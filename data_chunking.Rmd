@@ -1,0 +1,36 @@
+---
+title: "data_chunking"
+author: "Trevor Lindner"
+date: '2022-11-12'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load("dplyr")
+Cleaned.Frisco <- read.csv("C:/Users/lindn/Downloads/Cleaned Frisco.csv", row.names=1)
+restaurant_conversion <- read.csv("C:/Users/lindn/Desktop/CSE6242/Group Project/Restaurant_Conversion.csv")
+```
+
+## R Markdown
+
+```{r chunk_restaurant_type}
+cleaned_cat <- merge(x = Cleaned.Frisco, y = restaurant_conversion, by.x = "Restaurant.Category.1", by.y = "restaurant_detail_category", all = TRUE)
+```
+
+
+```{r time_categories}
+#open for breakfast open before 10:00
+cleaned_cat$Open_Breakfast <- cleaned_cat$Opening.Time <= 1000
+#open for lunch Open before 12:00 and closes after 12:00
+cleaned_cat$Open_Lunch <- cleaned_cat$Opening.Time <= 1200 & cleaned_cat$Closing.Time >= 1200
+#open for dinner open before 18:00 and closes after 18:00
+cleaned_cat$Open_Dinner <- cleaned_cat$Opening.Time <= 1800 & cleaned_cat$Closing.Time >= 1800
+#open late night close after 22:00
+cleaned_cat$Open_Late <- cleaned_cat$Closing.Time > 2200
+```
+
+```{r write file}
+write.csv(cleaned_cat,file='/Users/lindn/Desktop/CSE6242/Group Project/Frisco_Categorized_Restaurants.csv', row.names=TRUE)
+```
+

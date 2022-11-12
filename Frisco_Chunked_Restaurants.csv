@@ -1,0 +1,896 @@
+"","Restaurant.Category.1","id","is_claimed","is_closed","review_count","rating","Pickup.Available","Delivery.Available","Reservation.Available","Price.Level","number.of.photos","City","State","Opening.Time","Closing.Time","Has.Messaging","reduced.category","Open_Breakfast","Open_Lunch","Open_Dinner","Open_Late"
+"1","african","wyxkS13kG6o2OMijSuSolQ","True","False",15,4,0,1,0,"",3,"Lewisville","TX",1200,2000,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"2","african","Wk7bGwKecyYwdh1e9JpIUg","True","False",21,3,1,1,0,"",3,"Frisco","TX",1130,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"3","african","t1OFpyRxngMWGNgI293XsQ","True","False",16,4,1,1,0,"",3,"Plano","TX",1100,1900,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"4","asianfusion","8AfxHKTkUeetZ5qz2aiJHw","True","False",131,4,1,1,0,"Medium",3,"Prosper","TX",1100,1530,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"5","asianfusion","kCgeadOYxcOeK-gvPGQheA","True","False",29,3.5,0,0,0,"",3,"Plano","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"6","asianfusion","DS9-YZdhErxrTeqw0pnFQQ","True","False",116,3,0,1,0,"Medium",3,"McKinney","TX",1115,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"7","asianfusion","Z3N__-JLDo1k0ukdH8Mm8g","True","False",408,4,1,1,0,"Medium",3,"Frisco","TX",1100,1430,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"8","asianfusion","NqlXqmFDK6nY1LXNvzdl0g","True","False",217,2,1,1,0,"Medium",3,"Frisco","TX",1100,2000,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"9","asianfusion","VRtEgQCGFGKWO0B_bmiDQw","True","False",170,2.5,1,1,0,"Medium",3,"Plano","TX",1100,2030,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"10","asianfusion","wPemPKnDZlW18VB1_NDW-A","True","False",52,3,0,1,0,"Low",3,"The Colony","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"11","asianfusion","Xj1xaMizHb87U5HwIkdZFA","True","False",315,4,0,1,0,"Medium",3,"Little Elm","TX",1030,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"12","asianfusion","2Yj62Zx22IQO_8U00DUcWw","True","False",308,3.5,0,1,0,"High",3,"Plano","TX",1600,2300,0,"East Asian",FALSE,FALSE,TRUE,TRUE
+"13","bagels","fpI7mnWKWi5ImtBf1gd-zg","True","False",140,2,0,1,0,"Low",3,"Frisco","TX",530,1600,0,"Cafe",TRUE,TRUE,FALSE,FALSE
+"14","bagels","eKUphiarXq87lHjyjY9IAg","True","False",41,4.5,0,0,0,"",3,"Frisco","TX",700,1330,0,"Cafe",TRUE,TRUE,FALSE,FALSE
+"15","bakeries","cTXJ0802WT8dL0ZTzNU4zw","True","False",14,3,1,1,0,"",3,"Frisco","TX",1000,2200,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"16","bakeries","skOdw3314w8zgKiHQoLDYg","True","False",67,4.5,1,1,0,"Low",3,"McKinney","TX",1000,2100,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"17","bakeries","h_lWIGnjyTFUSPsC6dE0sQ","False","False",27,4,1,1,0,"",3,"Frisco","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"18","bakeries","oRK4Cvz7GdvfrE-6erT--g","True","False",234,4,1,1,0,"Low",3,"Frisco","TX",1000,1900,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"19","bakeries","j37avD1FY1pr3aupWkCLUQ","True","False",13,3,1,1,0,"Low",3,"Frisco","TX",1000,2100,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"20","bakeries","Dv4WjkcFLJPbRdQlCQrprg","True","False",231,2.5,1,1,0,"Medium",3,"Frisco","TX",700,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"21","bakeries","Kt3mqOpwOMK3NiNtOPWXqQ","True","False",28,4.5,1,1,0,"Low",3,"Frisco","TX",900,2100,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"22","bakeries","QD9CCBP3zW5eMGrQ-pLozQ","True","False",487,3,0,1,0,"Medium",3,"Plano","TX",700,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"23","bakeries","AW2IHTSRCu69cEI9klJIMg","True","False",52,2.5,1,1,0,"Medium",3,"Plano","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"24","bars","sABLjt2mgq7uOZ61TOjH8g","True","False",133,2.5,1,1,0,"Medium",3,"Prosper","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"25","bars","xvTKsff8RJXJYs-XAFmMNg","True","False",110,2.5,1,1,0,"Medium",3,"McKinney","TX",1045,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"26","bars","_qyd2BjqAj9HSUG_orR0IA","True","False",103,2.5,1,1,0,"Medium",3,"Little Elm","TX",1100,200,0,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"27","bars","P4Nk4Kyd4lcLuGuTDavmIQ","True","False",558,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"28","bars","cDIUUkOB4JtV86PQRPpvsQ","True","False",118,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"29","bars","j2U3fC92-k-0EFdYFo8iow","True","False",589,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,0,0,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"30","bars","pdh_lSQmWok-ziY-_zSPEg","True","False",365,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2300,0,"Alcohol",FALSE,TRUE,TRUE,TRUE
+"31","bars","gxBSpboX3E4u_SWRUsqyHg","True","False",35,3,0,1,0,"",3,"Frisco","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"32","bars","-SPSN4lAQbJz8QLt9yZpSA","True","False",13,4,1,1,0,"",3,"Frisco","TX",1100,2100,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"33","bars","wrNNYaLz8vfqvKzafGjnQA","True","False",573,3.5,1,0,0,"Medium",3,"The Colony","TX",1500,2300,0,"Alcohol",FALSE,FALSE,TRUE,TRUE
+"34","bbq","9VqZZiaiyGH_6smpvUKaQQ","True","False",127,4.5,0,0,0,"Medium",3,"Aubrey","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"35","bbq","0stvkgthyTTqMl2gHBrk2g","True","False",116,4.5,0,0,0,"Medium",3,"The Colony","TX",1200,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"36","bbq","5ER1LVy_PBHfz0GZyW067Q","True","False",8,3,0,0,0,"",3,"Frisco","TX",1600,2100,0,"American",FALSE,FALSE,TRUE,FALSE
+"37","bbq","HCRlFBO5C21rGzQN8qA_cg","False","False",2,4.5,0,0,0,"",0,"McKinney","TX",NA,NA,0,"American",NA,NA,NA,NA
+"38","bbq","cEIkirpGljclPdTXg-mHgQ","True","False",447,3.5,1,1,0,"Medium",3,"Frisco","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"39","bbq","_G7hGWuaK-KRqYVGuH-OLw","True","False",17,4,0,0,0,"",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"40","bbq","2h0AeH-Z02YaG6MUy8zRJA","True","False",5,3.5,1,1,0,"",3,"The Colony","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"41","bbq","FJAPln5z1Y85RpQsnLuRzg","True","False",157,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"42","bbq","DtYMJeVbFgGXroWYUX5P4Q","True","False",1825,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"43","bbq","sPUbrRvGAPa4urHB0_6rmg","True","False",311,4,0,0,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"44","bbq","fsArw_200gqcuyvOtWL98w","True","False",355,4.5,0,1,0,"Medium",3,"Frisco","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"45","bbq","3t-zZGvSM5w5x5GsegbcpQ","True","False",16,3,0,0,0,"",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"46","bbq","eL0fRp3FvuPsSkB7iAWnwA","True","False",86,4,1,1,1,"Medium",3,"Frisco","TX",1600,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"47","bbq","ODbbhY_o8aNwdv-_PUFZpg","False","False",29,2.5,1,1,0,"",3,"Prosper","TX",NA,NA,0,"American",NA,NA,NA,NA
+"48","bbq","JY1CpLWXdTils6iJ6kT7Xw","True","False",30,2,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"49","bbq","icbNjFkK_Knw4C7Rf2hJfw","True","False",45,3,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"50","bbq","JJpou9UZElV_COC_eolWKA","True","False",62,2.5,1,0,0,"Medium",2,"Little Elm","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"51","bbq","PA-AJwmLljfAC8g6MY-l3g","True","False",76,3,1,1,0,"Medium",3,"Prosper","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"52","bbq","yTLCJduGNoCQthPTEF7S-A","True","False",58,2.5,1,1,0,"Medium",3,"McKinney","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"53","bowling","DDs6SgnILpNZ43D8ILk_og","True","False",178,2.5,0,1,0,"Medium",3,"Frisco","TX",1100,100,0,"Non-Restaurant",FALSE,FALSE,FALSE,FALSE
+"54","brazilian","0lBMAhaYMjJn6hif_wHdAQ","True","False",464,4,1,1,0,"High",3,"Plano","TX",1100,1500,0,"Latin American",FALSE,TRUE,FALSE,FALSE
+"55","brazilian","P-nmEhRKXLKnAaBOtx4ENA","True","False",546,4.5,1,1,0,"High",3,"Frisco","TX",1630,2100,0,"Latin American",FALSE,FALSE,TRUE,FALSE
+"56","brazilian","PP_Aqo-FuKPQcM1s6AelXw","True","False",181,4,0,0,0,"Medium",3,"Plano","TX",1630,2100,1,"Latin American",FALSE,FALSE,TRUE,FALSE
+"57","breakfast_brunch","9wAA64HxlsDGGMUviXxXyQ","True","False",117,3.5,1,1,0,"Medium",3,"Little Elm","TX",700,1400,1,"American",TRUE,TRUE,FALSE,FALSE
+"58","breakfast_brunch","arrOJBiqOsQ-zBx1tXntiw","True","False",208,4.5,0,0,0,"Medium",3,"Plano","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"59","breakfast_brunch","BbYl_rVZDFPQyT6tuNQDBw","True","False",396,4.5,1,1,0,"Medium",3,"Frisco","TX",700,1500,0,"American",TRUE,TRUE,FALSE,FALSE
+"60","breakfast_brunch","trYkuKXsOZcyczi12Sfyiw","False","False",3,5,0,0,0,"",3,"Frisco","TX",NA,NA,0,"American",NA,NA,NA,NA
+"61","breakfast_brunch","ux7_my9gBCAY9Fae0-bc4w","True","False",288,4,1,1,0,"Medium",3,"Frisco","TX",700,1500,1,"American",TRUE,TRUE,FALSE,FALSE
+"62","breakfast_brunch","rdTDtfC1T70Z4lBPP9NoJQ","True","False",97,4,1,1,0,"Low",3,"Frisco","TX",600,1400,0,"American",TRUE,TRUE,FALSE,FALSE
+"63","breakfast_brunch","xUzzt6pgTf0Sy01X-ge63w","True","False",329,4.5,0,1,0,"Medium",3,"Frisco","TX",700,1400,0,"American",TRUE,TRUE,FALSE,FALSE
+"64","breakfast_brunch","zxu9YPbSm-2u5MXhGPxZcQ","False","False",1,4,0,0,0,"",3,"Frisco","TX",800,1700,0,"American",TRUE,TRUE,FALSE,FALSE
+"65","breakfast_brunch","BkOI4SjFFlNHEowjVH-yzg","True","False",339,4,0,0,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"66","breakfast_brunch","3m1fFOsPlS2cpq1hBCPShA","True","False",872,4.5,0,1,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"67","breakfast_brunch","Yj9R7Lxon-lF1lpZ4C1Whg","True","False",91,4.5,0,0,0,"Medium",3,"McKinney","TX",700,1500,0,"American",TRUE,TRUE,FALSE,FALSE
+"68","breakfast_brunch","4scGfgdDKJgf5oIJtFWMow","True","False",411,4,0,1,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"69","breakfast_brunch","UJyaOs7eq_oB1aI1ZSAh0w","True","False",424,4.5,0,1,0,"Medium",3,"Frisco","TX",700,1500,0,"American",TRUE,TRUE,FALSE,FALSE
+"70","breakfast_brunch","whEjz4CSMkfo-XRxy8vkbw","True","False",195,4,0,0,0,"Medium",3,"Plano","TX",700,1400,0,"American",TRUE,TRUE,FALSE,FALSE
+"71","breakfast_brunch","cmi1LffsFyRyO7wJ2fesmg","True","False",1247,4,1,1,0,"Low",3,"Plano","TX",800,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"72","breakfast_brunch","U0bNPDmJuKnc9I5KR3nrZQ","True","False",18,3,0,1,0,"Medium",3,"Plano","TX",1600,2200,1,"American",FALSE,FALSE,TRUE,FALSE
+"73","breakfast_brunch","k-UKMQWZ7Cs9o7z9KGXAhg","True","False",34,4.5,1,1,0,"",3,"Lewisville","TX",630,1500,1,"American",TRUE,TRUE,FALSE,FALSE
+"74","breakfast_brunch","QDQwPO2PnhEPW950ezBsrg","True","False",83,4,0,1,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"75","breakfast_brunch","SNHOYL6JEXEiL_ORK2IRfQ","True","False",103,3,0,0,0,"",3,"Prosper","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"76","breakfast_brunch","yOQAuEsb5GHAkjXV0M-fFw","True","False",78,4,0,0,0,"Medium",3,"Aubrey","TX",700,1500,0,"American",TRUE,TRUE,FALSE,FALSE
+"77","breakfast_brunch","Z9ejlDeudZqQ1rD0Ae1X3g","False","False",1,4,0,0,0,"",3,"Plano","TX",NA,NA,0,"American",NA,NA,NA,NA
+"78","breakfast_brunch","QJFlzbDYd0xJrcGiQeJ6PQ","True","False",85,4.5,1,1,0,"Low",3,"Little Elm","TX",430,1230,0,"American",TRUE,TRUE,FALSE,FALSE
+"79","breakfast_brunch","KCFAvlZcU8KOkx-MnOThcQ","False","False",3,5,1,1,0,"",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"80","breakfast_brunch","yFhHi-2NQL45W7dwu3zs8w","True","False",651,4,1,1,0,"Medium",3,"Plano","TX",630,1400,1,"American",TRUE,TRUE,FALSE,FALSE
+"81","breakfast_brunch","-Y7lHLK6zVzpS74d92wTBQ","True","False",484,4.5,0,1,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"82","breakfast_brunch","ECJSJo48XjK9nz5xu1ut1Q","True","False",11,4.5,0,0,0,"Medium",3,"Plano","TX",700,0,1,"American",TRUE,FALSE,FALSE,FALSE
+"83","breakfast_brunch","WpOkFfb8xuaYV8SQfc3Yzg","True","False",123,4.5,0,0,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"84","breakfast_brunch","Do4OPvA_2ogF-adBTuwe5Q","True","False",248,1.5,1,1,0,"Low",3,"Frisco","TX",0,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"85","breakfast_brunch","mCaqhmCERtXf1Ytt3Kzb5g","True","False",93,4,1,1,0,"Medium",3,"Frisco","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"86","breakfast_brunch","eLLlvggmbTMdK-tvubXmCA","True","False",722,4.5,0,1,0,"Medium",3,"Frisco","TX",700,1500,0,"American",TRUE,TRUE,FALSE,FALSE
+"87","breakfast_brunch","AQ0OMprwnFlYkFRoT6Fr-w","True","False",120,3.5,0,0,0,"Medium",3,"McKinney","TX",700,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"88","breakfast_brunch","I8kjxgLslqaNwybm1dKkag","True","False",20,4.5,1,1,0,"",3,"Frisco","TX",700,1400,1,"American",TRUE,TRUE,FALSE,FALSE
+"89","breakfast_brunch","NUKEqZp54WUS7-Qc3JnLyw","True","False",299,4,1,1,0,"Medium",3,"Frisco","TX",630,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"90","breakfast_brunch","qa4tf-_h-k5dLw0Gy84ecw","True","False",15,4.5,0,0,0,"",3,"Frisco","TX",630,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"91","breakfast_brunch","6gc2Of2_XRiEh9zL68tJfw","True","False",58,1.5,1,1,0,"Medium",3,"Frisco","TX",600,0,1,"American",TRUE,FALSE,FALSE,FALSE
+"92","british","p-teu1Zk4UAFMUvxQ5vd2A","True","False",136,3,0,1,0,"Medium",3,"Plano","TX",1500,200,0,NA,FALSE,FALSE,FALSE,FALSE
+"93","bubbletea","YmrfIxrEkkPpjvJ1k3kdCA","True","False",13,4.5,1,1,0,"Low",3,"Frisco","TX",1200,2000,0,"Cafe",FALSE,TRUE,TRUE,FALSE
+"94","bubbletea","uZKsrUwhKqP5U4SjVsHxRw","True","False",136,4,0,0,0,"Low",3,"Frisco","TX",1100,2100,0,"Cafe",FALSE,TRUE,TRUE,FALSE
+"95","buffets","Sep2VU-6pMn11oFz45a2rg","True","False",372,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"Other",FALSE,TRUE,TRUE,FALSE
+"96","burgers","cCd7Qjs5_gXjJvkJvwS0EA","True","False",47,2,0,1,0,"Low",3,"Frisco","TX",1000,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"97","burgers","fr9rMkLY-jRztWrT8QgYmQ","True","False",451,4,1,1,0,"Medium",3,"Plano","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"98","burgers","AiTCz58xj4U5RbSkePlV-g","True","False",36,1.5,0,1,0,"Low",3,"Frisco","TX",600,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"99","burgers","6cE8x0LfybDPhe5H1FveSg","True","False",44,3.5,1,1,0,"",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"100","burgers","7TkYToFcsYjIJ1aYq4tZCw","True","False",191,4,0,1,0,"Medium",3,"Frisco","TX",1030,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"101","burgers","cP9puqDInVekjyMyZ3S6Ew","True","False",103,3,1,1,0,"Medium",3,"Frisco","TX",1030,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"102","burgers","zOKgw6Fhniw1Sgrb8ZjQoA","True","False",74,3,0,0,0,"Low",3,"McKinney","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"103","burgers","6iywwOtYOjTBOVxPvP_xaA","True","False",37,3,1,1,0,"Low",3,"Mckinney","TX",600,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"104","burgers","UPlWGA2JmY5fkZRyvXUQdA","True","False",142,3,1,1,0,"Medium",3,"Little Elm","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"105","burgers","EetNVXi8X-l-rwzDgu1ZaA","True","False",73,2,0,1,0,"",3,"Prosper","TX",1100,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"106","burgers","TyRw4hi7yGcYvty-JWRPlA","True","False",204,1.5,0,1,0,"Low",3,"Frisco","TX",0,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"107","burgers","gu0isKhH9VBEgQp3YvaMfw","True","False",42,1.5,1,1,0,"",3,"Frisco","TX",600,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"108","burgers","jiJ3Nq9IbtrDkn8EOhE-8A","True","False",51,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,0,1,"American",FALSE,FALSE,FALSE,FALSE
+"109","burgers","SImwObdVNj5NwKdW-jpuuw","True","False",59,3,1,1,0,"",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"110","burgers","X-Q7PtcWTYvGDfOfA-QjjA","True","False",107,3,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"111","burgers","H2H4tShOfQZ9AKsI8t1Rwg","True","False",15,1.5,0,1,0,"Low",3,"Allen","TX",1000,2300,1,"American",TRUE,TRUE,TRUE,TRUE
+"112","burgers","os_9iQIiQ--eSFvNAIul0A","True","False",317,4,1,1,0,"Medium",3,"Frisco","TX",1200,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"113","burgers","3_qHy2eIKfXlSuwRfuA8Hw","True","False",38,2,0,1,0,"Low",3,"Plano","TX",800,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"114","burgers","v0IGu9WM286lyj4m0AJI8w","True","False",18,4.5,1,1,0,"",3,"Frisco","TX",700,1100,0,"American",TRUE,FALSE,FALSE,FALSE
+"115","burgers","tvO2ofDdgTkWrDyDHlTd3g","True","False",169,3,0,1,0,"Medium",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"116","burgers","IJ_6VoseADX4YE9UHJoxIw","True","False",176,4,1,1,0,"Low",3,"Frisco","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"117","burgers","vwlHCU1nZ36o7DRJiV-aLQ","True","False",85,3,0,1,0,"Low",3,"Mckinney","TX",0,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"118","burgers","92olaKGptfVZlLN75JDLPA","True","False",270,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"119","burgers","8FJUasAEr9GbM6bt9z4o3w","True","False",45,4.5,0,0,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"120","burgers","g1ZE_yso6z_5P3iDbEKHVA","True","False",1,4,1,1,0,"",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"121","burgers","5y8ImahTyoCMIxMRABr1ZA","True","False",431,4,0,0,0,"Low",3,"Frisco","TX",1030,100,0,"American",FALSE,FALSE,FALSE,FALSE
+"122","burgers","28BwwPQHZQUk_T-bifn_NQ","False","False",171,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"123","burgers","CIQbbv3pClkStU3dqhfbKg","True","False",25,2.5,0,1,0,"Low",3,"Prosper","TX",0,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"124","burgers","sDz-KIeqgHYITNl2GM7Z6A","True","False",1236,4.5,0,0,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"125","burgers","zSznTEwh__5CPSodIkdU0w","True","False",287,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"126","burgers","FhLnYcXY5VVallPb74NanA","True","False",138,4,1,1,0,"",3,"Plano","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"127","burgers","rneHZ-Ls54Zx0_Y1qVkeTg","True","False",7,3,1,1,0,"",3,"Little Elm","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"128","burgers","TkXqAEK6DsbuMM32YtUQDA","False","False",2,1,0,0,0,"",0,"Frisco","TX",NA,NA,0,"American",NA,NA,NA,NA
+"129","cafes","Yb83MXgnK5MR-KEMd0PrZw","True","False",3,4.5,0,1,0,"",0,"Plano","TX",730,1530,0,"Cafe",TRUE,TRUE,FALSE,FALSE
+"130","cafes","xVz0QrAeFT7wrkmwyPdSyQ","True","False",836,4.5,1,1,0,"Medium",3,"Frisco","TX",630,1430,1,"Cafe",TRUE,TRUE,FALSE,FALSE
+"131","cafes","1KLl03kQJT8otvpUdRLwVA","True","False",532,2.5,1,1,0,"Medium",3,"Plano","TX",1100,0,0,"Cafe",FALSE,FALSE,FALSE,FALSE
+"132","cafes","uZ6mBlUQAfSLhisJLIJmqw","True","False",63,4.5,0,0,0,"Low",3,"Frisco","TX",630,1700,1,"Cafe",TRUE,TRUE,FALSE,FALSE
+"133","cafes","Zm4b-zWNOWVnru2aLENOzg","False","False",2,2.5,0,0,0,"",2,"Frisco","TX",NA,NA,0,"Cafe",NA,NA,NA,NA
+"134","cafes","de7yjE4hCubxhGJ2etyjhQ","False","False",11,3,0,0,0,"Low",3,"Frisco","TX",NA,NA,0,"Cafe",NA,NA,NA,NA
+"135","cafes","yMxxZRtOcF1qvra5zAKESg","True","False",392,3.5,1,1,0,"Medium",3,"Frisco","TX",700,2000,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"136","cafes","soD-cFZRyDV8vfOqjGZN6g","True","False",164,3.5,1,1,0,"Medium",3,"Frisco","TX",630,1800,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"137","cafes","IC1A5xLL1OSK1Q7j6jYJeQ","True","False",87,3,1,1,0,"Low",3,"Frisco","TX",630,1930,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"138","cafes","cnVsj6X0SCg7gzsm1G3D-Q","True","False",1,5,0,0,0,"",0,"Frisco","TX",700,1600,0,"Cafe",TRUE,TRUE,FALSE,FALSE
+"139","cafes","8Qsd-RdR90QOZdUpG30-fg","True","False",8,5,0,1,0,"",2,"Plano","TX",NA,NA,0,"Cafe",NA,NA,NA,NA
+"140","cafes","eoBID5gflQpb5P2APgq3Fg","True","False",167,4.5,0,1,0,"Low",3,"Frisco","TX",1000,2100,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"141","cajun","AMrvcVbz1IfBfr6FmqEOtg","True","False",5,3,1,1,0,"",3,"Frisco","TX",800,1700,1,"American",TRUE,TRUE,FALSE,FALSE
+"142","cajun","XY2R-4zbFaFvou7jvUELDw","True","False",208,4,0,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"143","cajun","ETA-JSx9f5wjDqWFKoOPIA","True","False",194,3,1,0,0,"Medium",3,"Frisco","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"144","cajun","orsc-l0O4p17u0-E41moxg","True","False",22,4.5,0,0,0,"",3,"Frisco","TX",800,1800,1,"American",TRUE,TRUE,TRUE,FALSE
+"145","cajun","ls16f4kuadN-5pohYZJgiA","False","False",5,4,0,0,0,"",3,"Frisco","TX",1300,1900,0,"American",FALSE,FALSE,TRUE,FALSE
+"146","cajun","Fknrudb49wLWaaYI0CJYOw","True","False",245,3.5,1,1,0,"Medium",3,"The Colony","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"147","cajun","7MZ9A8phbfac39wCct9qUg","False","False",2,3,0,0,0,"",2,"Frisco","TX",1100,2000,0,"American",FALSE,TRUE,TRUE,FALSE
+"148","cakeshop","O5Eo6wkdzu6CTeUEcwkSYg","True","False",1,4,0,0,0,"",0,"Frisco","TX",800,1600,1,"Snacks/Dessert",TRUE,TRUE,FALSE,FALSE
+"149","cakeshop","WHqKxIureuFBmZB5yCi-Mw","True","False",9,4.5,0,0,0,"Low",3,"Frisco","TX",900,1900,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"150","catering","_GvII7semYQHGuFItlFoxA","True","False",31,5,0,0,0,"",3,"Frisco","TX",NA,NA,1,"Non-Restaurant",NA,NA,NA,NA
+"151","cheesesteaks","isYi-iSEDl_GjEuW9Wml0g","True","False",285,4.5,1,1,0,"Medium",3,"Frisco","TX",1130,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"152","cheesesteaks","KBUHDw9cQdVLtLumeBcu4w","True","False",8,2.5,1,1,0,"",3,"Plano","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"153","chicken_wings","SxxFkcwfNxIbIBQ2JiwBgw","False","False",10,3,0,1,0,"Medium",3,"Frisco","TX",1000,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"154","chicken_wings","uDdQOtDdPv9_3xEAD-SyEQ","True","False",391,3,0,1,0,"Medium",3,"Little Elm","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"155","chicken_wings","bBYik7QanfVMBYb3i3augA","True","False",50,2.5,0,0,0,"Medium",3,"McKinney","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"156","chicken_wings","cX4Zv5vEtsmIgHm6r90LgA","True","False",11,2.5,0,0,0,"",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"157","chicken_wings","ildn15RPc2Z5-96pkUdmNg","True","False",45,4,1,1,0,"",3,"Plano","TX",1030,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"158","chicken_wings","Q7DVhWpvQ0-8oefFfx2I5w","True","False",87,4,1,1,0,"Medium",3,"Frisco","TX",1130,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"159","chicken_wings","Src3ef2xHd2CuOaz2-eV9A","False","False",3,2.5,0,1,0,"",0,"Plano","TX",NA,NA,0,"American",NA,NA,NA,NA
+"160","chicken_wings","W9-sc1-0TsV7kmkjdlSV5Q","True","False",62,2,0,0,0,"Medium",3,"McKinney","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"161","chicken_wings","JEThalxbd3QbmeyFpYtlRg","True","False",2,1.5,1,1,0,"",3,"Plano","TX",NA,NA,0,"American",NA,NA,NA,NA
+"162","chicken_wings","8NUuMj8vQNqEmlxuLfLJQg","True","False",312,2,1,1,0,"Medium",3,"Frisco","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"163","chicken_wings","XfAZ2ubt2gMgFd0t1Cpwgw","True","False",38,4,1,1,0,"",3,"Frisco","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"164","chicken_wings","dLJ0NeQ4UG6mWyNAncJp7Q","True","False",108,1.5,1,1,0,"Low",3,"Frisco","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"165","chicken_wings","E35MHanbKc4vwPodgHs7ng","True","False",91,2.5,0,1,0,"Medium",3,"Frisco","TX",1030,0,1,"American",FALSE,FALSE,FALSE,FALSE
+"166","chicken_wings","BzTiOG1rKflwZnioC0d5hQ","True","False",58,1.5,0,0,0,"",3,"Prosper","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"167","chicken_wings","rjaxz6DXmdVJWqwb5NYfGg","True","False",143,2.5,0,0,0,"Medium",3,"Frisco","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"168","chicken_wings","YJJeGldNu5riaHzdJckB4g","True","False",61,3,0,1,0,"Low",3,"Frisco","TX",1000,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"169","chicken_wings","iWv2_dkxehghYqmkd2qY7Q","True","False",30,3,1,1,0,"Low",3,"Plano","TX",900,2330,0,"American",TRUE,TRUE,TRUE,TRUE
+"170","chicken_wings","voD4poR-Wv1YqDZvjUSoEQ","True","False",31,4.5,1,1,0,"Medium",3,"Plano","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"171","chicken_wings","hgjebDDc1vxd0Rg8v0fCbA","False","False",72,4,1,1,0,"",3,"The Colony","TX",1100,2130,0,"American",FALSE,TRUE,TRUE,FALSE
+"172","chicken_wings","qxm8VbFFy6-GyLLbgscLyA","True","False",60,2.5,1,1,0,"Low",3,"Frisco","TX",1030,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"173","chicken_wings","sj4x_LtOVruBSHzCMUW-vw","True","False",226,4,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"174","chicken_wings","EJfRkGk3tjit4WvGrR78og","True","False",10,4,1,1,0,"",3,"Plano","TX",1130,2130,0,"American",FALSE,TRUE,TRUE,FALSE
+"175","chicken_wings","tHCCI0S5rsjAM_h9S7OqZg","True","False",1,1,1,1,0,"",3,"Frisco","TX",1000,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"176","chicken_wings","wUPD1IWHdyh3nB4cH6e9KQ","True","False",14,2,0,1,0,"Low",3,"Frisco","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"177","chickenshop","e0W3Z_Wuwf1yf38vTQ0b6A","True","False",32,4,0,0,0,"",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"178","chickenshop","Q2z6-am58t-h9fi_ZCky_A","True","False",19,3.5,0,1,0,"",3,"Prosper","TX",1000,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"179","chickenshop","hMv8yA_1OTJ4ieH_5aAMuQ","True","False",69,3,0,1,0,"Medium",3,"Little Elm","TX",1000,2200,1,"American",TRUE,TRUE,TRUE,FALSE
+"180","chickenshop","SHzDmzr0K0tx_rzLavKx5w","True","False",31,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"181","chickenshop","wpvggwrUd-roXvIr1lSGRA","True","False",97,3.5,1,1,0,"Low",3,"Frisco","TX",1030,2230,1,"American",FALSE,TRUE,TRUE,TRUE
+"182","chickenshop","mW5AQncfKFZDmgjOOVuzbg","False","False",250,4,0,1,0,"Medium",3,"Frisco","TX",630,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"183","chickenshop","PqxMYBUi_KMvN5PPHe4_GQ","False","False",1034,4,0,1,0,"Medium",3,"Frisco","TX",1100,1400,0,"American",FALSE,TRUE,FALSE,FALSE
+"184","chickenshop","lSsHJLOwlV28rLPmqni9Hw","True","False",126,4,1,1,0,"Medium",3,"Plano","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"185","chickenshop","MxFpXpXgO8VaNoBT3Vs4hw","True","False",48,2,0,1,0,"",3,"Prosper","TX",600,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"186","chinese","R6S3ZQnsHz5iSDGsh0fcag","True","False",6,3.5,0,0,0,"",3,"Plano","TX",1100,2200,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"187","chinese","GYmFR0Eckx9DKNZWHk6lFQ","False","False",63,2.5,1,1,0,"Medium",3,"The Colony","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"188","chinese","xUXwO2Tkny70Khz3MN-Kuw","True","False",161,3,1,1,0,"Low",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"189","chinese","ZadjbWA7kQi34IdSJfScow","True","False",279,4,1,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"190","chinese","1grej05ylLHHBGlDyGchaw","True","False",269,3.5,1,1,0,"Medium",3,"Frisco","TX",1130,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"191","chinese","3ZiOvwzcsN3eOm7glVxWpw","True","False",113,4.5,0,1,0,"",3,"Frisco","TX",1130,2100,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"192","chinese","KICoweaVCo7ok7UH589zmA","True","False",69,2,1,1,0,"Low",3,"Frisco","TX",1030,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"193","chinese","AKMIIvW8JDuDOjRzaN4ntw","True","False",96,4,1,1,0,"Low",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"194","chinese","e5hGi2KXJUWT1ijs_7Z-bg","True","False",258,4,0,1,0,"Medium",3,"McKinney","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"195","chinese","eesJ6i0LRbgn7X6oCxFCZQ","True","False",90,3,1,1,0,"Low",3,"Little Elm","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"196","chinese","5zrELQaB9973nlot4_QbFg","True","False",99,4,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"197","chinese","BTNKR9mcXBL07Ilty0HtXQ","True","False",230,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"198","chinese","qHWxt_82KsiDsU4_tiMlNQ","True","False",57,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"199","chinese","-ptKXpBnXnb0_2q6-z3M7A","True","False",140,3.5,1,1,0,"Low",3,"Frisco","TX",1030,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"200","chinese","ikFdQNBF2klt1qxZ7IS8Vw","True","False",189,4,0,1,0,"Medium",3,"Plano","TX",1100,1500,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"201","chinese","S-Xv3BCb8Y3UstSxGemIwg","True","False",130,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"202","chinese","lS3aVLxV9-fiAtGUTj05Qg","False","False",1,3,0,0,0,"",0,"The Colony","TX",NA,NA,0,"East Asian",NA,NA,NA,NA
+"203","chinese","niyxfBCPrboxDRS89af9Gg","True","False",27,2,1,1,0,"",3,"Prosper","TX",1030,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"204","chinese","7ZPkCIH9HsUQXmVl3ZOuQQ","True","False",82,4,1,1,0,"Medium",3,"Frisco","TX",1100,1430,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"205","chinese","3k8hkpMUE7LNEnJtK8MQmQ","False","False",139,3.5,1,1,0,"Medium",3,"Frisco","TX",NA,NA,0,"East Asian",NA,NA,NA,NA
+"206","chinese","xnXELLGta6saAzh5XCylMw","True","False",330,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"207","chinese","IJRd9CkAFkCfCcrUH-LNng","True","False",10,1.5,0,1,0,"Low",3,"Frisco","TX",1100,1900,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"208","chinese","t0LQ_T1BTW95-xHpjL8tvw","True","False",93,3,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"209","chinese","vm12ElhcqU9SdSsQXktOTw","True","False",252,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"210","chinese","zTwNymkfEtDL2KrG5F_zKA","True","False",336,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"211","chinese","ebMVbmC-0n82x-cq4NnO4w","True","False",57,2.5,1,1,0,"Low",3,"Frisco","TX",1030,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"212","chinese","ENPhfwodl_g1ey02eGY6tg","True","False",155,4,1,1,0,"Medium",3,"Frisco","TX",1100,1500,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"213","chinese","TzpVCMjAuviinx8Zqn_wuQ","False","False",13,2,0,0,0,"Low",3,"Plano","TX",NA,NA,0,"East Asian",NA,NA,NA,NA
+"214","chinese","gi4vOTfyHYdG9yKWGIFnGQ","False","False",102,3.5,1,0,0,"Low",3,"Little Elm","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"215","chinese","3laIllEuWvKpxBMLEIQlyQ","True","False",50,4,0,0,0,"",3,"Aubrey","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"216","cocktailbars","okJLsY6V-YZocKR7ULezlg","True","False",146,3,0,0,0,"Medium",3,"Plano","TX",1100,200,0,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"217","cocktailbars","FquUMNqS1wcQ4h-BngwRvw","True","False",1076,4,1,1,0,"High",1,"Plano","TX",1100,2300,0,"Alcohol",FALSE,TRUE,TRUE,TRUE
+"218","cocktailbars","1sG3OSwCjK-vT_CuLY4wEg","True","False",297,4,0,1,0,"Medium",3,"Frisco","TX",1600,2300,0,"Alcohol",FALSE,FALSE,TRUE,TRUE
+"219","cocktailbars","WCbEUZkwPtJaWHGkqZSjcg","True","False",14,4.5,0,0,0,"",3,"Plano","TX",NA,NA,1,"Alcohol",NA,NA,NA,NA
+"220","cocktailbars","pLkI7rTVAF1tcKUxtPg-uQ","True","False",355,4,0,1,0,"Medium",3,"The Colony","TX",1100,2100,1,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"221","coffee","kXFTbwklmU1HUx3fNkxXRA","True","False",69,4.5,1,1,0,"",3,"Aubrey","TX",1100,2000,1,"Cafe",FALSE,TRUE,TRUE,FALSE
+"222","coffee","Y_-ItYDjjf-gr8ESpenkAQ","True","False",61,3.5,0,0,0,"",3,"Plano","TX",1000,2100,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"223","coffee","_r0Aat8yGRQBcJ-URzjwfw","True","False",7,4.5,0,1,0,"",3,"Frisco","TX",600,2300,1,"Cafe",TRUE,TRUE,TRUE,TRUE
+"224","coffee","-KQ-YXlgq9-dlIwbVbRW-A","True","False",42,1.5,0,1,0,"Low",3,"Frisco","TX",500,200,0,"Cafe",TRUE,FALSE,FALSE,FALSE
+"225","coffee","GdoOYUGHnfHZ-Fi9t8ftww","True","False",302,4,1,1,0,"Low",3,"Frisco","TX",700,1900,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"226","coffee","f5SH8VGe08UNTuSqraZ85Q","True","False",26,4,1,1,0,"",3,"Plano","TX",700,1700,1,"Cafe",TRUE,TRUE,FALSE,FALSE
+"227","coffee","7GYhTL_ZGsl3upw0duHMFQ","True","False",103,4.5,0,1,0,"Low",3,"Frisco","TX",600,1800,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"228","coffee","OZWDD29Scf5398rZtZUI-g","True","False",87,5,1,1,0,"",3,"Frisco","TX",730,1500,1,"Cafe",TRUE,TRUE,FALSE,FALSE
+"229","coffee","M-sJbSejtpJxrd4jgbQjFQ","True","False",57,4.5,0,1,0,"Low",3,"Frisco","TX",700,1900,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"230","coffee","1ybF8eowFlhMM-CnSal-2A","True","False",7,5,0,1,0,"",3,"Frisco","TX",800,1630,0,"Cafe",TRUE,TRUE,FALSE,FALSE
+"231","coffee","aeoqxRcfBMJpVzfp5BsR2g","True","False",79,3.5,0,1,0,"Low",3,"Frisco","TX",1100,2100,1,"Cafe",FALSE,TRUE,TRUE,FALSE
+"232","coffee","rhgcWzrX8zYmajGOS7ZBPw","True","False",39,4.5,0,0,0,"Low",3,"The Colony","TX",600,2000,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"233","coffee","ai5EoQurQ2p62nWki63AvQ","True","False",23,4.5,1,1,0,"Medium",3,"Plano","TX",1100,1900,1,"Cafe",FALSE,TRUE,TRUE,FALSE
+"234","coffee","n34XB0ToqCR9IvRD43z_0Q","True","False",6,4,0,0,0,"",2,"Prosper","TX",NA,NA,1,"Cafe",NA,NA,NA,NA
+"235","coffee","2V8rtOukZv28V-2O_UtknA","True","False",166,4.5,1,1,0,"Low",3,"Frisco","TX",800,1900,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"236","coffee","QBimuzLMIEPnkACx91CuVg","True","False",14,4.5,0,0,0,"",2,"Little Elm","TX",530,2000,0,"Cafe",TRUE,TRUE,TRUE,FALSE
+"237","comedyclubs","S1QjC8q3VUiBTG5cOfb-xQ","False","False",18,4,0,0,0,"",3,"Plano","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"238","comfortfood","RHIWPkZB7jrm8qiIKAk0UQ","True","False",198,3,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"239","comfortfood","rq28ApqJTfjQykOp4IMs5Q","False","False",1,1,0,0,0,"",0,"Frisco","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"240","comfortfood","vXVwm1HnQIRi8UZ7kY6jCQ","True","False",1,4,0,1,0,"",3,"Frisco","TX",1130,2130,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"241","convenience","_0O77Ep6vDuCLX3Ma7tj8A","True","False",6,4,0,0,0,"Medium",3,"The Colony","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"242","creperies","StxZMBAQIuVQ2Vr8YFk1gQ","True","False",129,4,1,1,0,"Low",3,"Frisco","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"243","delis","YCCnuIYQHW0Lnv_r7pFBbw","True","False",42,2,1,1,0,"",3,"Prosper","TX",1030,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"244","delis","vTBJ5sIQ8dkFmc6RO82CeQ","True","False",38,3,1,1,0,"",3,"Frisco","TX",1000,2200,1,"American",TRUE,TRUE,TRUE,FALSE
+"245","delis","xv81wCCTDRFQJDFfQNcE7A","True","False",224,4,1,1,0,"Medium",3,"Frisco","TX",1100,1500,0,"American",FALSE,TRUE,FALSE,FALSE
+"246","delis","1aV716ltx_wnpCRQ2qqCxA","True","False",99,4,1,1,0,"Low",3,"Frisco","TX",1000,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"247","desserts","Q5FMcoOqQMV5vgK1B-2O_g","True","False",90,4.5,1,1,0,"Low",3,"McKinney","TX",700,2030,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"248","desserts","P-a683VhuwDfkBQPBJfKng","True","False",5,3.5,1,1,0,"",3,"Frisco","TX",1100,2100,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"249","desserts","BRj76UFQ7QzTyaXckVOGbA","True","False",325,4.5,0,1,0,"Low",3,"Frisco","TX",1200,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"250","desserts","mNjBgjdHxbhUpZRJlPN8Tw","True","False",15,4.5,1,1,0,"",3,"Prosper","TX",830,1630,1,"Snacks/Dessert",TRUE,TRUE,FALSE,FALSE
+"251","desserts","vBcQFP5cvt7eV95DdvKZ0g","True","False",98,4.5,1,1,0,"Low",3,"Frisco","TX",1200,2300,0,"Snacks/Dessert",FALSE,TRUE,TRUE,TRUE
+"252","dimsum","qUOjUzjJtscXJ_osgY-1Hg","True","False",44,4,1,1,0,"",3,"Frisco","TX",1130,1430,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"253","diners","joyHADqN2fQfQX3XNvPfQQ","False","False",15,4.5,0,0,0,"",3,"Plano","TX",NA,NA,0,"American",NA,NA,NA,NA
+"254","dinnertheater","5ARD6r8F8ElBUFQYLYd5TA","True","False",307,3.5,0,1,0,"Medium",3,"McKinney","TX",1000,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"255","donuts","aqK1TjojzmS_GrTaA2oLkA","True","False",94,5,0,1,0,"Low",3,"The Colony","TX",600,1300,0,"Snacks/Dessert",TRUE,TRUE,FALSE,FALSE
+"256","donuts","mdm7kpQLbJD3J-WxgYeLvA","False","False",18,4.5,0,0,0,"Low",3,"The Colony","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"257","donuts","Mk1u7X-QN6xMLdb69rX7uw","True","False",33,4,0,0,0,"Low",3,"Plano","TX",1200,2100,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"258","filipino","5zHiHDlInqxBuldqlrUZvQ","False","False",13,3,0,0,0,"",3,"Frisco","TX",1100,1800,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"259","fishnchips","XkTG6ilGwHEmJ_fLI6KN1A","True","False",365,3.5,1,1,0,"Medium",3,"Plano","TX",1100,2130,0,"European",FALSE,TRUE,TRUE,FALSE
+"260","food_court","rT1uBjftW4GAXJUS2GW3pA","True","False",1163,4,1,1,0,"Medium",3,"Plano","TX",900,2300,1,"Other",TRUE,TRUE,TRUE,TRUE
+"261","food_court","Kw43zmxSVE6R2S3NYkrfzQ","False","False",2,4,0,0,0,"",3,"Frisco","TX",NA,NA,0,"Other",NA,NA,NA,NA
+"262","fooddeliveryservices","XIrYN0qGn5CrCsMlqCoQDA","True","False",18,2.5,0,0,0,"",3,"Frisco","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"263","fooddeliveryservices","gWb-EDAWKT1g-ZnTn4AlzA","False","False",3,2.5,0,0,0,"",3,"Frisco","TX",1100,2100,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"264","fooddeliveryservices","pip9lYKzDTiY1v3eqm349g","True","False",10,1.5,0,0,0,"",3,"Frisco","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"265","fooddeliveryservices","S5a32egBdTL-ZyF9DnbVQQ","False","False",29,1.5,0,1,0,"",3,"Frisco","TX",1100,2100,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"266","fooddeliveryservices","u1sW0RUhC0S5lJbb2lgRjA","True","False",9,1,0,0,0,"",3,"Frisco","TX",1100,2200,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"267","fooddeliveryservices","DAMzDNLkmrxR-KtiQWKN1A","True","False",3,1.5,1,1,0,"",3,"Frisco","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"268","fooddeliveryservices","PMPWzhjo5vQ922o3ArQb0Q","True","False",1,1,1,1,0,"",3,"Frisco","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"269","fooddeliveryservices","5igUwYCwr6uqtUZ91GZYKA","False","False",2,2.5,0,1,0,"",3,"Plano","TX",1130,1430,0,"Non-Restaurant",FALSE,TRUE,FALSE,FALSE
+"270","fooddeliveryservices","LemlCQPaGgIrCTPIst0fKg","True","False",8,2,0,1,0,"",3,"Frisco","TX",NA,NA,0,"Non-Restaurant",NA,NA,NA,NA
+"271","fooddeliveryservices","izwUMcJu2uTAQjrifb-y_Q","False","False",6,1,0,1,0,"",3,"Frisco","TX",1100,2100,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"272","fooddeliveryservices","c4wsVWzJzi8aqCH-L0-S6A","True","False",2,1,0,1,0,"",3,"Frisco","TX",1100,2200,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"273","foodtrucks","bhW7ow0fWVXAJCTu5VW_jQ","False","False",2,5,0,0,0,"",3,"Denton","TX",NA,NA,0,"Other",NA,NA,NA,NA
+"274","foodtrucks","2CcoD1fRfNroaGQ_sAliNQ","True","False",3,4.5,0,1,0,"",3,"Little Elm","TX",800,1500,0,"Other",TRUE,TRUE,FALSE,FALSE
+"275","foodtrucks","PWdsdUAcl5ub8DXUz7AUHQ","True","False",47,4.5,1,1,0,"Low",3,"Allen","TX",1700,2130,0,"Other",FALSE,FALSE,TRUE,FALSE
+"276","foodtrucks","Gwad2kmWrkGRoG0fe6_0Gg","True","False",14,4.5,0,0,0,"",3,"The Colony","TX",1100,2000,0,"Other",FALSE,TRUE,TRUE,FALSE
+"277","foodtrucks","yawhLqszfIp9q1aGNdLoig","True","False",23,4.5,1,1,0,"Medium",3,"Aubrey","TX",1100,1800,0,"Other",FALSE,TRUE,TRUE,FALSE
+"278","foodtrucks","DRf2aj2CygJkN9TJR0tIUQ","True","False",11,4.5,0,0,0,"",3,"Frisco ","TX",1100,2000,0,"Other",FALSE,TRUE,TRUE,FALSE
+"279","french","zGXLe-CZ6QTUtRZl5rfSKg","True","False",355,3.5,0,1,0,"High",3,"Plano","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"280","french","hyUtqLeuOmGMKJqnvyWt8A","True","False",70,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,2000,0,"European",FALSE,TRUE,TRUE,FALSE
+"281","gluten_free","vBEBY-rR6QK96b4pao2SRQ","True","False",9,5,0,0,0,"",3,"Plano","TX",1000,1900,1,"Other",TRUE,TRUE,TRUE,FALSE
+"282","golf","tdawfJdlfIQC3Ov3s9A9nw","True","False",42,2.5,0,1,0,"Medium",3,"Frisco","TX",700,1900,0,"Non-Restaurant",TRUE,TRUE,TRUE,FALSE
+"283","greek","CfDcp7LFygP-G4DM_RHHDQ","True","False",1168,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"284","greek","Vx3NrSUUhBBbd1EGEh8NDQ","True","False",56,4.5,0,1,0,"",3,"McKinney","TX",1100,2100,1,"European",FALSE,TRUE,TRUE,FALSE
+"285","greek","R6I8WufTczcbT7RCNHiQgw","True","False",501,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"286","grocery","zxWGR6Rt1mGCqu3BpRGajw","False","False",24,3,1,1,0,"Medium",3,"Frisco","TX",1000,2200,0,"Other",TRUE,TRUE,TRUE,FALSE
+"287","grocery","7ISNR8GB199a2EfU3LfvQw","True","False",53,3,0,0,0,"Medium",3,"Plano","TX",700,2300,0,"Other",TRUE,TRUE,TRUE,TRUE
+"288","halal","S3M7oh04sNVO_LU_YKABMA","False","False",2,3,1,0,0,"",1,"Frisco","TX",1900,2130,0,"Middle Eastern/African",FALSE,FALSE,FALSE,FALSE
+"289","halal","XxNR0okPVMefxN-XDBaTcg","True","False",29,3,1,1,0,"",3,"Frisco","TX",1130,2200,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"290","halal","q_3jGUfM5Y9aqg5V2aDqxg","True","False",57,4,1,1,0,"Low",3,"Plano","TX",1000,2200,1,"Middle Eastern/African",TRUE,TRUE,TRUE,FALSE
+"291","halal","yXc7InaJ37Mh9c8QaRd8VQ","True","False",187,3.5,1,1,0,"Medium",3,"Plano","TX",1030,2300,0,"Middle Eastern/African",FALSE,TRUE,TRUE,TRUE
+"292","halal","3j5xiowOQaDDMF6Z34nGMw","True","False",50,4,1,1,0,"Medium",3,"Frisco","TX",1100,0,1,"Middle Eastern/African",FALSE,FALSE,FALSE,FALSE
+"293","halal","gcZYvz_9SQUwOpoC6_1q_A","True","False",26,3,1,1,0,"Medium",3,"Frisco","TX",1130,1430,0,"Middle Eastern/African",FALSE,TRUE,FALSE,FALSE
+"294","hawaiian","-zrSJe-66SLHvRxx21dW6w","True","False",472,4,1,1,0,"Medium",3,"Plano","TX",1100,2000,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"295","hawaiian","jmHvUUG1DTNeey2cGXfTUA","True","False",127,4,1,1,0,"Low",3,"Frisco","TX",1100,0,1,"South/Southeast Asian",FALSE,FALSE,FALSE,FALSE
+"296","hawaiian","Fy9vts4JG67xbXV81opL2Q","True","False",501,4.5,1,1,0,"Medium",3,"The Colony","TX",1100,2000,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"297","hawaiian","UVEbaBKgCmlrWL0RuTkcyg","True","False",52,4,1,1,0,"",3,"Frisco","TX",1100,0,1,"South/Southeast Asian",FALSE,FALSE,FALSE,FALSE
+"298","hotdog","X0GMsxXcQncx71ELKtSp8w","True","False",119,4,0,0,0,"Low",3,"Frisco","TX",1000,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"299","hotdog","EljhY-U94IgJ3785_smhcw","True","False",156,4.5,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"300","hotdog","GHUaiP_beS4BQiNsyhtyjQ","False","False",1,5,0,0,0,"",1,"The Colony","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"301","hotdog","xTE0ZQuy561cs_pH2Asnqg","True","False",18,3.5,1,1,0,"",3,"Frisco","TX",1130,2000,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"302","hotdogs","AJx-DvDj1_COW8ku3Fbd5A","True","False",50,3,0,1,0,"Low",3,"Frisco","TX",1000,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"303","hotdogs","T-jS9VDynLl3gCPipDnhtA","True","False",50,3,0,1,0,"Low",3,"Frisco","TX",500,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"304","hotdogs","sytEJOWJJAJw72nRgBwraQ","True","False",23,3,0,1,0,"Low",3,"Frisco","TX",800,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"305","hotdogs","mtFwCHKKM42nVSyCCBiM5g","False","False",35,1,0,1,0,"",3,"Aubrey","TX",900,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"306","hotdogs","rqqxKB_xqy2Jif2TpDlomw","True","False",1,1,0,0,0,"",3,"Frisco","TX",800,100,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"307","hotdogs","oXuxRsNrLXx7QmH2MRbBRg","True","False",52,1.5,0,1,0,"Low",3,"Frisco","TX",1000,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"308","hotdogs","RURDenJmFqJO__G9Xg8cYw","True","False",51,1.5,1,1,0,"Low",3,"Frisco","TX",600,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"309","hotdogs","Xs9AdIIW07fCNh9ySrARPg","True","False",60,1.5,1,1,0,"Low",3,"Little Elm","TX",600,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"310","hotdogs","qBSTj8-J-bvUpdzdwtK_Eg","True","False",81,2,1,1,0,"Low",3,"Frisco","TX",1000,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"311","hotdogs","diEQoYhhuR2OrT7MEa_ORg","True","False",21,2,0,1,0,"",3,"Little Elm","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"312","hotdogs","sZ6OGgdDvbJu8DmE2NIrGg","True","False",35,2,0,1,0,"Low",3,"Frisco","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"313","hotdogs","8pfCGsHj3Vm81QLQU94EpA","True","False",168,1.5,1,1,0,"Low",3,"Prosper","TX",1000,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"314","hotdogs","UODnlRa6KH_sg2h87itk5Q","False","False",70,1.5,0,1,0,"",3,"Prosper","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"315","hotdogs","4lA1sZQre_PkQRGNTMYI-g","True","False",32,2.5,0,0,0,"",3,"Frisco","TX",600,2200,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"316","hotdogs","67xj6pgP_qE3tqBWrRHimg","True","False",62,2.5,1,1,0,"Low",3,"Plano","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"317","hotdogs","JxpsuUnC5aiTsfw_d8TyHg","True","False",78,4,0,1,0,"Low",3,"Plano","TX",600,2200,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"318","hotdogs","LBX-yu132S4qui9rTNFCyg","True","False",9,1.5,1,1,0,"",1,"LITTLE ELM","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"319","hotdogs","o_g-vMKxSFZRUPicjN5s_Q","True","False",38,1.5,0,0,0,"Low",3,"Aubrey","TX",600,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"320","hotdogs","UaqJjEwtWmI72QACt3x18A","True","False",165,1.5,0,1,0,"Low",3,"Little Elm","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"321","hotdogs","cRBuTJRNeBks6DsHw9Y0HQ","True","False",24,2.5,1,1,0,"Low",3,"Mckinney","TX",600,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"322","hotdogs","q6ML8MCgbh7hZmRxVNCKIA","True","False",117,1.5,0,1,0,"",3,"Frisco","TX",1045,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"323","hotdogs","SuKRjqrNZIsQEuRV3N_1cA","True","False",55,1.5,1,1,0,"Low",3,"Little Elm","TX",1030,2300,0,"Snacks/Dessert",FALSE,TRUE,TRUE,TRUE
+"324","hotdogs","WSJyrsPICp3Zgn9xku9FBA","True","False",100,1.5,0,1,0,"Low",3,"Plano","TX",500,200,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"325","hotdogs","KyMqxVfeBNCnSLZEkr4y0g","True","False",160,2,0,1,0,"Low",3,"Frisco","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"326","hotdogs","aJJNlseeJcz74jsKi4ToJw","True","False",56,2.5,0,1,0,"Low",3,"Frisco","TX",500,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"327","hotdogs","rWk2uM_nXWJe1J5TddcU-w","True","False",42,2.5,1,1,0,"Low",3,"Plano","TX",600,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"328","hotdogs","RrQcMesIU_97od3SXnO4pg","True","False",39,2.5,0,1,0,"Low",3,"Plano","TX",500,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"329","hotdogs","bCgqc6RDr0a5c0t5giS5RA","True","False",28,3,1,1,0,"Low",3,"Frisco","TX",600,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"330","hotdogs","PSdYVsopHU2UiHQaWi9tTw","True","False",168,4,1,1,0,"Medium",3,"Prosper","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"331","hotdogs","_pJrK5CgwDVO_Y0rYUCMTw","False","False",37,1.5,0,0,0,"Low",3,"Little Elm","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"332","hotdogs","ZyLPQAyV4usZDWBAKT7l2Q","True","False",14,3,0,1,0,"Low",3,"Frisco","TX",1100,1900,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"333","hotdogs","yyInJ3lw7rXGkp2TEnb3nw","True","False",233,4,1,1,0,"Low",3,"McKinney","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"334","hotdogs","BzUMAbGLTppRzIG-fbSOOg","True","False",126,3,0,0,0,"Low",3,"Frisco","TX",600,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"335","hotdogs","HcMaNZ_vhF61Fz2lROn91w","True","False",45,2,0,1,0,"Low",3,"Frisco","TX",1000,100,1,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"336","hotdogs","IxyWVgibGUBLYGVkAzvaJA","True","False",61,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"337","hotdogs","YADkKuo2fRrwhUa1NasIWQ","True","False",60,1.5,0,1,0,"Low",3,"Prosper","TX",600,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"338","hotdogs","b9zUxyuAZCPz3OXjykYVjQ","True","False",28,3,1,1,0,"Low",3,"Frisco","TX",600,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"339","hotdogs","pgCVN3jDsDZ3CF1NtiNzgw","True","False",63,2,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"340","hotdogs","P5Fnpc3kiLhKEiAIi2-c4Q","True","False",453,3.5,1,1,0,"Medium",3,"Plano","TX",1100,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"341","hotdogs","OZt4IgydXAJY-mxkdvOchA","True","False",25,2,0,1,0,"Low",3,"Dallas","TX",1000,0,1,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"342","hotdogs","s5RrKMbJR3mzfzUgZQdrfA","True","False",135,1.5,1,1,0,"Low",3,"Little Elm","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"343","hotdogs","_UW1f_GiJomw1OUwXt_u9Q","True","False",57,1.5,1,1,0,"Low",3,"Frisco","TX",900,2330,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"344","hotdogs","bqnWklmo832hOkZAi2lJWA","False","False",9,2,0,0,0,"",2,"Frisco","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"345","hotdogs","T-KPkZ235kqoWFbDx2sONQ","True","False",162,1,0,1,0,"Low",3,"Frisco","TX",400,100,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"346","hotdogs","yduGbvN_vc3p5O7psTtgYA","True","False",71,3.5,0,0,0,"Low",3,"Prosper","TX",600,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"347","hotdogs","6kko__Bv_9QrreUGte89jA","True","False",24,3,0,0,0,"Low",3,"Frisco","TX",1100,1900,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"348","hotdogs","1M6R5YO87u7qdZLBC7pzTQ","True","False",91,3.5,0,1,0,"Low",3,"Mckinney","TX",600,2200,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"349","hotdogs","9ivZM3H6alDVj7i8FR2_Vw","True","False",53,2.5,0,0,0,"Low",3,"Frisco","TX",1000,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"350","hotdogs","CvjkIAAakBUg9h1x3-Bwow","True","False",49,1.5,0,0,0,"Low",3,"Little Elm","TX",600,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"351","hotdogs","rgyGjJp-6JsvVTZthwJtzw","True","False",60,2,1,1,0,"Low",3,"McKinney","TX",NA,NA,1,"Snacks/Dessert",NA,NA,NA,NA
+"352","hotdogs","Oc21t1r_VYI8ua_4vl4yBA","True","False",56,1.5,0,1,0,"Low",3,"Frisco","TX",500,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"353","hotdogs","4Q-avUTinF4ahNuc_UDxYA","True","False",36,2,0,1,0,"Low",3,"Frisco","TX",500,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"354","hotdogs","RvVX5URUKXSHQ_iJe-gQdw","True","False",112,1.5,0,1,0,"Low",3,"Prosper","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"355","hotdogs","uCtRjGhSmzOTsTxTZqi48g","True","False",45,3.5,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"356","hotdogs","7JDoHq4CVcyX6rUG8umgqA","True","False",58,1.5,0,1,0,"Low",3,"McKinney","TX",800,200,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"357","hotdogs","RW7IL5kqWQ8USZq9Z1_FKg","True","False",122,2.5,0,1,0,"Low",3,"Frisco","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"358","hotdogs","3Q40CA5T8ev10dY4rhz7JA","True","False",60,3.5,0,1,0,"Low",3,"Plano","TX",600,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"359","hotdogs","5HabLL3znKQq1oGZ-4H8Nw","True","False",105,3.5,0,1,0,"Medium",3,"Frisco","TX",1000,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"360","hotdogs","byUtTxo_PfHSWpEV_zGTHA","True","False",47,2,0,1,0,"Low",3,"Plano","TX",800,200,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"361","hotdogs","U1-htRRFX9wo3HnsnWsWng","True","False",56,2.5,0,1,0,"Low",3,"Mckinney","TX",0,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"362","hotdogs","7Y3B42mFUJI0JCQUxFnqiw","True","False",55,2.5,1,1,0,"Low",3,"The Colony","TX",1030,2200,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"363","hotdogs","E3je_lQpn3Y4v704GM2xFg","True","False",51,2,1,1,0,"Low",3,"Frisco","TX",600,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"364","hotdogs","KOdQv5TtIXNju-ZIUpahEA","False","False",14,2.5,0,1,0,"",3,"Frisco","TX",1000,2300,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"365","hotdogs","k8SflrjlIUxSf1UxU3Dyxg","True","False",71,4,0,1,0,"Low",3,"Frisco","TX",600,2100,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"366","hotdogs","aWo2a28uJ1BPMQB7GfSMUg","True","False",9,3,0,0,0,"",3,"FRISCO","TX",1000,2000,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"367","hotdogs","HUcWNv2vGkOBctVg6ZtG7g","True","False",33,4.5,1,1,0,"",3,"Frisco","TX",1000,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"368","hotdogs","jXBN7J5n1e9OKVx6ss2oJA","True","False",38,2.5,1,1,0,"Low",3,"Frisco","TX",700,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"369","hotdogs","aXhYVRkgf_5H0-cEFcYXpA","True","False",78,2.5,0,1,0,"Low",3,"Frisco","TX",500,0,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"370","hotdogs","Mttwq_s9mf8luCdBi-DfPg","True","False",67,2.5,0,1,0,"Low",3,"Frisco","TX",600,2200,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"371","hotdogs","zuaLmRpXbZjC_ek0ZHLEjQ","True","False",17,4.5,1,1,0,"",3,"Frisco","TX",1000,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"372","hotdogs","ilbpPtszw7TdBuObPCoMhg","True","False",46,2,0,1,0,"Low",3,"Mckinney","TX",630,2300,1,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"373","hotdogs","04OCsRfOYh4O-PLJTEFceg","True","False",43,2,0,1,0,"Low",3,"Frisco","TX",1000,100,1,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"374","hotdogs","kAW6buXIunh-Pehq4Hewhg","True","False",21,3,0,0,0,"Low",3,"Frisco","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"375","hotdogs","5-Z62vbCFS05WHMTEr_Waw","True","False",58,1.5,0,1,0,"Low",3,"McKinney","TX",800,200,0,"Snacks/Dessert",TRUE,FALSE,FALSE,FALSE
+"376","hotdogs","Fmjo9qVYNvkoOtC1Y5q0Gw","True","False",53,3,1,1,0,"Low",3,"Frisco","TX",1030,2100,0,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"377","hotpot","NnFTfgKHNp8BuinJlvdvJA","True","False",286,4.5,0,0,0,"",3,"Frisco","TX",1130,2300,0,"East Asian",FALSE,TRUE,TRUE,TRUE
+"378","icecream","i0OoO-IfchgdM46gH8poJA","True","False",186,4.5,1,1,0,"Low",3,"Frisco","TX",1100,2200,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"379","icecream","4K1dzfPHYurRWc2xK_6bxA","False","False",14,2,0,0,0,"",3,"McKinney","TX",600,2245,0,"Snacks/Dessert",TRUE,TRUE,TRUE,TRUE
+"380","indpak","p7iTBe8fMg4CWTNqSpSqxQ","False","False",10,2.5,0,1,0,"",2,"Frisco","TX",1630,2100,0,"South/Southeast Asian",FALSE,FALSE,TRUE,FALSE
+"381","indpak","Gl8f12Czdq8P14rhXYN3-w","False","False",4,4.5,0,1,0,"",3,"Frisco","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"382","indpak","JoiJT-ig0ikZuT4zDIzJMw","True","False",226,3.5,1,0,0,"Medium",3,"Plano","TX",1100,1430,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"383","indpak","kXc01zB4yjLat1zl3mOeWA","True","False",17,3,1,1,0,"Medium",3,"Frisco","TX",1100,1400,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"384","indpak","6hDHVCKSnIPQG0TGkro_2w","True","False",194,3,1,1,0,"Medium",3,"Frisco","TX",1030,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"385","indpak","BAbR7fkjpMn7VuqCkX7Psg","True","False",233,2.5,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"386","indpak","Db1RvODC5y4DyKC0LPpanQ","True","False",256,4,1,1,0,"Medium",3,"Plano","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"387","indpak","X430LURLrWV9biYin0Jgeg","True","False",86,4.5,1,1,0,"Medium",3,"Plano","TX",1200,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"388","indpak","Gh0FFtOkDpnGdsTyn9YhBA","True","False",3,3.5,1,1,0,"",3,"Frisco","TX",1600,2100,1,"South/Southeast Asian",FALSE,FALSE,TRUE,FALSE
+"389","indpak","e6U99SEwPfwT5FfooMIGhQ","True","False",39,4,1,1,0,"Low",3,"Frisco","TX",1600,2100,1,"South/Southeast Asian",FALSE,FALSE,TRUE,FALSE
+"390","indpak","yf9mlOI9DT2v2D5aco5Mjg","False","False",53,2.5,1,1,0,"",3,"Frisco","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"391","indpak","LADOBU3eimEr4rEkxqFtQg","False","False",3,2.5,1,1,0,"",2,"Frisco","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"392","indpak","sy114dVm4JV1uWOciIF-KA","True","False",136,2.5,1,1,0,"Medium",3,"Plano","TX",1130,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"393","indpak","D3_a3c9ngBvfHKWVQOZhog","True","False",169,3.5,1,1,0,"Medium",3,"Plano","TX",1130,1400,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"394","indpak","TGZi6fhAw2CrqJhNFNHJBw","True","False",92,3.5,0,0,0,"Medium",3,"Frisco","TX",1130,1430,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"395","indpak","VMCTIvRhtNUFZFiKTcnlMQ","True","False",379,4,1,1,0,"Medium",3,"Plano","TX",1200,2130,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"396","indpak","PPKfdbAZLW3UbfbjrJtLlQ","True","False",407,3,1,1,0,"Medium",3,"Frisco","TX",1130,1430,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"397","indpak","3VayAUKOZjafXyHoaXQ6fw","True","False",42,3.5,1,1,0,"Medium",3,"Plano","TX",1100,1430,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"398","indpak","IFlKhRQeY02-DvYwyidWVg","True","False",216,2.5,1,1,0,"Medium",3,"Plano","TX",1130,1430,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"399","indpak","yqLWNq0OKoSYrmqYu51-sQ","True","False",386,2.5,0,1,0,"Medium",3,"Plano","TX",1030,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"400","indpak","L8tVIcR-i6G292gRoicOmg","True","False",92,3,1,1,0,"",3,"Plano","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"401","indpak","n128YZqWp68zmv3_NIOdgA","True","False",199,4,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"402","indpak","sOnue1eNSFOqqA9ntSDsZQ","True","False",2,2,1,1,0,"",3,"Frisco","TX",1130,2130,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"403","indpak","ZpHWDSNRxglQ0PN7gZwC5w","True","False",19,2,1,1,0,"",3,"Frisco","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"404","indpak","kHWU8C2N7lVrSMcLhIBJ8g","True","False",9,4,1,1,0,"",3,"Plano","TX",1100,1500,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"405","indpak","eZMjL0KdCbgHWyoVp536KA","False","False",35,2.5,0,0,0,"Medium",3,"Plano","TX",1000,2200,0,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"406","indpak","W2gGOTTJ1Clcm_ek1Gbhjw","True","False",126,3.5,1,1,0,"",3,"Plano","TX",1100,1500,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"407","indpak","kZ932TA8tWlt0H54nGR2zg","True","False",249,3,0,1,0,"Medium",3,"Plano","TX",1100,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"408","indpak","2hEoWOcti8BmA4GpAuBBzg","True","False",43,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2000,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"409","indpak","xgDwXAzxUkgUwxtiJ2bKog","False","False",8,3.5,1,1,0,"",2,"Frisco","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"410","indpak","STpKf7W9XcAYfKxm4ezIFQ","True","False",94,3,1,1,0,"Medium",3,"Plano","TX",1000,2200,1,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"411","indpak","eLSnVgHrQ55ek-tvCyr4-A","False","False",2,5,0,0,0,"",3,"Frisco","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"412","indpak","MPqYvejBfvQ8y-H7IztWAg","True","False",47,3,1,1,0,"",3,"Plano","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"413","indpak","icK467zSGbcVKOXvYG-GXQ","True","False",47,3.5,1,1,0,"",3,"Frisco","TX",1000,2100,0,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"414","indpak","TXgYoFvA71_HPruOFZnxZw","True","False",36,3.5,1,1,0,"Medium",3,"Frisco","TX",1600,2100,0,"South/Southeast Asian",FALSE,FALSE,TRUE,FALSE
+"415","indpak","-soVjwdcFOdVsIK8LwmbSA","True","False",6,4,1,1,0,"",3,"Frisco","TX",1030,2230,1,"South/Southeast Asian",FALSE,TRUE,TRUE,TRUE
+"416","indpak","q9Kzn-jk4aoQ3OAm--rItA","True","False",193,3.5,1,1,0,"Medium",3,"Plano","TX",1000,2200,1,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"417","indpak","g6H_JUQC_dV14MZvkVEsLg","True","False",45,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"418","indpak","8L8nfzPjUqFlAZHY7vLdkQ","True","False",144,3.5,1,1,0,"Medium",3,"McKinney","TX",1130,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"419","indpak","O95IXuZZ_LjKXH90iWzPzw","True","False",104,3.5,1,1,0,"",3,"Frisco","TX",1000,2200,0,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"420","indpak","ocosJrExGXihoGMiL6Grbw","True","False",7,2.5,1,1,0,"",3,"Frisco","TX",1200,2200,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"421","indpak","HnQZKjVaQ30XxADHy3kFGQ","True","False",7,4.5,1,1,0,"",3,"Prosper","TX",1100,2130,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"422","indpak","P2YDkwSbfOt_dBCz-kzsmw","True","False",83,4,1,1,0,"",3,"Little Elm","TX",1100,1430,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"423","indpak","0GC4fMs13jhUIM0rjqen2Q","True","False",195,3.5,0,0,0,"",3,"The Colony","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"424","indpak","nYMfkC12UQETXl-NXO1KFA","True","False",10,3.5,0,0,0,"",3,"Frisco","TX",1100,2100,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"425","indpak","tpu4dmnf0n7AIrharg8Dmg","True","False",148,3,1,1,0,"Medium",3,"Frisco","TX",1130,1500,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"426","indpak","oQULVCaZqf4YUwmJOjXJIw","False","False",8,3,0,1,0,"",3,"Plano","TX",1000,2200,0,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"427","intlgrocery","J6-PwOfRohS4gGriZciTVw","True","False",53,4.5,0,1,0,"Low",3,"Frisco","TX",800,2100,0,"Other",TRUE,TRUE,TRUE,FALSE
+"428","italian","DrNk945Nty193ET3PajIEA","True","False",514,4,0,1,0,"Low",3,"Frisco","TX",1045,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"429","italian","PCiTWqNtYXVATm2dAJPfIw","True","False",430,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"European",FALSE,TRUE,TRUE,FALSE
+"430","italian","6iS4Z3ZOx56KsNTId0Xphg","True","False",66,4,0,0,0,"Medium",3,"Frisco","TX",1200,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"431","italian","hzfzGVfh6PJWHINkzOvDTw","True","False",738,4,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"432","italian","RI2ucLondiayyI30J6oKMA","True","False",419,4,0,1,0,"Medium",3,"McKinney","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"433","italian","fhG2Xdg2Zl58kzox2AmNCg","True","False",79,3,0,0,0,"Medium",3,"Prosper","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"434","italian","vxq-VIQENYOVtM1q3Oqhhg","True","False",186,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"435","italian","sq2pdhpFaT_7jQQXbYW0Qg","True","False",215,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"436","italian","4wC1ucrwHjtwNepKIIJNJg","True","False",15,3,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"European",TRUE,TRUE,TRUE,FALSE
+"437","italian","cjlF7hRSWtikQJwvHySvUA","True","False",226,3,0,0,0,"Medium",3,"Frisco","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"438","italian","b69SigqPWocfdrFAwA-NFg","False","False",1,1,0,0,0,"",0,"McKinney","TX",NA,NA,0,"European",NA,NA,NA,NA
+"439","italian","X3Ph3dagbWXIOBvtREBIuA","True","False",36,3.5,0,1,0,"Medium",3,"Frisco","TX",1000,2100,1,"European",TRUE,TRUE,TRUE,FALSE
+"440","italian","7EFw8CZZ1uha_P5jBTrftw","True","False",43,4.5,0,0,0,"",3,"Frisco","TX",NA,NA,0,"European",NA,NA,NA,NA
+"441","italian","V2kn1tg_tDrU2uQ4g5XBog","True","False",49,3.5,1,1,0,"Medium",3,"TX","TX",1100,2200,1,"European",FALSE,TRUE,TRUE,FALSE
+"442","italian","jv9tCB0-XP3E1ToE_kESSg","True","False",26,3.5,0,0,0,"",3,"Plano","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"443","italian","Wj71IYNYXPTeXiifvpJxhw","True","False",982,4,0,1,0,"Medium",3,"Plano","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"444","italian","xXvMyE9iwHZwtApULpZsWw","False","False",118,3.5,0,0,0,"",3,"Frisco","TX",1600,2200,0,"European",FALSE,FALSE,TRUE,FALSE
+"445","italian","KFdJyuoszE7NEEBxQS5KFA","True","False",115,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"446","italian","8v8xl7zv2_784ZpVjyExfg","True","False",120,3.5,1,1,0,"Medium",3,"Plano","TX",1000,2200,1,"European",TRUE,TRUE,TRUE,FALSE
+"447","italian","MTm90fxhZmoWiIpHYhIinw","True","False",20,3,1,1,0,"",3,"Frisco","TX",1100,2100,0,"European",FALSE,TRUE,TRUE,FALSE
+"448","italian","uiZn7YAIzeKmAAxMZlUtnw","True","False",8,4.5,0,0,0,"",3,"Plano","TX",1600,2100,1,"European",FALSE,FALSE,TRUE,FALSE
+"449","italian","1fo-TvPTzcFeWLGXB3fzTQ","True","False",378,4,0,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"450","japanese","71tAn1cSyEieiYKgs_oJYw","True","False",30,3.5,0,0,0,"",3,"Plano","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"451","japanese","SiPbYLdiqoW9Xfcolj2t6A","True","False",308,4.5,0,1,0,"Medium",3,"Plano","TX",1130,1400,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"452","japanese","fMzms4DlNscaHjjtC_uFsQ","True","False",438,3,1,1,0,"Medium",3,"Plano","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"453","japanese","g_XBHNmwfPUOI4qE_bBgPQ","True","False",83,3,1,1,0,"",3,"Aubrey","TX",1100,1430,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"454","japanese","K7cmD8XdKgMZO0KDfsw8VA","True","False",148,4.5,1,1,0,"Medium",3,"Frisco","TX",1400,2130,0,"East Asian",FALSE,FALSE,TRUE,FALSE
+"455","japanese","zBFjxv7dGdB5qnI1OB6a8g","True","False",53,4.5,0,0,0,"",3,"The Colony","TX",1700,2200,0,"East Asian",FALSE,FALSE,TRUE,FALSE
+"456","japanese","mGdzFQD2qM_GiwQNoNTJaQ","True","False",211,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"457","japanese","GYDttSQAaK62Lr5_70G3ng","True","False",66,4.5,1,0,0,"",3,"Frisco","TX",1130,2130,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"458","japanese","WQbMbt_WwyUNxzg6QVzsEw","True","False",229,4.5,0,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"459","japanese","BePzmytaaSUDQdFs8emMig","True","False",216,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,1400,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"460","japanese","jEApzbFwsHjqyIjrJFGYtQ","True","False",89,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"461","japanese","YAcRarYclSMDvZFMhpHJ3A","True","False",296,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,2030,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"462","japanese","AaJYEkGaXwCpGXOD_4_O5w","True","False",586,4.5,0,1,0,"Medium",3,"Frisco","TX",1115,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"463","japanese","Z3LXiGk9ArgQSNUKsihuhw","True","False",258,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"464","japanese","02W08EcIRmmfk_BSmfMxSA","True","False",233,4,1,1,0,"Low",3,"Plano","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"465","japanese","TTjP3BiTwjjUajqQZcU8KQ","True","False",199,4,1,1,0,"Medium",3,"Frisco","TX",1115,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"466","japanese","LI4Pno4pCXwqXHHhZoIw2Q","True","False",451,4,1,1,0,"Medium",3,"Plano","TX",1730,200,0,"East Asian",FALSE,FALSE,FALSE,FALSE
+"467","japanese","dStZ6VQPoBI9203LqlMg4A","True","False",374,4,1,1,0,"Medium",3,"Frisco","TX",1130,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"468","japanese","XuLeRR_exu0uMvXh_ndZgQ","True","False",35,4,1,1,0,"",3,"Frisco","TX",NA,NA,0,"East Asian",NA,NA,NA,NA
+"469","japanese","ZJQT8qHEMUEeVoR5sJ_xnw","True","False",31,3,0,1,0,"Low",3,"Frisco","TX",NA,NA,0,"East Asian",NA,NA,NA,NA
+"470","japanese","H9FhKrox5np9_2n0OfZgyA","True","False",155,4,0,1,0,"High",3,"Plano","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"471","juicebars","HeSDtvFdccnj7Q-IR6KcsQ","True","False",32,3.5,1,1,0,"",3,"Frisco","TX",700,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"472","juicebars","0qMbPbGoKnySSK9wjJ4tiA","True","False",62,3.5,0,1,0,"Low",3,"Plano","TX",700,2000,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"473","juicebars","hjKduY4M-1qwLxeYsjH_JA","True","False",47,4.5,1,1,0,"",3,"Frisco","TX",700,2000,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"474","juicebars","e1BEeNZcr0w1QJOUysT6zg","True","False",7,4,0,1,0,"",3,"Frisco","TX",1100,1900,1,"Snacks/Dessert",FALSE,TRUE,TRUE,FALSE
+"475","juicebars","Q6Ubri6ALZiKajqKv8qKUA","True","False",12,4,1,1,0,"Medium",3,"Frisco","TX",700,2000,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"476","juicebars","xTgSlxrW71cNV9FMVL-CKA","True","False",140,4.5,1,1,0,"Low",3,"Frisco","TX",700,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"477","juicebars","lFvJMCTC-bzdsc6U5Qc2Pw","True","False",34,3.5,1,1,0,"",3,"Mckinney","TX",700,2100,1,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"478","juicebars","KHAZfWpTLESjsSa4MhrnAA","True","False",36,3.5,1,1,0,"",3,"Frisco","TX",700,2100,0,"Snacks/Dessert",TRUE,TRUE,TRUE,FALSE
+"479","korean","hyWh6hF047JlBYSQZtJ5pQ","True","False",25,3.5,0,1,0,"",3,"Plano","TX",700,1100,1,"East Asian",TRUE,FALSE,FALSE,FALSE
+"480","korean","M_dvpbuYLadhaNITtl1BpA","True","False",28,3.5,1,1,0,"",3,"Frisco","TX",1100,2200,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"481","korean","A6ATZ-qAPpK5ee0egKMAdQ","True","False",146,4.5,1,1,0,"Low",3,"The Colony","TX",1500,2100,0,"East Asian",FALSE,FALSE,TRUE,FALSE
+"482","korean","3Rzq5eGRz2OZMHMD1ZJg1w","False","False",99,4.5,1,1,0,"",3,"Plano","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"483","korean","SZ-iltOHzVPXO32xCaHyyA","True","False",370,4,1,1,0,"Medium",3,"Frisco","TX",1100,2030,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"484","laotian","Sz0vgWkH095oQ6Z95bKNWA","True","False",266,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"485","latin","NHNooFGocSwzh5zpI61kXA","True","False",531,4,0,0,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"486","meats","VQcv58vja_I81PxIGsc3TA","True","False",19,4.5,0,1,0,"High",3,"Frisco","TX",930,1830,0,"Other",TRUE,TRUE,TRUE,FALSE
+"487","mediterranean","RDx3dQfFGw9MGy_sJfmeTQ","True","False",65,4.5,1,1,0,"Medium",3,"Plano","TX",800,2200,1,"Middle Eastern/African",TRUE,TRUE,TRUE,FALSE
+"488","mediterranean","P_JEgS5iMC8VqI9H58wIWg","True","False",27,4,1,1,0,"",3,"Frisco","TX",1100,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"489","mediterranean","PlMinVhlJJdllFIIaJg_sg","True","False",211,4,0,0,0,"Medium",3,"Plano","TX",1045,2200,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"490","mediterranean","PxAKddRxxfWzXjCfp6Ayzw","True","False",24,5,1,1,0,"",3,"Frisco","TX",1100,2200,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"491","mediterranean","WCqWlOTMcbQTs45Uu7pT2Q","True","False",81,3,0,0,0,"Low",3,"Plano","TX",1000,2100,0,"Middle Eastern/African",TRUE,TRUE,TRUE,FALSE
+"492","mediterranean","MvXyh0R1GI74GiDga517jA","True","False",190,4.5,1,1,0,"Low",3,"Prosper","TX",1100,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"493","mediterranean","z6fMg9NIF57FDrNNrUmmaQ","True","False",5,4,1,1,0,"",3,"Frisco","TX",1100,2200,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"494","mediterranean","pgTcAZlMyY_JBkFn3kw0RQ","False","False",7,2.5,1,1,0,"",3,"Frisco","TX",NA,NA,0,"Middle Eastern/African",NA,NA,NA,NA
+"495","mediterranean","aB5bP5VAL7wpd5YyYV-HxQ","True","False",201,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"496","mediterranean","owBzaC2SInwyRPO3b5OQMg","True","False",100,3,0,0,0,"",3,"Frisco","TX",1045,2200,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"497","mediterranean","MW4BQQ7FqSGmRXbflOf32A","True","False",126,4,1,1,0,"Medium",3,"Little Elm","TX",1100,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"498","mediterranean","9pfwW8MvEWgFUjN2HQD7JQ","True","False",203,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"499","mediterranean","es_tw1e8vz7vzhN9z6u1rQ","True","False",195,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"500","mediterranean","2KTXmV6c9LnE7yiHn6_mPw","True","False",107,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"501","mediterranean","wbHiIFjcluXon_u8drYJhA","True","False",61,4.5,1,1,0,"",3,"McKinney","TX",1100,2100,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"502","mediterranean","TsAkeXoWijRbZlE6tebcIg","True","False",72,3,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"503","mediterranean","yPe4i13GlCNwIRTtpu26HQ","True","False",29,3.5,1,1,0,"",3,"Frisco","TX",600,2000,1,"Middle Eastern/African",TRUE,TRUE,TRUE,FALSE
+"504","mexican","omjn6i_DGuwQeY53aQYmdA","True","False",91,1.5,1,1,0,"Low",3,"Frisco","TX",1045,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"505","mexican","uLUg8RY3sg6jGWaTWvSABw","True","False",221,4,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"506","mexican","QDkEt8Awu0oU9I6u61ef8g","True","False",108,3.5,0,1,0,"",3,"Frisco","TX",630,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"507","mexican","5tr1jqMorEOp_lUPbaQVCw","True","False",30,2.5,0,1,0,"Low",3,"Frisco","TX",800,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"508","mexican","uhOSmiTRR2r40pU5KV-X_A","True","False",42,3,0,1,0,"Low",3,"Frisco","TX",800,0,1,"Latin American",TRUE,FALSE,FALSE,FALSE
+"509","mexican","_dEy7wHFK5472D9VFYJ92Q","True","False",206,3,0,1,0,"Low",3,"Frisco","TX",630,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"510","mexican","adESuLvYNJSht2Bwt4xZyg","True","False",66,2,1,1,0,"Low",3,"Frisco","TX",1030,0,0,"Latin American",FALSE,FALSE,FALSE,FALSE
+"511","mexican","7zZC-vj8LSkbBPT7fLP3cg","True","False",321,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"512","mexican","EK7Jh8ldDDA04YODjT0o4Q","True","False",4,5,1,1,0,"",3,"Frisco","TX",1100,2000,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"513","mexican","tnepbIVbFKZJErF0FGrtZA","True","False",41,2,0,1,0,"Low",3,"The Colony","TX",800,200,0,"Latin American",TRUE,FALSE,FALSE,FALSE
+"514","mexican","azu29xbMwwXSggNxGK8NTA","True","False",109,3.5,1,1,0,"Low",3,"Plano","TX",1045,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"515","mexican","JHwMwZu4oU9L0gCGHJ4caA","True","False",104,4.5,1,1,0,"Low",3,"Frisco","TX",700,1600,0,"Latin American",TRUE,TRUE,FALSE,FALSE
+"516","mexican","SJIyDOjpUT5BSAfqW6D9uw","False","False",37,3.5,0,1,0,"Low",3,"Frisco","TX",730,1600,0,"Latin American",TRUE,TRUE,FALSE,FALSE
+"517","mexican","WpSUattkohegfbVk2rtGUw","True","False",55,3.5,1,1,0,"Medium",3,"Frisco","TX",1300,2000,1,"Latin American",FALSE,FALSE,TRUE,FALSE
+"518","mexican","TOIN3_aVIaPjGTJRvvbZmw","True","False",257,3.5,1,1,0,"Low",3,"Mckinney","TX",800,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"519","mexican","bqdjUIwYVlg8T00hzAgU3Q","True","False",154,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"520","mexican","YLaAQyt9detwubdLDXyBhQ","True","False",235,3.5,0,1,0,"Medium",3,"The Colony","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"521","mexican","Yfd_q1H6EHs8Jcus0YzEWw","True","False",258,4,0,1,0,"Medium",3,"Frisco","TX",800,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"522","mexican","vjjTBUQ_WVcKXUpofnjA9Q","True","False",58,2,1,1,0,"Low",3,"Prosper","TX",930,0,0,"Latin American",TRUE,FALSE,FALSE,FALSE
+"523","mexican","vZ7Ycb8r0Vr_joGuq86nFA","True","False",71,3,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"524","mexican","wpb2Yf71dKmxE8HolljrKg","True","False",143,2.5,1,1,0,"Low",3,"Frisco","TX",1045,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"525","mexican","ANYckegJ6A9GjDT16Z-RBA","True","False",253,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"526","mexican","kUg9xLGJRJ8v8rh2C6PKMA","True","False",112,3,1,1,0,"Medium",3,"Little Elm","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"527","mexican","Br61jGdeSyqGUJfaBIz7iw","False","False",240,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"528","mexican","zBHAYgiHY7sHqWw5rrWzUg","True","False",453,3,1,1,0,"Medium",3,"Plano","TX",1100,2100,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"529","mexican","9gipDs4tb47SK0zTrCOBqA","True","False",1903,4,0,1,0,"Medium",3,"Plano","TX",1100,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"530","mexican","Dm3BHOb67UyE8NYED-7ZMQ","False","False",117,4,1,1,0,"Medium",3,"Frisco","TX",1630,2100,0,"Latin American",FALSE,FALSE,TRUE,FALSE
+"531","mexican","2_TeolyUZPOZzo6kYrxyng","True","False",300,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2230,1,"Latin American",FALSE,TRUE,TRUE,TRUE
+"532","mexican","qXBX6r0WPWV2VnZupZxjDA","True","False",41,2.5,0,1,0,"Low",3,"Little Elm","TX",800,0,0,"Latin American",TRUE,FALSE,FALSE,FALSE
+"533","mexican","bIm_I9zf-xSEqvaOgAJHow","False","False",172,3.5,0,1,0,"Medium",3,"McKinney","TX",NA,NA,0,"Latin American",NA,NA,NA,NA
+"534","mexican","A3HeeuhyfPJsM04YPzsY5w","True","False",445,4,0,1,0,"Low",3,"Frisco","TX",800,2000,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"535","mexican","s3lTK380dKKklsyQU4CARQ","True","False",13,4,0,0,0,"",3,"Little Elm","TX",830,1800,1,"Latin American",TRUE,TRUE,TRUE,FALSE
+"536","mexican","ANh7XGDzZU1WnYPaNbe5UQ","True","False",199,3,1,1,0,"Medium",3,"McKinney","TX",1100,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"537","mexican","o1VhGBJ5fJf4x3T8CMCo9g","True","False",636,4,1,1,0,"Medium",3,"Frisco","TX",1600,2100,1,"Latin American",FALSE,FALSE,TRUE,FALSE
+"538","mexican","NI5oFUFtNud1XWtKmwpHkw","True","False",161,3,1,1,0,"Medium",3,"Plano","TX",1100,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"539","mexican","9s700_ccLe7eWQ0wVcsiLw","True","False",165,2,1,1,0,"Low",3,"Frisco","TX",1045,2200,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"540","mexican","PcUxrG2jbbsrNksa-rv4wQ","True","False",381,3.5,0,1,0,"Medium",3,"Plano","TX",1100,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"541","mexican","DVz7Re9iXefYKLByYMj5WA","True","False",342,3.5,1,1,1,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"542","mexican","ReNCXkmjTZ34mdT6Z5lkwg","True","False",289,3.5,1,1,0,"Low",3,"Frisco","TX",700,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"543","mexican","g5ruqXTckS7RVKeXC51xcg","True","False",25,2.5,0,1,0,"Low",3,"Allen","TX",800,100,0,"Latin American",TRUE,FALSE,FALSE,FALSE
+"544","mexican","7YhOw6OO1hUYArazkbkIZw","True","False",135,3,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"545","mideastern","OVA6yAnz-t2plf10rV0IYg","True","False",25,4,1,1,0,"",3,"Frisco","TX",1045,2100,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"546","mini_golf","NqeSnJV2YQVz9E7wDD15Rw","True","False",194,3.5,0,0,0,"Medium",3,"The Colony","TX",1600,0,0,"Non-Restaurant",FALSE,FALSE,FALSE,FALSE
+"547","mongolian","pV6OmIL4rVprs9J4I15zsA","True","False",186,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"548","movietheaters","Ns_3CA-0JfKKzXOAVYWOhQ","True","False",131,4,0,0,0,"Medium",3,"Plano","TX",1100,2200,0,"Non-Restaurant",FALSE,TRUE,TRUE,FALSE
+"549","newamerican","gYvN7itwBu9c1t9dlQVs2Q","True","False",178,4,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"American",FALSE,TRUE,TRUE,FALSE
+"550","newamerican","rI9NXTUM5cUB6xwMWsqWxQ","True","False",690,4,1,0,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"551","newamerican","VBJAHggfAaYeLGpgh-VDLg","True","False",1126,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"552","newamerican","Ze9xD_EevRAKQBtmzGZa6A","True","False",176,4.5,1,1,0,"",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"553","newamerican","pbAZBIf0UDp3hyDztApznQ","True","False",538,4,0,1,0,"Medium",3,"Frisco","TX",1600,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"554","newamerican","ZmrPkPlb6gRylpyZU4EydQ","True","False",1833,4,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"555","newamerican","NyUjZnRq5siS_gYOSD5nNQ","True","False",193,4,1,1,0,"Medium",3,"Frisco","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"556","newamerican","65LT-CAFf_sdZpzfAB8xWg","True","False",319,3.5,1,1,0,"Medium",3,"Plano","TX",1500,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"557","newamerican","x7VrnL4qS2ZN0eTA_YiCVw","True","False",383,3.5,0,1,0,"Medium",3,"Frisco","TX",700,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"558","newamerican","wkHpLVptUXD4-EbvFEhefA","True","False",417,3,1,1,0,"High",3,"Plano","TX",1130,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"559","newamerican","-bA5MchNJM-QypJ7FcNtYg","False","False",1,1,1,1,0,"",1,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"560","newamerican","bUg07AVkdt2HagDFbNv7bw","True","False",912,4,0,0,0,"Medium",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"561","newamerican","kkG9Ub4bqKMcOS8NjRG_2w","True","False",153,4.5,1,1,0,"Medium",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"562","newamerican","2z7Qw5FCDtUtZzEj8VX4-A","True","False",60,4.5,0,0,0,"",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"563","newamerican","61iY8WwaOPWo2i5ewXpXLg","True","False",1211,4,1,1,0,"Medium",3,"Plano","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"564","newamerican","FFIQIS6BkguhKfUwnoy-AA","True","False",2,3.5,0,0,0,"",3,"Frisco","TX",630,1000,1,"American",TRUE,FALSE,FALSE,FALSE
+"565","newamerican","B_2g2gD5jELS2Jhd2Q7Y1w","True","False",96,3,1,1,0,"Medium",3,"Frisco","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"566","newamerican","yGEfIoLiZcRPr6fXAIqQBw","True","False",459,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"567","newamerican","GMig8rc2x9Y_Bl7tXF4wXg","True","False",57,4.5,0,0,0,"Medium",3,"Plano","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"568","newamerican","j7KJET9cwN_8qdw-S-83mQ","True","False",33,3.5,1,1,0,"Medium",3,"Frisco","TX",1000,2000,0,"American",TRUE,TRUE,TRUE,FALSE
+"569","newamerican","VvWbcB590fuy-RjnWx0JWw","True","False",167,3,0,1,0,"Medium",3,"Frisco","TX",700,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"570","newamerican","5c1hPEl9jH5lK1VfLSeEfw","True","False",1702,4,0,1,0,"Medium",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"571","newamerican","SzvLc4Hq16k1PloXtbllkA","True","False",174,4.5,0,0,0,"Medium",3,"Plano","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"572","newmexican","3owTR9nCGRpEx9w5fqai3g","False","False",7,3.5,1,1,0,"",3,"Frisco","TX",NA,NA,0,"Latin American",NA,NA,NA,NA
+"573","noodles","2bhoiJBB-ZTffL5wxbZdSg","True","False",22,4,1,1,0,"",3,"Frisco","TX",1100,2000,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"574","noodles","qjITTDhThRP7l9YR1xr5Rw","True","False",239,4,0,1,0,"Medium",3,"McKinney","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"575","pakistani","IMzB-8Y1hsXqQ6Ey9Vw3oQ","True","False",6,4.5,0,0,0,"",3,"FRISCO","TX",NA,NA,0,"South/Southeast Asian",NA,NA,NA,NA
+"576","pakistani","Lz4Zxt6TavWZbnlB1GQz_Q","True","False",8,3.5,0,0,0,"",3,"Frisco","TX",1200,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"577","persian","xGG3_va7-p2XDgSeg1g3fQ","True","False",20,4,1,1,0,"Medium",3,"Plano","TX",1100,2200,1,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"578","pizza","NzfzwOMbXstr8KgYtl230w","True","False",184,4,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"579","pizza","un--SdbtI7YXC4HeMhyOFg","True","False",23,4,0,1,0,"Medium",3,"Plano","TX",1100,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"580","pizza","GhZKg8l_CFZzU6y6pcIxUg","True","False",56,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"581","pizza","P6nlT31dF2Lmqg2NmlaBFw","True","False",26,3,1,1,0,"",3,"McKinney","TX",1030,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"582","pizza","IlMI7h8NdQUeBd6aTcp_qg","True","False",33,2,1,1,0,"Low",3,"Frisco","TX",930,2300,0,"American",TRUE,TRUE,TRUE,TRUE
+"583","pizza","C5BeHjwUnTZKsJC-6VeC8w","True","False",126,3,1,1,0,"Medium",3,"Allen","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"584","pizza","YhDcm4mQbwJowuaj9ZWebA","True","False",77,3,1,1,0,"Low",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"585","pizza","Y51mZRqXcK0HHu0XGAvogA","True","False",58,2,1,1,0,"Low",3,"Prosper","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"586","pizza","HnzUiOj1NlRtqdGcCXMv1g","True","False",54,3,1,1,0,"",3,"Prosper","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"587","pizza","L0ZTFpP581_t6xesZPklGA","False","False",12,2.5,0,0,0,"Low",3,"McKinney","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"588","pizza","8Jb_skztzszhHiHBsYoF0g","True","False",514,3.5,1,1,0,"Medium",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"589","pizza","qUvn-ilnP2I7lJ0j5ypiEw","True","False",377,4,1,1,0,"Medium",3,"Frisco","TX",1100,2030,0,"American",FALSE,TRUE,TRUE,FALSE
+"590","pizza","7OmKhqznZSzC4YQQaND2MA","True","False",13,4.5,1,1,0,"",3,"The Colony","TX",1030,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"591","pizza","E6X6xZjo5GRGls8pBcmfzA","True","False",40,4.5,1,0,0,"",3,"Allen","TX",1100,2000,0,"American",FALSE,TRUE,TRUE,FALSE
+"592","pizza","CBmSNb_77S3CI7KWVDaeCw","True","False",23,3,1,1,0,"Low",3,"Little Elm","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"593","pizza","25SissFt07nu8D4jlSp2Bw","True","False",186,4,1,1,0,"Medium",3,"The Colony","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"594","pizza","kQcCkh52NtJwReGbNVGV3Q","True","False",29,3,1,1,0,"",3,"Frisco","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"595","pizza","GjR509PwiyddlhhFYqfz7A","True","False",385,4,0,1,0,"Low",3,"McKinney","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"596","pizza","IMRLaETu6zPA5_wN4bSWZw","True","False",127,4,1,1,0,"Medium",3,"Plano","TX",1100,300,1,"American",FALSE,FALSE,FALSE,FALSE
+"597","pizza","N0Wp7kut-SGcBNkZGhdZcA","True","False",129,3.5,1,1,0,"Medium",3,"Plano","TX",1100,0,1,"American",FALSE,FALSE,FALSE,FALSE
+"598","pizza","ZKUv7RFzJ-vrY5RSrGSyxg","True","False",94,4.5,1,1,0,"Medium",3,"The Colony","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"599","pizza","hzdZUDhsqen-lzylMgAZlw","True","False",189,3,0,1,0,"Medium",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"600","pizza","xs7DCeaEbK0-dXjRgkVlwg","True","False",24,4,1,1,0,"",3,"The Colony","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"601","pizza","8bZb25LrWSE4bbVtQqHQaQ","True","False",142,3.5,1,1,0,"Medium",3,"Little Elm","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"602","pizza","89xKouh2qfXqwkIQ7kBNgg","True","False",293,3.5,0,1,0,"Medium",3,"Plano","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"603","pizza","xXfAv99pscOkgqLTNj1s2w","False","False",17,2,0,0,0,"Low",3,"Frisco","TX",1030,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"604","pizza","CX6_fsVSufbkUY70mB86bQ","True","False",40,2,1,1,0,"Low",3,"Plano","TX",1030,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"605","pizza","RgHVlb9ef5oiy7wR38Okxg","True","False",35,2.5,0,0,0,"Low",3,"The Colony","TX",1000,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"606","pizza","rMLYkzXa9bJ3GgvB51_9BQ","True","False",57,2.5,0,0,0,"Low",3,"McKinney","TX",1000,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"607","pizza","XacNYTPpUvx7ztO9b56OYw","True","False",24,2.5,1,1,0,"",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"608","pizza","X16alWsHoP34DBWC68bQWg","True","False",22,3,1,1,0,"",3,"Frisco","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"609","pizza","DTU6zs0SJcii5r8TetsSgA","False","False",7,3,1,1,0,"Low",1,"Little Elm","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"610","pizza","1zOp-W9-HW5AGE6eg5eQ9w","True","False",138,4,1,1,0,"Medium",3,"The Colony","TX",1630,2100,0,"American",FALSE,FALSE,TRUE,FALSE
+"611","pizza","-xr9y2UKvI54OxukPu4uIg","True","False",60,1.5,1,1,0,"Low",3,"Frisco","TX",930,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"612","pizza","z24kI4C6usrf-HrHV0-2ig","True","False",149,3.5,1,1,0,"Low",3,"Little Elm","TX",1700,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"613","pizza","QBhNEbSTqoRAQoCAh0gwAQ","True","False",619,4,1,1,0,"Medium",3,"Frisco","TX",1200,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"614","pizza","aSS07ssvQ3ewdXhx90-Oxw","True","False",53,4,1,1,0,"",3,"Little Elm","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"615","pizza","WWF8KZyNOnI2J0rymB9_7w","True","False",134,4.5,1,1,0,"Medium",3,"Prosper","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"616","pizza","S9_I5wQG_eIyXUx6kiRbIw","True","False",112,4,0,1,0,"Medium",3,"Prosper","TX",1600,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"617","pizza","YeDaKmr_gPRnNM8c-j1PfQ","True","False",96,4,1,1,0,"Low",3,"Frisco","TX",1100,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"618","pizza","cGkbxAlTLBBwWV5-6Ou4Fg","True","False",22,2,1,1,0,"Low",3,"Prosper","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"619","pizza","1Zeu64qc5h6JJAumt0_zxQ","True","False",119,4,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"620","pizza","4bfYHBInIk6B60BJvY8WqQ","False","False",8,1.5,0,0,0,"Low",3,"The Colony","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"621","pizza","KbGVIC7XKkLY5bwtTVfGpA","True","False",29,4.5,1,1,0,"Medium",3,"The Colony","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"622","pizza","iUVerBjIRvHUJ4t_5MjmWw","True","False",37,2,1,1,0,"Low",3,"The Colony","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"623","pizza","SEiQjsJgaJStMQQPwq8gBA","True","False",34,3.5,0,1,0,"Low",3,"Frisco","TX",1100,2000,1,"American",FALSE,TRUE,TRUE,FALSE
+"624","pizza","-o0BRJ9KapCBiZkyMWSEvg","True","False",167,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"625","pizza","-PT1Co5y4Dta_vv9tQDgBg","True","False",56,3.5,1,1,0,"",3,"Frisco","TX",1600,2300,1,"American",FALSE,FALSE,TRUE,TRUE
+"626","pizza","PzDZy9PTCYbuaMONj6Tiag","False","False",17,4,0,0,0,"Low",3,"Little Elm","TX",1000,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"627","pizza","kwRfq6G1qPBcBk8ZAsCjZw","True","False",40,3.5,0,0,0,"Low",3,"Frisco","TX",1030,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"628","pizza","EyXBigvw_MrGyckC3WeSNQ","True","False",54,1.5,0,1,0,"Low",3,"Mckinney","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"629","pizza","kVScf0mfeqxdQr2Rt7CqGA","True","False",39,2.5,1,1,0,"Low",3,"Plano","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"630","pizza","vxR6uRe5us41UX8nUasvaQ","True","False",37,3.5,0,1,0,"",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"631","pizza","a_14dgr5WOW_XYkEXbep0A","False","False",36,2,0,0,0,"Low",3,"Little Elm","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"632","pizza","Qkudr-NkuPleXeMACLYSFA","True","False",10,2.5,1,1,0,"",3,"Aubrey","TX",1030,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"633","pizza","dcAnsCtmIPjVgIBBGyxAnA","True","False",160,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"634","pizza","R2c9TlPKQgfSEPPCHGLrXA","True","False",334,3.5,1,1,0,"Low",3,"Little Elm","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"635","pizza","i1zEl3cr3_og02V_UpJrPA","True","False",54,3.5,0,0,0,"Low",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"636","pizza","JvC2xEnGrSnY_x7oeAE14Q","True","False",16,2.5,0,1,0,"Low",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"637","pizza","bSnPJidAIfQ-eRUOYIZUfQ","True","False",33,4,0,1,0,"",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"638","pizza","h3bECdKPJFUySL8dNyj1nw","True","False",108,4,1,1,0,"Medium",3,"Plano","TX",1100,2130,0,"American",FALSE,TRUE,TRUE,FALSE
+"639","pizza","Dl9E_6GJGPyfpts8mF3blQ","True","False",175,4,1,1,0,"Medium",3,"Frisco","TX",1500,2100,0,"American",FALSE,FALSE,TRUE,FALSE
+"640","pizza","Llw4JYGLDZByKQ0dtt7Qhg","True","False",97,3,1,1,0,"Medium",3,"Frisco","TX",1030,2145,0,"American",FALSE,TRUE,TRUE,FALSE
+"641","pizza","5wHJw1s9WfGt_2G_-9c2sA","True","False",3,4,0,0,0,"",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"642","pizza","zl1X-9mprr35PDvLCHETEw","True","False",18,4,1,1,0,"Medium",3,"Little Elm","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"643","pizza","jG1dCsa_x0jufF3xmKA4JA","True","False",150,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"644","pizza","FK75rail3NA7C7i3Tf65dA","True","False",667,4,1,1,0,"Medium",3,"Frisco","TX",1045,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"645","pizza","FLgsL_4C6xV7ZrkXyvBLVw","True","False",77,4,1,1,0,"",3,"McKinney","TX",1000,2300,1,"American",TRUE,TRUE,TRUE,TRUE
+"646","pizza","UJgDfMWYR-HJEphrLcV9ng","True","False",41,2,0,1,0,"Low",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"647","pizza","_cj2qAP9AqSeWRzgm1T_vw","True","False",287,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"648","pizza","DVZ9NxXqML-kOmUgUwwheA","False","False",45,2.5,0,0,0,"",3,"Plano","TX",1500,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"649","pizza","AQ7enmSJNGmGVs5TD7LLOA","True","False",1,5,1,1,0,"",0,"Plano","TX",1030,2300,1,"American",FALSE,TRUE,TRUE,TRUE
+"650","poke","aXoV3PWOd5Y6uTYksUjHbQ","True","False",228,4.5,1,1,0,"Medium",3,"Frisco","TX",1030,2030,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"651","poke","Zgf-GnxkN3pmv033YRzpcw","True","False",17,3,1,1,0,"",3,"Frisco","TX",1100,2000,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"652","poolhalls","yarRK_CyQjiA7TlezTHb6Q","True","False",51,3.5,0,0,0,"",3,"Frisco","TX",1600,0,0,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"653","portuguese","85ISIMsWi_-ZOigO1MGBaQ","True","False",89,3.5,1,1,0,"",3,"Frisco","TX",1200,2200,0,"European",FALSE,TRUE,TRUE,FALSE
+"654","pubs","1PrS8o8ROv0ssLUA7lHh6g","True","False",149,4,0,1,0,"Medium",3,"Plano","TX",1300,2200,0,"Alcohol",FALSE,FALSE,TRUE,FALSE
+"655","pubs","nFZ5Nk6vMh1fvE6YqVexrg","True","False",650,4,1,1,0,"Medium",3,"Plano","TX",1100,200,0,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"656","pubs","x9IdjGmsB51OVcwFwJROqg","True","False",64,4,1,1,0,"Medium",3,"The Colony","TX",1100,2130,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"657","pubs","T9OCOs5JyOv1PbHUFa8oEg","True","False",127,3,1,1,0,"Medium",3,"Plano","TX",1600,0,1,"Alcohol",FALSE,FALSE,FALSE,FALSE
+"658","ramen","Al0o9RvsT6NqsBb4OODExg","True","False",447,4,1,1,0,"Medium",3,"Frisco","TX",1130,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"659","ramen","GrTcRGrIPsPZ01wNfFXoTg","True","False",96,4.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"660","ramen","RvKyDMJRW2Wkhaow2_bH8A","True","False",320,4,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"661","restaurants","dX3-4nnczSFxlrAU06x-PQ","False","False",2,3,0,0,0,"",0,"Frisco","TX",NA,NA,0,"Other",NA,NA,NA,NA
+"662","restaurants","vScAfQ7DUYR72ULnsj86dA","False","False",1,2,0,0,0,"Low",1,"The Colony","TX",NA,NA,0,"Other",NA,NA,NA,NA
+"663","salad","xEyfYswkqIHx5tgPtBTtzQ","True","False",105,2,1,1,0,"",3,"Prosper","TX",630,2100,0,"Other",TRUE,TRUE,TRUE,FALSE
+"664","salad","585QN2-qxMKJyJzrDQx0zA","True","False",67,4.5,1,1,0,"",3,"Frisco","TX",1000,2000,1,"Other",TRUE,TRUE,TRUE,FALSE
+"665","salad","UQBzqAQXl5UMeuJOWGtoJA","True","False",153,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"Other",FALSE,TRUE,TRUE,FALSE
+"666","salad","48hHHbYYqaNR8w4-SMY8Sg","True","False",15,4,0,0,0,"",3,"Frisco","TX",630,2100,1,"Other",TRUE,TRUE,TRUE,FALSE
+"667","salad","xnKXnKjFki9Ty5DS36tsyg","True","False",67,3.5,1,1,0,"",3,"McKinney","TX",700,2100,0,"Other",TRUE,TRUE,TRUE,FALSE
+"668","salad","wj9wzw4hHv5X3h_Y1Y43MQ","True","False",84,3.5,1,1,0,"Low",3,"Plano","TX",1000,2100,0,"Other",TRUE,TRUE,TRUE,FALSE
+"669","salad","tw4b9_sbiPDSIRr9uxcqiw","True","False",121,3.5,1,1,0,"Medium",3,"Plano","TX",1100,2000,1,"Other",FALSE,TRUE,TRUE,FALSE
+"670","salad","2Nt2Q5nxHI39RgYxZZ9N-g","True","False",87,3,1,1,0,"Medium",3,"Frisco","TX",1000,2200,1,"Other",TRUE,TRUE,TRUE,FALSE
+"671","salad","lkpHOzbZ24WiJr7Z6oNRgQ","True","False",3,3.5,1,1,0,"",3,"Frisco","TX",700,2200,1,"Other",TRUE,TRUE,TRUE,FALSE
+"672","salad","SxgZPDwoNHmQeqdFA2adaQ","True","False",101,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,1,"Other",FALSE,TRUE,TRUE,FALSE
+"673","salad","y9O3ZBcWQ0WQCoD4psD4ig","True","False",131,3,0,1,0,"Medium",3,"Plano","TX",1100,2100,1,"Other",FALSE,TRUE,TRUE,FALSE
+"674","salad","AmnHxTCusvEleAtDD76p4A","True","False",21,4.5,0,0,0,"Medium",3,"Plano","TX",1100,2200,0,"Other",FALSE,TRUE,TRUE,FALSE
+"675","salad","LWYqf2ipwcQF-8LCkJakOw","True","False",107,3,1,1,0,"Medium",3,"Frisco","TX",900,2200,0,"Other",TRUE,TRUE,TRUE,FALSE
+"676","salad","Bge0sonT778EZ2O28U_TZQ","True","False",6,2.5,0,1,0,"Medium",3,"Frisco","TX",700,1600,0,"Other",TRUE,TRUE,FALSE,FALSE
+"677","salad","_XCKzCdyvs5TOnNAKwF5EA","True","False",76,3,0,0,0,"Medium",3,"Frisco","TX",1045,2200,0,"Other",FALSE,TRUE,TRUE,FALSE
+"678","salad","SCqQaNz-VdtJsBF0-rDhug","True","False",73,2.5,1,1,0,"Medium",3,"Frisco","TX",1000,2100,0,"Other",TRUE,TRUE,TRUE,FALSE
+"679","salad","amB9cpkO5890MXGctomQ9A","True","False",178,3.5,1,1,0,"Medium",3,"Aubrey","TX",1100,2100,0,"Other",FALSE,TRUE,TRUE,FALSE
+"680","salvadoran","5Zpv34Q0FedYu9A24Felgw","False","False",155,4,0,1,0,"Medium",3,"Little Elm","TX",1100,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"681","sandwiches","R0dGrbc1yTa48VLV91InUg","True","False",7,1.5,1,1,0,"Low",3,"Frisco","TX",800,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"682","sandwiches","UoTPPOD1tB6emq8yfhkHHA","True","False",18,2,1,1,0,"Low",3,"Plano","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"683","sandwiches","AlX7rMLA8Gc5P66UE0OonQ","True","False",4,1.5,1,1,0,"",3,"Frisco","TX",1000,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"684","sandwiches","nNjlelXOZObSH2JBmHUbHw","True","False",38,4,0,1,0,"",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"685","sandwiches","TqkMtNRbg6fzRwQXD7sk3w","True","False",6,1.5,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"686","sandwiches","KHzBjElVfG2QCk7sxfF9jg","True","False",14,2,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"687","sandwiches","FezBLXOhaZHG59R_X1fQaA","True","False",10,2.5,1,1,0,"Low",3,"Frisco","TX",900,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"688","sandwiches","QA0dX5PjbTUBYN-zjV1zOg","True","False",2,1.5,1,1,0,"",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"689","sandwiches","LrkTN-oSrPf6dNivwaK_hw","True","False",6,4,1,1,0,"Medium",3,"Plano","TX",730,1500,1,"American",TRUE,TRUE,FALSE,FALSE
+"690","sandwiches","ouCXOe0T3gLxC0gxLnaMsA","True","False",97,3,1,1,0,"Low",3,"Plano","TX",700,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"691","sandwiches","RAlFwSYpj88t7byrfh_4_Q","True","False",7,2,1,1,0,"Low",3,"Frisco","TX",1000,2000,0,"American",TRUE,TRUE,TRUE,FALSE
+"692","sandwiches","twNVNiknrbxc3iwAz15rWw","True","False",4,2,0,1,0,"Low",3,"Plano","TX",600,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"693","sandwiches","naa4IFuxAONqP9be4SAERQ","True","False",1,2,0,0,0,"",3,"Frisco","TX",1700,2300,0,"American",FALSE,FALSE,TRUE,TRUE
+"694","sandwiches","-9SaDG6Ndccgchsri7FJGw","True","False",9,2.5,1,1,0,"Low",3,"Allen","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"695","sandwiches","KL9l---bXP4uOxPeoPyz7w","True","False",193,4.5,1,1,0,"Low",3,"Frisco","TX",1000,1800,0,"American",TRUE,TRUE,TRUE,FALSE
+"696","sandwiches","DbGshk1aSz2gvfKadXf3hA","True","False",17,2.5,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"697","sandwiches","1iO8M-Ht1qcIw6tikdOJqg","True","False",51,3.5,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"698","sandwiches","pk-llAKgf8b1a9HY1UHszw","True","False",18,2,1,1,0,"Low",3,"Frisco","TX",800,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"699","sandwiches","GGBzpGEHRW1VbYm2OSSh_A","True","False",76,3,1,1,0,"Low",3,"Frisco","TX",1030,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"700","sandwiches","BW2dTsDsfvg28RnscUkAxw","True","False",56,4,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"701","sandwiches","BjTP0NhxjO3Z69-uDwjlIw","True","False",55,4,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"702","sandwiches","Fl_zLFA-Q0t-bqxBcBQuZA","True","False",15,2,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"703","sandwiches","-L9dRulgOXC2VXObqr7yPw","True","False",43,4,1,1,0,"Low",3,"Frisco","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"704","sandwiches","AHLLMGWR9MObgzi8BwfmAw","True","False",14,2,1,1,0,"",3,"Frisco","TX",800,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"705","sandwiches","Alwgh6S_MMuy-2bwbDRKtQ","True","False",54,2.5,1,1,0,"Low",3,"Little Elm","TX",1000,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"706","sandwiches","Rt-2qjzpD8FhxKnT5Yzn3w","True","False",61,4,1,0,0,"Low",3,"Frisco","TX",1000,1900,0,"American",TRUE,TRUE,TRUE,FALSE
+"707","sandwiches","zI7_iCkVD85jpg15wrGEnQ","True","False",100,3,1,1,0,"Low",3,"Frisco","TX",700,2000,0,"American",TRUE,TRUE,TRUE,FALSE
+"708","sandwiches","8EobQNL7qV37OmQbE-4Lxg","True","False",77,4,1,1,0,"Low",3,"Frisco","TX",1030,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"709","sandwiches","ZrgOQ_cxAgigoBMJjmjwvA","True","False",6,3,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"710","sandwiches","AWzZpYrIlJc62sE-UfWJAA","True","False",73,2.5,0,1,0,"Low",3,"Mckinney","TX",600,1500,1,"American",TRUE,TRUE,FALSE,FALSE
+"711","sandwiches","ivpG_AY-HdBh3VDrdz2aqQ","True","False",96,2.5,0,0,0,"Low",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"712","sandwiches","APcCju8-e4Pi8wqIM2txIg","True","False",6,3,1,1,0,"Low",3,"Frisco","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"713","sandwiches","1sr6bCaICwbQLGy8k-zFCA","True","False",248,2,1,1,0,"Low",3,"Frisco","TX",700,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"714","sandwiches","ASiLlqytNkpY-ilT0rPH3A","True","False",1,5,0,0,0,"",3,"Frisco","TX",1000,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"715","sandwiches","7rhEZOowuyG-tR0FKxRwsg","True","False",10,2.5,1,1,0,"Low",3,"Plano","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"716","sandwiches","oSrcfY9N4TFztv2agouNtA","True","False",24,1.5,1,1,0,"Low",3,"Little Elm","TX",800,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"717","sandwiches","uH0cNrCQHQOOzY423GxHHQ","True","False",10,3,1,1,0,"Low",3,"The Colony","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"718","sandwiches","n7O4vrA0Pyoo2Es4lksdrg","True","False",48,2.5,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"719","sandwiches","0ajlW74wmDzyGFwwqQ7w3g","True","False",53,4,1,1,0,"Low",3,"Plano","TX",1000,2100,0,"American",TRUE,TRUE,TRUE,FALSE
+"720","sandwiches","bFh_LbztghTbxrMkW7pXxA","True","False",23,3.5,1,1,0,"Low",3,"Little Elm","TX",900,2200,1,"American",TRUE,TRUE,TRUE,FALSE
+"721","sandwiches","oXcxeAshQbcKYdj1CLnLRA","True","False",13,2.5,1,1,0,"Low",3,"Plano","TX",900,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"722","scandinavian","9fn4XXC760FstUGGyOkjHg","True","False",60,3.5,0,0,0,"Low",3,"Frisco","TX",930,1900,0,"European",TRUE,TRUE,TRUE,FALSE
+"723","seafood","cHbtPMI88I6-nPQMDArv7A","True","False",30,3.5,0,0,0,"",3,"Frisco","TX",1700,2200,1,"Other",FALSE,FALSE,TRUE,FALSE
+"724","seafood","bD3Zk_Qd_pZeckdXzDlrYA","True","False",35,4.5,0,0,0,"",3,"Plano","TX",1600,2200,0,"Other",FALSE,FALSE,TRUE,FALSE
+"725","seafood","n9xpJEWHDFXu5AdrOWBILQ","True","False",8,3.5,0,0,0,"",3,"Aubrey","TX",1400,2000,1,"Other",FALSE,FALSE,TRUE,FALSE
+"726","seafood","0SN1d0Oc_651WZ9fnDFxig","True","False",479,4,0,1,0,"Medium",3,"Plano","TX",1100,2130,1,"Other",FALSE,TRUE,TRUE,FALSE
+"727","seafood","oibBVVdET2F3M6m_Pozvpg","True","False",225,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"Other",FALSE,TRUE,TRUE,FALSE
+"728","seafood","8T6RDK7XZMBM0g1mX4Pydw","True","False",21,4.5,0,0,0,"",3,"Frisco","TX",1100,2200,0,"Other",FALSE,TRUE,TRUE,FALSE
+"729","seafood","QLYxzqZyvRNYdMQXVwsilQ","True","False",56,4.5,0,0,0,"",3,"Plano","TX",1100,2100,1,"Other",FALSE,TRUE,TRUE,FALSE
+"730","seafood","xP0UfpcFPWyCcpvoi9HE6w","True","False",28,1.5,1,1,0,"",3,"Little Elm","TX",1030,2200,0,"Other",FALSE,TRUE,TRUE,FALSE
+"731","seafood","9BaVzWkwvyGDqXzrhWPh-g","False","False",1,3,0,0,0,"Medium",0,"Plano","TX",NA,NA,0,"Other",NA,NA,NA,NA
+"732","seafood","It5tdF9-kQpnxMOaNMsatA","True","False",178,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,1,"Other",FALSE,TRUE,TRUE,FALSE
+"733","servicestations","38BtkjnAB0otMbV0iaU4Ow","True","False",5,4.5,0,0,0,"Medium",3,"Frisco","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"734","servicestations","imuBwQgy4AZWx1y9YTwUDA","True","False",8,4.5,0,0,0,"Low",3,"Frisco","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"735","servicestations","Wrjm9S6WKKDj2kxqV40jqw","True","False",7,4,0,0,0,"Low",3,"Little Elm","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"736","servicestations","NdCB1MWnyBj62szCbM3fAg","True","False",20,4,0,0,0,"Low",3,"Plano","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"737","servicestations","Z6hCGj9443bzA6FWGueQ5w","True","False",15,4,0,0,0,"Low",3,"McKinney","TX",0,0,0,"Non-Restaurant",TRUE,FALSE,FALSE,FALSE
+"738","shavedice","zc0GVHpSDrwZYBH5imO6Eg","True","False",1,5,0,0,0,"Low",0,"Savannah","TX",NA,NA,0,"Snacks/Dessert",NA,NA,NA,NA
+"739","soulfood","RhL6hXqiz_nMz06Xx7tBcg","True","False",8,4.5,1,1,0,"",3,"East Aubrey","TX",1500,2100,0,"American",FALSE,FALSE,TRUE,FALSE
+"740","soup","bjf_GqoEITM8KXhR5C7Q4g","True","False",84,2,1,1,0,"",3,"Prosper","TX",700,2200,0,"Other",TRUE,TRUE,TRUE,FALSE
+"741","southern","Y8R6dBxCTuUapbaCscnJiQ","True","False",109,3,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"742","southern","PyOrQnHcPq1hjdFUw7ScQA","True","False",1,5,0,0,0,"",3,"Frisco","TX",1100,1900,1,"American",FALSE,TRUE,TRUE,FALSE
+"743","southern","tcP5RGVhyLtwzgC1JUuXWw","True","False",1,1,0,0,0,"",3,"Frisco","TX",1130,2130,0,"American",FALSE,TRUE,TRUE,FALSE
+"744","southern","DXjW8Gar51vqK-5SP8TMuA","True","False",83,4,0,0,0,"Medium",3,"The Colony","TX",1000,2000,0,"American",TRUE,TRUE,TRUE,FALSE
+"745","southern","kUTLx_nG_tZq5mxHV20jMA","True","False",133,3.5,1,1,0,"Low",3,"Frisco","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"746","southern","NnhmirXY45qcKOxLsMDY0g","True","False",233,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"747","spanish","7Kn8g-hm_V_6TUIDfF5IIA","True","False",1023,4.5,1,1,0,"Medium",3,"Plano","TX",1130,2200,1,"European",FALSE,TRUE,TRUE,FALSE
+"748","sportsbars","KDq7vr7iTkL6kN18MEMiGw","True","False",140,3.5,1,1,0,"Medium",3,"The Colony","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"749","sportsbars","jvJH9kRzNCnKu_Oatg0nTw","True","False",246,3,0,1,0,"Medium",3,"Frisco","TX",1100,2300,1,"American",FALSE,TRUE,TRUE,TRUE
+"750","sportsbars","o-6bLgIV1iy_vEVjy-bZgw","True","False",76,3,1,1,0,"Medium",3,"Plano","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"751","sportsbars","LrL_bLXNenIjN91wxrXbfA","True","False",436,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2300,1,"American",FALSE,TRUE,TRUE,TRUE
+"752","sportsbars","iRIG9UDwZzQQqzVXwMb6-A","True","False",141,3.5,1,1,0,"Low",3,"Frisco","TX",1500,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"753","sportsbars","eVv3L2EFs1BiC85xb9fjKQ","False","False",90,3.5,1,1,0,"Medium",3,"Frisco","TX",NA,NA,0,"American",NA,NA,NA,NA
+"754","sportsbars","n97FN42b-OL2vaC5l7H6bA","False","False",44,2.5,1,1,0,"Low",3,"The Colony","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"755","sportsbars","5CEaI_x0Thq2peM2Hg8loA","False","False",3,1.5,1,1,0,"",1,"Frisco","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"756","sportsbars","sWEd99NMp4i9v1c2FjUZ6g","True","False",330,4,1,1,0,"Medium",3,"Frisco","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"757","sportsbars","poOYI-vXRWHmhz7fRPd3gA","True","False",61,4,0,0,0,"Medium",3,"Frisco","TX",1100,2300,0,"American",FALSE,TRUE,TRUE,TRUE
+"758","sportsbars","9ym7Z3fh-lcb3PCSPG3tJg","False","False",20,3,1,1,0,"",3,"Plano","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"759","sportsbars","kbnot1kG_1S41XSC72WtMg","True","False",161,4,1,1,0,"Medium",3,"Frisco","TX",1100,0,1,"American",FALSE,FALSE,FALSE,FALSE
+"760","sportsbars","GUYRcfd-496Zxj7Vo3I6OQ","True","False",92,3.5,1,1,0,"Medium",3,"Plano","TX",1030,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"761","sportsbars","2a6RITg2Z4v3f9CFenNVIQ","True","False",195,3.5,0,1,0,"Medium",3,"Plano","TX",NA,NA,0,"American",NA,NA,NA,NA
+"762","sportsbars","KPOVqP2NifV_iDKUiYxbDg","True","False",30,3,0,0,0,"",3,"Prosper","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"763","sportsbars","AdVSU_Hngnrs3YubGKvylA","True","False",298,2.5,0,1,0,"Medium",3,"Frisco","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"764","steak","CgWUvlyRs6EB_v48xCbhjw","True","False",241,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"765","steak","kAhUtTyuLEb3xY4FGHKiOA","True","False",395,3.5,1,1,0,"High",3,"Plano","TX",1130,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"766","steak","-fCEkt9eboVQrjuM2XbWww","True","False",817,4,1,1,0,"High",3,"Frisco","TX",1600,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"767","steak","EnKHHf7K0XYPo_8XInzHZg","True","False",101,3.5,1,1,0,"",3,"Frisco","TX",1100,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"768","steak","acB0ChFUxJpVTFVcJ2t_XQ","True","False",437,4,0,0,0,"High",3,"Plano","TX",1700,2100,0,"American",FALSE,FALSE,TRUE,FALSE
+"769","steak","IAh1XtMoJUYgURQeVusZ8Q","True","False",371,3.5,0,1,0,"High",3,"Frisco","TX",1700,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"770","steak","WOpEFjyd_9aH3tKngxZLpw","True","False",142,3.5,1,1,0,"High",3,"The Colony","TX",1130,2200,1,"American",FALSE,TRUE,TRUE,FALSE
+"771","steak","ZJflcNC3kCGSrlUtmuNWSg","True","False",730,4,1,1,0,"High",3,"Frisco","TX",1600,2200,1,"American",FALSE,FALSE,TRUE,FALSE
+"772","steak","a2DhMIpjTKVS8PZ_wTj6Wg","True","False",223,3.5,0,0,0,"Medium",3,"Prosper","TX",1500,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"773","steak","B0C_xeso40xEZ3UNGpYfFA","False","False",173,4.5,0,0,0,"",3,"Plano","TX",1100,1400,0,"American",FALSE,TRUE,FALSE,FALSE
+"774","steak","TyziXxg_YojlwW5Jyn9pdQ","True","False",245,4,0,1,0,"Very High",3,"Frisco","TX",1600,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"775","steak","e6jZo-1jRrx8gQ8MAUdylQ","True","False",92,2.5,1,1,0,"Medium",3,"The Colony","TX",1100,2100,1,"American",FALSE,TRUE,TRUE,FALSE
+"776","steak","4-AA8upb5-VG8t_o4cEw-Q","True","False",640,4,0,0,0,"High",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"777","sushi","kyEoPMpwBVXs01xrNvQPfA","True","False",233,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"778","sushi","8ZvGnlrkf6yvvDgsC7s29w","True","False",217,3.5,1,1,0,"Medium",3,"Frisco","TX",1130,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"779","sushi","GV3PsW3rOrBRiIKZGBu97g","True","False",407,4.5,0,1,0,"Medium",3,"Plano","TX",1100,1530,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"780","sushi","SlVl1e_KWW4OGeKHBWJLIQ","True","False",347,4,0,1,0,"Medium",3,"Frisco","TX",1130,2100,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"781","sushi","VLh42MUV2YqMmJIDQDt3YQ","True","False",245,3,1,1,0,"Medium",3,"Frisco","TX",1130,2130,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"782","sushi","-vOUERTHJcICrD6do77NSQ","True","False",52,4.5,0,0,0,"",3,"Plano","TX",1100,1500,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"783","sushi","B0I8ykB_GXHH7MmGY2JwSA","True","False",42,4,0,0,0,"Medium",3,"Plano","TX",1100,2130,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"784","sushi","Ju9FG4YpXcyPvdJHZuro8A","True","False",108,3,0,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"785","sushi","d4g1LzxLJNzEJ5NmnV0WTQ","True","False",718,3.5,1,1,0,"Medium",3,"Plano","TX",1100,0,0,"East Asian",FALSE,FALSE,FALSE,FALSE
+"786","sushi","Mk-vt-KaxL5vKEbm78dAog","True","False",129,4,1,1,0,"Medium",3,"McKinney","TX",1630,2100,0,"East Asian",FALSE,FALSE,TRUE,FALSE
+"787","sushi","BWdGYxgglIbmWt08eHrT5A","True","False",193,4.5,0,1,0,"High",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"788","sushi","6O3DF4Zy9YlkQjCjSjplHg","True","False",314,4,0,1,0,"Medium",3,"Plano","TX",1100,1400,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"789","sushi","xFzwCnbOmWUE_r4zDUts5w","True","False",92,3.5,1,1,0,"Low",3,"The Colony","TX",1130,2045,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"790","sushi","-IyQj3-fwnQwK4yR-F5aCw","False","False",68,4,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"East Asian",FALSE,TRUE,TRUE,FALSE
+"791","sushi","8pCRLVHCo7LeW9vY7czB6Q","True","False",359,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,200,0,"East Asian",FALSE,FALSE,FALSE,FALSE
+"792","sushi","Xiy3ZAXgkZDcbDNQ-hVihA","True","False",308,3.5,0,1,0,"Medium",3,"Frisco","TX",1130,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"793","sushi","87wqbVMYCSJVPqIqI9dRrA","False","False",243,4.5,0,1,0,"Medium",3,"Prosper","TX",1100,1500,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"794","sushi","j6dDGi3iIu7UFXAGcbFtCw","False","False",332,4,0,1,0,"Medium",3,"Frisco","TX",1100,1430,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"795","sushi","OvpiAP80c7DJ7AKTzEfQKw","True","False",40,5,1,1,0,"",3,"McKinney","TX",1100,1500,0,"East Asian",FALSE,TRUE,FALSE,FALSE
+"796","sushi","UQ0ejf1a9Ob33UnBGHbdOA","True","False",63,4.5,0,1,0,"High",3,"Frisco","TX",1730,2200,0,"East Asian",FALSE,FALSE,TRUE,FALSE
+"797","sushi","7dSJCOqiBd3dWkUaccvVqw","False","False",12,3.5,0,0,0,"Low",3,"Little Elm","TX",1000,1900,0,"East Asian",TRUE,TRUE,TRUE,FALSE
+"798","tacos","03O8XMlMfBYx8sGx38U90Q","True","False",92,3.5,1,1,0,"",3,"Frisco","TX",700,2030,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"799","tacos","-1ehfpe4BEGQSRwmOtytaA","True","False",50,4,0,0,0,"Medium",3,"Plano","TX",1000,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"800","tacos","eNwam9V9mTo3zU4gaA730w","True","False",66,3.5,0,0,0,"",3,"Plano","TX",1030,2100,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"801","tacos","3J85R-8OD7qTD8GcsFOtXA","False","False",5,3.5,0,0,0,"",3,"Plano","TX",NA,NA,0,"Latin American",NA,NA,NA,NA
+"802","tacos","t8Pb0_xMN5f_adUbitKE9Q","True","False",153,4,0,1,0,"Low",3,"Plano","TX",700,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"803","tacos","TvfnPWq0_KAqFepc0Eowrg","True","False",388,4,1,1,0,"Medium",3,"Frisco","TX",700,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"804","tacos","lLys8FLpQw7m2McQjXECMw","True","False",45,3.5,0,0,0,"",3,"Frisco","TX",1000,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"805","tacos","ZRWexafbbMuXHWFbDcyBMw","False","False",50,3.5,0,1,0,"",3,"McKinney","TX",800,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"806","tacos","Xbu1z0g2kqrmJSHYliIYeA","True","False",61,2,0,1,0,"",3,"Prosper","TX",1000,1500,1,"Latin American",TRUE,TRUE,FALSE,FALSE
+"807","tacos","g3zH7bwfkfqZs2PXGECjJQ","False","False",7,1,0,0,0,"",3,"Frisco","TX",NA,NA,0,"Latin American",NA,NA,NA,NA
+"808","tacos","kKu7nSF9fU8dLp9nZR9uVg","True","False",178,4,1,1,0,"Medium",3,"Frisco","TX",1100,2000,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"809","tacos","opFjbZ9NAOjefao_zGly6Q","True","False",118,4,1,1,0,"",3,"Frisco","TX",1100,2200,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"810","taiwanese","D1dLze9zWlAcVL4YtvIZMg","True","False",105,4,1,1,0,"Medium",3,"Frisco","TX",1030,2100,1,"East Asian",FALSE,TRUE,TRUE,FALSE
+"811","taiwanese","HN_pEb1xZdlycOAZE6v8oA","True","False",39,4.5,0,1,0,"",3,"Frisco","TX",1100,1500,1,"East Asian",FALSE,TRUE,FALSE,FALSE
+"812","tea","fDMEF_1tL48Qg-77jhzVhw","True","False",101,3.5,0,1,0,"Medium",3,"Frisco","TX",1000,1800,1,"Cafe",TRUE,TRUE,TRUE,FALSE
+"813","tex-mex","-bU1PK5JPuBKaN94LbDbGQ","True","False",119,4.5,0,1,0,"Low",3,"Frisco","TX",1000,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"814","tex-mex","_9OEYhv5CTbczJG9w9romw","False","False",170,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"815","tex-mex","WF_fQLXy4nvgeahmCNAlfg","True","False",337,4,0,1,0,"Medium",3,"Frisco","TX",1100,2200,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"816","tex-mex","2MF61JoLIFKvpT9P1Egl-A","True","False",424,3.5,0,1,0,"Medium",3,"Plano","TX",1100,2200,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"817","tex-mex","y-SmL3aGfLDxFsKkJwPxBw","True","False",28,4,1,1,0,"",3,"Prosper","TX",1100,2100,1,"Latin American",FALSE,TRUE,TRUE,FALSE
+"818","tex-mex","NXLO7IxmBkUMe2wBm2Jf1g","True","False",311,4,0,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"819","tex-mex","HeqS3ubwRtxOk0DEBrWqVg","True","False",595,4,0,0,0,"Low",3,"Plano","TX",700,2000,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"820","tex-mex","oHvIrycm6jsBZhBVFfOLaA","True","False",163,3,1,1,0,"Low",3,"Frisco","TX",700,2200,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"821","tex-mex","8jMd6HuRUNXWxC9XmMmgVw","True","False",33,3,0,0,0,"Medium",3,"Prosper","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"822","tex-mex","r3TwC0SGxwqlycndwJvRog","False","False",90,3,1,1,0,"Medium",3,"Frisco","TX",700,2100,0,"Latin American",TRUE,TRUE,TRUE,FALSE
+"823","tex-mex","5Is2w0FGIUVekvKuYabHLA","True","False",121,3,1,1,0,"Low",3,"Frisco","TX",1030,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"824","tex-mex","GN4Y_ciDBDiGjv8TJAMUqA","True","False",219,3.5,1,1,0,"Medium",3,"The Colony","TX",1100,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"825","tex-mex","Xf-b9HcYzij1L9rITbVLlA","True","False",124,3,0,0,0,"Medium",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"826","tex-mex","N8uql1IhGeD0Fwe-uRU53g","True","False",125,3.5,1,1,0,"Low",3,"Plano","TX",1030,2130,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"827","tex-mex","DFg_NsqMZnBAfEbF4YQuWA","True","False",229,4,1,1,0,"Low",3,"Frisco","TX",1100,2100,0,"Latin American",FALSE,TRUE,TRUE,FALSE
+"828","thai","y4WjFhNHRyS7T2Z0XtKg9Q","True","False",167,4.5,1,1,0,"Medium",3,"Frisco","TX",1030,2100,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"829","thai","dPaJzxW0foPByEXbPFkh_Q","True","False",141,4,1,1,0,"Medium",3,"Aubrey","TX",1100,2130,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"830","thai","pgLGHfb9SzwFE0Hb-VboJw","True","False",11,4,1,1,0,"",3,"Frisco","TX",1100,2000,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"831","thai","epWYCIJvJba2YTCpHtxpjA","False","False",106,4,0,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"832","thai","Q3-03ugxTJQdb1uiiu8OOg","True","False",226,4,0,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"833","thai","VsQdpn2_KxXOBtj_cbLfCg","True","False",95,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2130,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"834","thai","isjmPIkJIqYUxmtzNNoL2w","True","False",135,4.5,1,1,0,"Low",3,"Frisco","TX",1100,1500,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"835","thai","kfy9Z4oNUQecv7iMpYiTwQ","True","False",533,4,0,1,0,"Medium",3,"Frisco","TX",1100,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"836","thai","aWri1w8P-noEj8H0DeLeYg","True","False",47,4.5,1,1,0,"Medium",3,"Mckinney","TX",1100,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"837","thai","-LTRytE898vpXoZI8KoRkw","True","False",427,4,1,1,0,"Medium",3,"Frisco","TX",1100,1500,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"838","thai","dAQ2Jfq0SPMFSgvmC9rXMw","True","False",182,4,1,1,0,"Medium",3,"Prosper","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"839","thai","XpyrGWMGtmTuucT-5LTy5Q","True","False",537,3.5,1,0,0,"Medium",3,"Frisco","TX",1100,2200,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"840","thai","m3PvfN8v47y7boK5t2CXeg","True","False",354,4,1,0,0,"Medium",3,"Plano","TX",1100,1430,0,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"841","thai","MNbE9yisXquR6jZU7g8LHg","True","False",121,3.5,0,1,0,"Medium",3,"Frisco","TX",1100,1430,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"842","thai","7xS1tAErcqFwwrT_FYiSjg","True","False",165,3.5,1,1,0,"Medium",3,"Plano","TX",NA,NA,1,"South/Southeast Asian",NA,NA,NA,NA
+"843","thai","VJFWCA-_YFp6L9ilderheA","True","False",326,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"844","thai","ShcPPcYFPlfKAJOe1XaSVw","True","False",9,4.5,0,0,0,"",3,"Plano","TX",1100,1500,1,"South/Southeast Asian",FALSE,TRUE,FALSE,FALSE
+"845","tradamerican","uyOCI2LjY9es9MEZRrvO8A","True","False",16,4,0,1,0,"Medium",3,"Plano","TX",630,1330,0,"American",TRUE,TRUE,FALSE,FALSE
+"846","tradamerican","YLprsfSHoyywn5TPwysohA","True","False",1,1,0,0,0,"",3,"Frisco","TX",1700,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"847","tradamerican","cFg3OuME3nNjFhlrAdx7yg","False","False",1,5,0,0,0,"",0,"The Colony","TX",NA,NA,0,"American",NA,NA,NA,NA
+"848","tradamerican","byi_VwH3BZrJIAm7_9nFsA","False","False",36,1.5,0,0,0,"Medium",3,"Frisco","TX",NA,NA,0,"American",NA,NA,NA,NA
+"849","tradamerican","TH4FSBYZHDb6Bkvo_NUTaw","True","False",8,4.5,0,0,0,"",3,"Frisco","TX",600,1000,0,"American",TRUE,FALSE,FALSE,FALSE
+"850","tradamerican","J5KgGmPmzNX5owUyZVQIVg","True","False",314,3.5,1,1,0,"Medium",3,"McKinney","TX",800,2100,1,"American",TRUE,TRUE,TRUE,FALSE
+"851","tradamerican","6OKBmFJjhrfUx_lkaZK9Kg","True","False",14,3.5,0,0,0,"",3,"Aubrey","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"852","tradamerican","uRWKgKt86pij6a4-HrdMAg","True","False",208,3.5,1,1,0,"Medium",3,"Plano","TX",700,200,1,"American",TRUE,FALSE,FALSE,FALSE
+"853","tradamerican","vPm9rtJ8ls6jDxdNidSnlA","True","False",724,3,0,1,1,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"854","tradamerican","Mz9JxtkFRffSEmO1bKEQbQ","True","False",789,4.5,0,1,0,"Medium",3,"Plano","TX",1100,2300,1,"American",FALSE,TRUE,TRUE,TRUE
+"855","tradamerican","QMban7yQ8rFdbH3F7Ej0dA","True","False",1,5,0,0,0,"",3,"Frisco","TX",1000,1500,1,"American",TRUE,TRUE,FALSE,FALSE
+"856","tradamerican","MhXsR-K3udMpgiA4Pukrhw","True","False",174,2.5,1,1,0,"Medium",3,"Frisco","TX",1045,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"857","tradamerican","Q1uNE4_H_Lczy7hMg8WZhA","True","False",301,4,0,1,0,"Medium",3,"Frisco","TX",1700,2200,1,"American",FALSE,FALSE,TRUE,FALSE
+"858","tradamerican","Oc2oe5lU_j-Gp3rRKA5ZBA","True","False",13,3.5,0,0,0,"Medium",3,"Frisco","TX",630,1030,1,"American",TRUE,FALSE,FALSE,FALSE
+"859","tradamerican","9Ua56Wkw6LmMndNGutBtHQ","True","False",17,3.5,0,0,0,"",3,"The Colony","TX",1100,200,1,"American",FALSE,FALSE,FALSE,FALSE
+"860","tradamerican","LOTjxKVKbfnSnfwfQ5jV0w","True","False",388,4,1,1,0,"Medium",3,"Plano","TX",700,2200,0,"American",TRUE,TRUE,TRUE,FALSE
+"861","tradamerican","2xZILGaSKG2pSXEK0jQDew","True","False",95,3,1,1,0,"Medium",3,"Frisco","TX",1100,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"862","tradamerican","2pM19ps82tA6GhsR7Wav-g","True","False",436,2.5,0,1,0,"Medium",3,"Plano","TX",1700,100,0,"American",FALSE,FALSE,FALSE,FALSE
+"863","tradamerican","OiM40KD8dYeUx0nJnZ7cqQ","True","False",4,3.5,0,0,0,"",3,"Frisco","TX",1600,2200,0,"American",FALSE,FALSE,TRUE,FALSE
+"864","tradamerican","wc3umQSpEccd8CFJM3OOaQ","True","False",107,4.5,1,1,0,"Low",3,"Allen","TX",700,2000,0,"American",TRUE,TRUE,TRUE,FALSE
+"865","tradamerican","aPF1nW2ecOTyFjf3ZCTtnw","True","False",140,2,1,1,0,"Medium",3,"Little Elm","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"866","tradamerican","KtPGQcyg-y_WsNoW7ynlUQ","True","False",166,2,1,1,0,"Low",3,"Frisco","TX",0,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"867","tradamerican","S0oiIcLX1oycuI5vjse_Yg","True","False",28,3,0,0,0,"",3,"The Colony","TX",NA,NA,0,"American",NA,NA,NA,NA
+"868","tradamerican","bFaNKayINuCo6V71Vox5mg","True","False",145,2,1,1,0,"Low",3,"Frisco","TX",1000,0,0,"American",TRUE,FALSE,FALSE,FALSE
+"869","tradamerican","K30mk8uDW2EVAbqHeLxjUQ","True","False",113,4,0,0,0,"Low",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"870","tradamerican","O0d4wJG2HcD0q-DA2YqMZw","True","False",245,3,1,1,0,"Medium",3,"Frisco","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"871","tradamerican","c5r2_s_4-U5O4NHGKTOKNg","True","False",198,2.5,1,1,0,"Medium",3,"Frisco","TX",1100,0,0,"American",FALSE,FALSE,FALSE,FALSE
+"872","tradamerican","gs24_Qf_1eN8aNvReqp7Vg","True","False",316,3.5,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"American",FALSE,TRUE,TRUE,FALSE
+"873","tradamerican","dWLlfnYioMnLS1kNILhrvw","True","False",162,4,0,1,0,"Low",3,"Frisco","TX",630,1330,0,"American",TRUE,TRUE,FALSE,FALSE
+"874","tradamerican","W5xgQQBtYJnt75Da8c0ZKg","True","False",716,4,1,1,0,"Medium",3,"Frisco","TX",800,1430,0,"American",TRUE,TRUE,FALSE,FALSE
+"875","tradamerican","C37T12bal2XCjcw1BwyPig","True","False",32,3.5,0,1,0,"Medium",3,"Plano","TX",1500,200,0,"American",FALSE,FALSE,FALSE,FALSE
+"876","tradamerican","5yWNsAA5mCb7dHufkb7Ykg","True","False",230,3,1,1,0,"Medium",3,"Frisco","TX",1100,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"877","tradamerican","ggum6770Bhf_DUsbuvnPyg","False","False",74,2,1,1,0,"Low",3,"Frisco","TX",1030,2200,0,"American",FALSE,TRUE,TRUE,FALSE
+"878","turkish","mDucdauYh9ZYXNXKpm-yPA","True","False",358,4,1,0,0,"Medium",3,"Plano","TX",1100,2200,0,"Middle Eastern/African",FALSE,TRUE,TRUE,FALSE
+"879","vegan","st0XfS5D4Ur-xkudOnm-2w","True","False",232,4,0,1,0,"Medium",3,"Frisco","TX",1130,1500,0,"Other",FALSE,TRUE,FALSE,FALSE
+"880","vegetarian","hUMwdLyZFTSySHSJkdeKVw","True","False",607,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,0,"Other",FALSE,TRUE,TRUE,FALSE
+"881","vegetarian","z0MZ0JVgg7_yOJ8wS6XPHA","True","False",43,3,1,1,0,"",3,"Allen","TX",1130,1500,0,"Other",FALSE,TRUE,FALSE,FALSE
+"882","vegetarian","uNKeGBJiVHvWphLECWrPcg","True","False",8,3.5,1,1,0,"",3,"Little Elm","TX",1500,2000,0,"Other",FALSE,FALSE,TRUE,FALSE
+"883","venues","9aEz75cce1lzQ07HGmVq_Q","True","False",1,5,0,0,0,"",3,"Frisco","TX",1700,0,1,"Non-Restaurant",FALSE,FALSE,FALSE,FALSE
+"884","vietnamese","NQteur0m7_WL3kxQ_3lUDA","True","False",235,3.5,1,1,0,"Low",3,"Frisco","TX",1100,2100,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"885","vietnamese","8F-LNn0pl3SVLYeFceVM5g","True","False",230,3.5,1,1,0,"Medium",3,"Frisco","TX",1100,2100,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"886","vietnamese","HwX6g_kmpJTSKD71M-Y3oQ","True","False",299,4,1,1,0,"Medium",3,"Plano","TX",1100,2100,1,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"887","vietnamese","Gs5itwDizu1DoPaYNFcxYw","True","False",250,3.5,1,1,0,"Low",3,"Plano","TX",1100,2100,0,"South/Southeast Asian",FALSE,TRUE,TRUE,FALSE
+"888","vietnamese","CMan4wBFgqD9Hq3mvVuCrA","True","False",92,3,0,0,0,"Medium",3,"Frisco","TX",1000,2200,0,"South/Southeast Asian",TRUE,TRUE,TRUE,FALSE
+"889","wine_bars","0mF8ergglfGHfNv7BnC8xA","True","False",227,4.5,0,1,0,"Medium",3,"Little Elm","TX",1500,2100,0,"Alcohol",FALSE,FALSE,TRUE,FALSE
+"890","wine_bars","_NUk_uXP4SKAbwZQHTwUGQ","True","False",410,4,0,0,0,"High",3,"Plano","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"891","wine_bars","vlaXN9-eRlgmpvOvTTQdng","False","False",1,5,0,1,0,"",0,"Plano","TX",NA,NA,0,"Alcohol",NA,NA,NA,NA
+"892","wine_bars","SjIPAWmmhRMsbDVnGbU34Q","True","False",211,3.5,0,0,0,"Medium",3,"Plano","TX",1500,2130,1,"Alcohol",FALSE,FALSE,TRUE,FALSE
+"893","wine_bars","iJm0T1cCFO9IRHwvESCo8w","True","False",244,4,0,1,0,"Medium",3,"Mckinney","TX",1100,2200,1,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"894","wine_bars","saVF1GAai9idAncGgH--Tg","True","False",376,4,1,1,0,"High",3,"Frisco","TX",1100,2100,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
+"895","wine_bars","w0Qo8DKuUkdjMtGn0GiZJQ","True","False",74,3.5,0,1,0,"",3,"Frisco","TX",1100,2200,0,"Alcohol",FALSE,TRUE,TRUE,FALSE
