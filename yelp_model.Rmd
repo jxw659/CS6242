@@ -1,0 +1,288 @@
+---
+title: "Frisco & Enterprise Data Validation"
+output: html_notebook
+
+---
+### Set-up
+
+Load packages
+
+```{r message=FALSE, warning=FALSE}
+options(scipen=999)
+options(dplyr.summarise.inform = FALSE)
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(corrplot)
+library(readr)
+library(caret) #one-hot
+library(randomForest)
+"%ni%" <- Negate("%in%")
+percentf <- function(x, digits = 2, format = "f", ...) {
+  paste0(formatC(100 * x, format = format, digits = digits, ...), "%")
+}
+```
+
+Load data
+
+```{r load data, warning=FALSE, include=FALSE}
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Z35PQKLW2GJCLRXRYY3UOGGQ"
+
+df <- readr::read_csv(url(urlfile))
+
+df <- df %>% select(-X1)
+```
+
+### Data Cleaning
+
+```{r}
+head(df)
+```
+
+Check NAs
+
+```{r check na, warning=FALSE}
+df %>%
+  select(-id) %>%
+  summarise_all(funs(sum(is.na(.))))
+```
+
+Add Breakfast/Lunch/Dinner/Late feature per Trevor's logic
+
+```{r}
+df <-
+df %>%
+  mutate(open_hour=as.integer(substr(`Opening Time`,1,2)),
+         close_hour=as.integer(substr(`Closing Time`,1,2))) %>%
+  mutate(Open_Breakfast = if_else(open_hour <= 10,1,0),
+         Open_Lunch = if_else(open_hour <= 12 & close_hour >= 12,1,0),
+         Open_Dinner = if_else(open_hour <= 18 & (close_hour >= 18 | close_hour <=2),1,0),
+         Open_Late = if_else(close_hour >= 22 | close_hour <= 2,1,0))
+```
+
+If Opening/Closing Time is NULL, can we determine breakfast/lunch/dinner/late status using restaurant category?
+
+```{r}
+df <-
+df %>%
+  mutate(Open_Breakfast = if_else(is.na(Open_Breakfast) & (grepl('breakfast|diner|brunch',`Restaurant Category 1`) |
+                                                             grepl('breakfast|diner|brunch',`Restaurant Category 2`) |
+                                                             grepl('breakfast|diner|brunch',`Restaurant Category 3`)),1,Open_Breakfast),
+         Open_Lunch = if_else(is.na(Open_Lunch) & (grepl('lunch|brunch',`Restaurant Category 1`) |
+                                                             grepl('lunch|brunch',`Restaurant Category 2`) |
+                                                             grepl('lunch|brunch',`Restaurant Category 3`)),1,Open_Lunch),
+         Open_Dinner = if_else(is.na(Open_Dinner) & (grepl('dinner',`Restaurant Category 1`) |
+                                                             grepl('dinner',`Restaurant Category 2`) |
+                                                             grepl('dinner',`Restaurant Category 3`)),1,Open_Dinner)) %>%
+  mutate(Open_Breakfast = if_else(is.na(Open_Breakfast),0,Open_Breakfast),
+         Open_Lunch = if_else(is.na(Open_Lunch),0,Open_Lunch),
+         Open_Dinner = if_else(is.na(Open_Dinner),0,Open_Dinner),
+         Open_Late = if_else(is.na(Open_Late),0,Open_Late))
+```
+
+
+Chunk restaurant categories?
+
+```{r}
+rbind(df %>% select(restaurant_category=`Restaurant Category 1`),
+      df %>% select(restaurant_category=`Restaurant Category 2`),
+      df %>% select(restaurant_category=`Restaurant Category 3`)) %>%
+  distinct() 
+```
+
+```{r}
+df %>% distinct(`Restaurant Category 1`,`Restaurant Category 2`,`Restaurant Category 3`)
+```
+
+```{r}
+df <-
+df %>%
+  mutate(restaurant_category=case_when(`Restaurant Category 1` %in% c("thai","japanese","chinese","asianfusion","sushi","indpak","noodles","vietnamese","pakistani",
+                                                                      "laotian","ramen","korean","mongolian","dimsum","taiwanese","hotpot","filipino","conveyorsushi",
+                                                                      "teppanyaki","cantonese","izakaya","japacurry","panasian","karaoke") |
+                                       `Restaurant Category 2` %in% c("thai","japanese","chinese","asianfusion","sushi","indpak","noodles","vietnamese","pakistani",
+                                                                    "laotian","ramen","korean","mongolian","dimsum","taiwanese","hotpot","filipino","conveyorsushi",
+                                                                    "teppanyaki","cantonese","izakaya","japacurry","panasian","karaoke") |
+                                       `Restaurant Category 3` %in% c("thai","japanese","chinese","asianfusion","sushi","indpak","noodles","vietnamese","pakistani",
+                                                                    "laotian","ramen","korean","mongolian","dimsum","taiwanese","hotpot","filipino","conveyorsushi",
+                                                                    "teppanyaki","cantonese","izakaya","japacurry","panasian","karaoke") ~"asian",
+                                       
+                                       `Restaurant Category 1` %in% c("italian","greek","portuguese","french","scandinavian","spanish","tapasmallplates","tapas",
+                                                                      "british","fishnchips","german","irish","pastashops","modern_european","mediterranean") |
+                                       `Restaurant Category 2` %in% c("italian","greek","portuguese","french","scandinavian","spanish","tapasmallplates","tapas",
+                                                                      "british","fishnchips","german","irish","pastashops","modern_european","mediterranean") |
+                                       `Restaurant Category 3` %in% c("italian","greek","portuguese","french","scandinavian","spanish","tapasmallplates","tapas",
+                                                                      "british","fishnchips","german","irish","pastashops","modern_european","mediterranean") ~"european",
+                                       
+                                       `Restaurant Category 1` %in% c("mideastern","halal","persian","turkish","falafel","syrian","kebab","lebanese","armenian")|
+                                       `Restaurant Category 2` %in% c("mideastern","halal","persian","turkish","falafel","syrian","kebab","lebanese","armenian")|
+                                       `Restaurant Category 3` %in% c("mideastern","halal","persian","turkish","falafel","syrian","kebab","lebanese","armenian")~"mideastern",
+                                       
+                                       `Restaurant Category 1` %in% c("latin","tex-mex","mexican","salvadoran","tacos","brazilian","newmexican")|
+                                       `Restaurant Category 2` %in% c("latin","tex-mex","mexican","salvadoran","tacos","brazilian","newmexican")|
+                                       `Restaurant Category 3` %in% c("latin","tex-mex","mexican","salvadoran","tacos","brazilian","newmexican")~"latin",
+                                       
+                                       `Restaurant Category 1` %in% c("bbq","soulfood","salad","tradamerican","hotdogs","sandwiches","pizza","burgers","chicken_wings",
+                                                                      "chickenshop","soup","delis","newamerican","hotdog","southern","cajun","cheesesteaks","smokehouse",
+                                                                      "steak") |
+                                       `Restaurant Category 2` %in% c("bbq","soulfood","salad","tradamerican","hotdogs","sandwiches","pizza","burgers","chicken_wings",
+                                                                      "chickenshop","soup","delis","newamerican","hotdog","southern","cajun","cheesesteaks","smokehouse",
+                                                                      "steak") |
+                                       `Restaurant Category 3` %in% c("bbq","soulfood","salad","tradamerican","hotdogs","sandwiches","pizza","burgers","chicken_wings",
+                                                                      "chickenshop","soup","delis","newamerican","hotdog","southern","cajun","cheesesteaks","smokehouse",
+                                                                      "steak")~"american",
+                                       
+                                       `Restaurant Category 1` %in% c("shavedice","desserts","icecream","cakeshop","bakeries","bubbletea","creperies","donuts","waffles",
+                                                                      "cupcakes","gelato")|
+                                       `Restaurant Category 2` %in% c("shavedice","desserts","icecream","cakeshop","bakeries","bubbletea","creperies","donuts","waffles",
+                                                                      "cupcakes","gelato")|
+                                       `Restaurant Category 3` %in% c("shavedice","desserts","icecream","cakeshop","bakeries","bubbletea","creperies","donuts","waffles",
+                                                                      "cupcakes","gelato")~"desserts",
+                                       
+                                       `Restaurant Category 1` %in% c("breakfast_brunch","coffee","cafes","acaibowls","juicebars","pancakes","diners") |
+                                       `Restaurant Category 2` %in% c("breakfast_brunch","coffee","cafes","acaibowls","juicebars","pancakes","diners") |
+                                       `Restaurant Category 3` %in% c("breakfast_brunch","coffee","cafes","acaibowls","juicebars","pancakes","diners") ~"breakfast",
+                                       
+                                       `Restaurant Category 1` %in% c("hawaiian","poke") |
+                                       `Restaurant Category 2` %in% c("hawaiian","poke") |
+                                       `Restaurant Category 3` %in% c("hawaiian","poke") ~"hawaiian",
+                                       
+                                       TRUE~"other"))
+
+```
+
+
+```{r}
+head(df)
+```
+
+Select features to check assumptions
+
+```{r}
+df_select <-
+df %>%
+  filter(State %in% c("TX","NV")) %>% # remove that one CA record
+  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
+         price,State,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+```
+
+One-hot encode categorical features
+
+```{r}
+dummy <- dummyVars("~.",data=df_select)
+df_onehot <- data.frame(predict(dummy,newdata=df_select))
+head(df_onehot)
+```
+
+### Check Assumptions
+
++ **Linearity of the data**: The relationship between the predictor (x) and the outcome (y) is assumed to be linear.
++ **Normality of residuals**: The residual errors are assumed to be normally distributed.
++ **Homogeneity of residuals**: variance. The residuals are assumed to have a constant variance (homoscedasticity)
++ **Independence of residuals error terms"**
+
+```{r}
+model <- lm(rating ~.,data=df_onehot)
+par(mfrow = c(2, 2))
+plot(model)
+```
+
+Can we use linear regression when the target variable, **rating**, is technically ordinal?
+
+### Random Forest
+
+Convert **rating** to categorical
+```{r}
+df_model <- 
+df_select %>%
+  mutate(rating=as.character(rating)) 
+```
+
+
+Split train/test
+
+```{r}
+inTraining <- createDataPartition(df_model$rating, p = .75, list = FALSE)
+training <- df_model[ inTraining,]
+testing  <- df_model[-inTraining,]
+```
+
+Train model
+
+```{r}
+set.seed(149)
+
+# repeated k-fold (k==10) cross-validation
+control <- trainControl(method='repeatedcv', 
+                        number=10, 
+                        repeats=3)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+```
+
+Can signal be improved if we bucket the ratings?
+
+```{r}
+df_model <-
+  df_select %>%
+  mutate(rating=case_when(rating <= 2.5~'low',
+                          rating <= 3.5~'med',
+                          TRUE~'high'))
+```
+
+```{r}
+inTraining <- createDataPartition(df_model$rating, p = .75, list = FALSE)
+training <- df_model[ inTraining,]
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# repeated k-fold (k==10) cross-validation
+control <- trainControl(method='repeatedcv', 
+                        number=10, 
+                        repeats=3)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
