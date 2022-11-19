@@ -1,0 +1,26 @@
+---
+title: "CSE6242 Toy Model"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("/Users/Samuel/OneDrive/All Documents/Ga_Tech/Graduate/CSE 6242/Project/Toy Model")
+```
+
+## Reading in Data and Libraries
+```{r}
+library(glmnet)
+set.seed(100)
+frisco = read.csv(file = "Cleaned Frisco.csv")
+frisco = data.frame(frisco)
+head(frisco)
+```
+
+We have 17 columns and 895 rows in the data set.
+```{r}
+frisco$Opening.Time <- as.character(frisco$Opening.Time)
+frisco$Closing.Time <- as.character(frisco$Closing.Time)
+first_model = lm(rating~review_count+Restaurant.Category.1+Pickup.Available+Delivery.Available+Reservation.Available+Price.Level+number.of.photos+Opening.Time+Closing.Time+Has.Messaging, data =frisco)
+summary(first_model)
+```
