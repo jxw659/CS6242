@@ -1,9 +1,9 @@
 ---
-title: "Frisco & Enterprise Data Validation"
+title: "Yelp Model"
 output: html_notebook
 
 ---
-### Set-up
+### **Set-up**
 
 Load packages
 
@@ -11,12 +11,12 @@ Load packages
 options(scipen=999)
 options(dplyr.summarise.inform = FALSE)
 
-library(dplyr)
+library(tidyverse)
 library(ggplot2)
 library(lubridate)
 library(corrplot)
 library(readr)
-library(caret) #one-hot
+library(caret) 
 library(randomForest)
 "%ni%" <- Negate("%in%")
 percentf <- function(x, digits = 2, format = "f", ...) {
@@ -26,15 +26,22 @@ percentf <- function(x, digits = 2, format = "f", ...) {
 
 Load data
 
+> Note: if the below chunk doesn't execute, you'll need to generate a new urlfile by viewing the raw dataset on github, and copying the url 
+
 ```{r load data, warning=FALSE, include=FALSE}
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Z35PQKLW2GJCLRXRYY3UOGGQ"
+# --- frisco & enterprise
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Y75LLI4OYGAPRFXB6Y34H7VA"
+df1 <- readr::read_csv(url(urlfile))
+df1 <- df1 %>% select(-X1)
 
-df <- readr::read_csv(url(urlfile))
-
-df <- df %>% select(-X1)
+# --- conroe & meridan
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Conroe_and_Meridan_Cleaned_Data.csv?token=GHSAT0AAAAAAB3H4L3Z44ENDMZCSAERVFSEY34IAMA"
+df2 <- readr::read_csv(url(urlfile))
+df2 <- df2 %>% select(-X1)
+df <- rbind(df1,df2)
 ```
 
-### Data Cleaning
+### **Data Cleaning**
 
 ```{r}
 head(df)
@@ -48,7 +55,9 @@ df %>%
   summarise_all(funs(sum(is.na(.))))
 ```
 
-Add Breakfast/Lunch/Dinner/Late feature per Trevor's logic
+28% of records are missing price...
+
+#### Add Breakfast/Lunch/Dinner/Late 
 
 ```{r}
 df <-
@@ -82,7 +91,7 @@ df %>%
 ```
 
 
-Chunk restaurant categories?
+#### Chunk restaurant categories
 
 ```{r}
 rbind(df %>% select(restaurant_category=`Restaurant Category 1`),
@@ -152,20 +161,215 @@ df %>%
 
 ```
 
-
+How many records are still missing restaurant_category?
 ```{r}
-head(df)
+df %>%
+  summarise(total_records=sum(n()),
+            missing_restaurant_cat=sum(restaurant_category=='other')) %>%
+  mutate(missing_percent=percentf(missing_restaurant_cat/total_records))
 ```
 
-Select features to check assumptions
+Remove odd records based on location
+
+```{r}
+df %>% group_by(State) %>% tally()
+```
+
+```{r}
+df <- df %>% filter(State %ni% c('CA','ND'))
+```
+
+Translate 'is_claimed' to boolean
+
+```{r}
+df <- df %>% mutate(is_claimed=if_else(is_claimed=='TRUE',1,0))
+```
+
+
+### **Feature Engineering**
 
 ```{r}
 df_select <-
 df %>%
-  filter(State %in% c("TX","NV")) %>% # remove that one CA record
   mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
   select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
          price,State,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+```
+
+
+One-hot encode categorical features
+
+```{r}
+dummy <- dummyVars("~.",data=df_select)
+df_onehot <- data.frame(predict(dummy,newdata=df_select))
+head(df_onehot)
+```
+
+### **Random Forest**
+
+OOB
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE)
+training <- df_model[ inTraining,]
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+# search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) and ntree (number of branches will grow after each time split)
+# number: number of resampling iterations (numeric)
+# sampling: sampling method (up,down)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+```
+
+Variable importance
+```{r}
+varImp(model)
+```
+
+
+```{r}
+training %>%
+  group_by(rating) %>%
+  summarise(reviews_mean=mean(review_count))
+```
+
+> **Observations**: review_count is highly predictive, which makes sense given review_count is a factor of time, and if a business has been around for along time, it's likely successful. State is also predictive, but since we want our model to predict across states/cities, can State be removed while maintaining an acceptable accuracy?
+
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] %>% select(-StateID, -StateNV, -StateTX)
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+# search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) and ntree (number of branches will grow after each time split)
+# number: number of resampling iterations (numeric)
+# sampling: sampling method (up,down)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+```
+
+Variable importance 
+
+```{r}
+varImp(model)
+```
+
+Predict on test set and create confusion matrix
+```{r}
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+State == ID
+
+```{r}
+predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateID==1)))
+
+# --- accuracy 
+predictions %>%
+  cbind(.,testing %>% filter(StateID==1)) %>%
+  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
+  summarise(accuracy=sum(accurate)/sum(n()))
+
+# --- confusion matrix
+predictions %>%
+  cbind(.,testing %>% filter(StateID==1)) %>%
+  group_by(rating,predicted_rating) %>%
+  summarise(counts=sum(n())) %>%
+  mutate(perc=percentf(counts/sum(counts))) %>%
+  select(-counts) %>%
+  pivot_wider(names_from=predicted_rating,values_from=perc)
+```
+
+State == TX
+
+```{r}
+predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateTX==1)))
+
+# --- accuracy 
+predictions %>%
+  cbind(.,testing %>% filter(StateTX==1)) %>%
+  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
+  summarise(accuracy=sum(accurate)/sum(n()))
+
+# --- confusion matrix
+predictions %>%
+  cbind(.,testing %>% filter(StateTX==1)) %>%
+  group_by(rating,predicted_rating) %>%
+  summarise(counts=sum(n())) %>%
+  mutate(perc=percentf(counts/sum(counts))) %>%
+  select(-counts) %>%
+  pivot_wider(names_from=predicted_rating,values_from=perc)
+```
+
+State == NV
+
+```{r}
+predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateNV==1)))
+
+# --- accuracy 
+predictions %>%
+  cbind(.,testing %>% filter(StateNV==1)) %>%
+  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
+  summarise(accuracy=sum(accurate)/sum(n()))
+
+# --- confusion matrix
+predictions %>%
+  cbind(.,testing %>% filter(StateNV==1)) %>%
+  group_by(rating,predicted_rating) %>%
+  summarise(counts=sum(n())) %>%
+  mutate(perc=percentf(counts/sum(counts))) %>%
+  select(-counts) %>%
+  pivot_wider(names_from=predicted_rating,values_from=perc)
+```
+
+
+
+### DO NOT USE, DO NOT REMOVE. FOR REFERENCE ONLY
+```{r}
+predict(model, newdata = testing, type = "prob") %>%
+  mutate(predicted_rating=if_else(high>=low,"high","low")) %>%
+  select(predicted_rating) %>%
+  cbind(.,testing) %>%
+  group_by(rating,predicted_rating) %>%
+  summarise(counts=sum(n())) %>%
+  mutate(perc=percentf(counts/sum(counts))) %>%
+  select(-counts) %>%
+  pivot_wider(names_from=predicted_rating,values_from=perc)
 ```
 
 One-hot encode categorical features
@@ -176,113 +380,38 @@ df_onehot <- data.frame(predict(dummy,newdata=df_select))
 head(df_onehot)
 ```
 
-### Check Assumptions
-
-+ **Linearity of the data**: The relationship between the predictor (x) and the outcome (y) is assumed to be linear.
-+ **Normality of residuals**: The residual errors are assumed to be normally distributed.
-+ **Homogeneity of residuals**: variance. The residuals are assumed to have a constant variance (homoscedasticity)
-+ **Independence of residuals error terms"**
-
 ```{r}
-model <- lm(rating ~.,data=df_onehot)
-par(mfrow = c(2, 2))
-plot(model)
-```
-
-Can we use linear regression when the target variable, **rating**, is technically ordinal?
-
-### Random Forest
-
-Convert **rating** to categorical
-```{r}
-df_model <- 
-df_select %>%
-  mutate(rating=as.character(rating)) 
-```
-
-
-Split train/test
-
-```{r}
-inTraining <- createDataPartition(df_model$rating, p = .75, list = FALSE)
-training <- df_model[ inTraining,]
-testing  <- df_model[-inTraining,]
-```
-
-Train model
-
-```{r}
-set.seed(149)
-
-# repeated k-fold (k==10) cross-validation
-control <- trainControl(method='repeatedcv', 
-                        number=10, 
-                        repeats=3)
-
-model <- train(rating ~., data=training,
-               method="rf",
-               trControl = control)
-
-print(model)
-```
-
-Can signal be improved if we bucket the ratings?
-
-```{r}
-df_model <-
-  df_select %>%
-  mutate(rating=case_when(rating <= 2.5~'low',
-                          rating <= 3.5~'med',
-                          TRUE~'high'))
+df_model %>% write.csv("C:\\Users\\e672437\\Documents\\TBD\\model_data.csv")
 ```
 
 ```{r}
-inTraining <- createDataPartition(df_model$rating, p = .75, list = FALSE)
-training <- df_model[ inTraining,]
-testing  <- df_model[-inTraining,]
-
-set.seed(149)
-
-# repeated k-fold (k==10) cross-validation
-control <- trainControl(method='repeatedcv', 
-                        number=10, 
-                        repeats=3)
-
-model <- train(rating ~., data=training,
-               method="rf",
-               trControl = control)
-
-print(model)
+cor(,method = c("pearson"))
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```{r}
+{
+  'is_claimed': [0,1],
+  'restaurant_categoryamerican': [0,1],
+  'restaurant_categoryasian': [0,1],
+  'restaurant_categorybreakfast': [0,1],
+  'restaurant_categorydesserts': [0,1],
+  'restaurant_categoryeuropean': [0,1],
+  'restaurant_categoryhawaiian': [0,1],
+  'restaurant_categorylatin': [0,1],
+  'restaurant_categorymideastern': [0,1],
+  'restaurant_categoryother': [0,1],
+  'pickup': [0,1],
+  'delivery': [0,1],
+  'reservation': [0,1],
+  'priceVeryHigh': [0,1],
+  'priceHigh': [0,1],
+  'priceMedium': [0,1],
+  'priceLow': [0,1],
+  'messaging': [0,1],
+  'Open_Breakfast': [0,1],
+  'Open_Lunch': [0,1],
+  'Open_Dinner': [0,1],
+  'Open_Late': [0,1]
+}
+```
