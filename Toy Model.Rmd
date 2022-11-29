@@ -14,13 +14,24 @@ library(glmnet)
 set.seed(100)
 frisco = read.csv(file = "Cleaned Frisco.csv")
 frisco = data.frame(frisco)
+frisco$Opening.Time <- as.character(frisco$Opening.Time)
+frisco$Closing.Time <- as.character(frisco$Closing.Time)
 head(frisco)
 ```
 
 We have 17 columns and 895 rows in the data set.
+
+Let's now split the data into testing and training data.
+
 ```{r}
-frisco$Opening.Time <- as.character(frisco$Opening.Time)
-frisco$Closing.Time <- as.character(frisco$Closing.Time)
-first_model = lm(rating~review_count+Restaurant.Category.1+Pickup.Available+Delivery.Available+Reservation.Available+Price.Level+number.of.photos+Opening.Time+Closing.Time+Has.Messaging, data =frisco)
+sample <- sample(c(TRUE, FALSE), nrow(frisco), replace=TRUE, prob=c(0.7,0.3))
+train  <- frisco[sample, ]
+test   <- frisco[!sample, ]
+```
+
+Now, let's train the first model.
+
+```{r}
+first_model = lm(rating~review_count+Restaurant.Category.1+Pickup.Available+Delivery.Available+Reservation.Available+Price.Level+number.of.photos+Opening.Time+Closing.Time+Has.Messaging, data =train)
 summary(first_model)
 ```
