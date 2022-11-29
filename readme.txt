@@ -5,10 +5,14 @@
 * pyproj v 3.4.0
 * jupyter v 4.8.1
 * requests v 2.28.1
+* ast v 3.7 or greater
+* itertools v 3.7 or greater
+* numpy v 1.20.1
+* json v 2.0.9
 ## R 
 ### R Packages
 ## QGIS v 3.28.1 (https://www.qgis.org/en/site/)
-## Tabuleau
+## Tableau
 # Shape Files
 All shape files used by our group can be found in their appropriate GeoData folder. This information is normally found in one of two ways.
 1. The city itself might publish information related to its city boarders their own GIS system. (https://geodata-frisco.hub.arcgis.com/datasets/frisco::citylimits/explore)
@@ -21,7 +25,6 @@ Inital_Yelp_Data_Pull.ipynb - Is the notebook that we use to transform geographi
 
 # An
 
-# Samuel
 We used the "clean_yelp.ipynb" notebook to clean the data.
 In the notebook, we used the libraries "pandas", "numpy", "json", and "ast" in a Python environment. We took the raw outputs and concatenated them together and then dropped the duplicated rows based on restaurant IDs. We then extracted the first category of each restaurant as we determined that would be the restaurant's main category for the column "Restaurant Type 1". We determined if pickup, delivery, or reservations were available according the data and created new columns ("Pickup Available", "Delivery Available", and "Reservation Available") for those values. We created a new column for price level (called "Price Level"), basing it on the number of dollar signs in each price entry. We found the total number of photos by finding the length of the list in each photos entry and put the values in the column "number of photos". We then found which city and state the restaurants were in based on the provided location data and added them to the columns "City" and "State". The opening and closing times were given in the hours column and we extracted those hours for the "Opening Time" and "Closing Time" columns. Finally, we determined whether or not the restaurant offered a messaging service for potential customers for the "Has Messaging" column. We did not change "is_closed", "is_claimed","review_count", or "rating".
 The final dataframe contained the columns "id";"is_closed"; "is_claimed"; "review_count"; "rating"; "Restaurant Category"; "Pickup Available"; "Delivery Available"; "Reservation Available"; "Price Level"; "number of photos"; "City"; "State"; "Opening Time"; "Closing Time"; and “Has Messaging”.
