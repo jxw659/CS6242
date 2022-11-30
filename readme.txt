@@ -22,7 +22,7 @@ All shape files used by our group can be found in their appropriate GeoData fold
 QGIS is used to read in the shapefile as a vector file and then is used to create a grid overlay using this method (https://gis.stackexchange.com/questions/29926/creating-regularly-spaced-defined-of-points-within-polygon-in-qgis)
 This data is then exported for use in the Yelp notebook
 # Yelp API pull
-Inital_Yelp_Data_Pull.ipynb - Is the notebook that we use to transform geographic points into the Yelp restaurant data. The notebook is well documented and should be self explanatory.
+To submit a Yelp API request, you need to first sign up for a Yelp account at https://fusion.yelp.com/. Once you have an account, select "Manage API Access" which will reveal your API key. Copy this API key and replace in the notebook Initial_Yelp_Data_Pull.ipynb to start the data pull. This notebook is used to transform geographic points into the Yelp restaurant data. The notebook is well documented and should be self explanatory.
 
 # Samuel
 We used the "clean_yelp.ipynb" notebook to clean the data.
