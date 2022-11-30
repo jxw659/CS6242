@@ -14,7 +14,6 @@ Load packages
 options(scipen=999)
 
 library(tidyverse) # data wrangling
-library(ggplot2) # plot
 library(lubridate) # date wrangling
 library(readr) # read file
 library(caret) # build model
@@ -31,12 +30,12 @@ Load data
 
 ```{r load data, warning=FALSE, include=FALSE}
 # --- frisco & enterprise
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3YHSAT74OX7ALFWU3UY4FOQMA"
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Y52ET25I7WKIV7LCOY4GYIVA"
 df1 <- readr::read_csv(url(urlfile))
 df1 <- df1 %>% select(-X1)
 
 # --- conroe & meridan
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Conroe_and_Meridan_Cleaned_Data.csv?token=GHSAT0AAAAAAB3H4L3YAI5V2U7LLF3WBA3YY4FOQSQ"
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Conroe_and_Meridan_Cleaned_Data.csv?token=GHSAT0AAAAAAB3H4L3YZAH27C22F62NFENCY4GYI5A"
 df2 <- readr::read_csv(url(urlfile))
 df2 <- df2 %>% select(-X1)
 df <- rbind(df1,df2)
@@ -550,7 +549,7 @@ predict(model, newdata = testing) %>%
 Load Dallas data
 
 ```{r include=FALSE}
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned_Dallas.csv?token=GHSAT0AAAAAAB3H4L3ZY7MDKIDTQJTOJWOIY4FQ7MQ"
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Cleaned_Dallas.csv?token=GHSAT0AAAAAAB3H4L3YYMB7WFQ5XD5UPPW6Y4GYKVQ"
 df_dallas <- readr::read_csv(url(urlfile))
 head(df_dallas)
 ```
