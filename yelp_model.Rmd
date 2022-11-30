@@ -1,7 +1,10 @@
 ---
 title: "Yelp Model"
-output: html_notebook
-
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
 ---
 ### **Set-up**
 
@@ -9,19 +12,16 @@ Load packages
 
 ```{r message=FALSE, warning=FALSE}
 options(scipen=999)
-options(dplyr.summarise.inform = FALSE)
 
-library(tidyverse)
-library(ggplot2)
-library(lubridate)
-library(corrplot)
-library(readr)
-library(caret) 
-library(randomForest)
-"%ni%" <- Negate("%in%")
+library(tidyverse) # data wrangling
+library(lubridate) # date wrangling
+library(readr) # read file
+library(caret) # build model
+library(randomForest) # build model
+"%ni%" <- Negate("%in%") # not in 
 percentf <- function(x, digits = 2, format = "f", ...) {
   paste0(formatC(100 * x, format = format, digits = digits, ...), "%")
-}
+} # display percent
 ```
 
 Load data
@@ -30,12 +30,12 @@ Load data
 
 ```{r load data, warning=FALSE, include=FALSE}
 # --- frisco & enterprise
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Y75LLI4OYGAPRFXB6Y34H7VA"
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Cleaned%20Frisco%20and%20Enterprise.csv?token=GHSAT0AAAAAAB3H4L3Y52ET25I7WKIV7LCOY4GYIVA"
 df1 <- readr::read_csv(url(urlfile))
 df1 <- df1 %>% select(-X1)
 
 # --- conroe & meridan
-urlfile="https://raw.githubusercontent.com/jxw659/CS6242/Samuel_work/Conroe_and_Meridan_Cleaned_Data.csv?token=GHSAT0AAAAAAB3H4L3Z44ENDMZCSAERVFSEY34IAMA"
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Conroe_and_Meridan_Cleaned_Data.csv?token=GHSAT0AAAAAAB3H4L3YZAH27C22F62NFENCY4GYI5A"
 df2 <- readr::read_csv(url(urlfile))
 df2 <- df2 %>% select(-X1)
 df <- rbind(df1,df2)
@@ -43,6 +43,7 @@ df <- rbind(df1,df2)
 
 ### **Data Cleaning**
 
+Preview data
 ```{r}
 head(df)
 ```
@@ -55,24 +56,30 @@ df %>%
   summarise_all(funs(sum(is.na(.))))
 ```
 
-28% of records are missing price...
+> **Observations*: a restaurant can have as many as 3 categories but it must have at min 1 catgory. Price is not required (impute or mark as NA?) Some records are missing opening/closing time
 
-#### Add Breakfast/Lunch/Dinner/Late 
 
-```{r}
-df <-
-df %>%
-  mutate(open_hour=as.integer(substr(`Opening Time`,1,2)),
-         close_hour=as.integer(substr(`Closing Time`,1,2))) %>%
-  mutate(Open_Breakfast = if_else(open_hour <= 10,1,0),
-         Open_Lunch = if_else(open_hour <= 12 & close_hour >= 12,1,0),
-         Open_Dinner = if_else(open_hour <= 18 & (close_hour >= 18 | close_hour <=2),1,0),
-         Open_Late = if_else(close_hour >= 22 | close_hour <= 2,1,0))
-```
+#### Add Breakfast/Lunch/Dinner/Late. 
 
 If Opening/Closing Time is NULL, can we determine breakfast/lunch/dinner/late status using restaurant category?
 
 ```{r}
+df <-
+df %>%
+  # convert time string to hour int
+  mutate(open_hour=as.integer(substr(`Opening Time`,1,2)),
+         close_hour=as.integer(substr(`Closing Time`,1,2))) %>%
+  
+  # if open before/at 10:00 -> breakfast
+  # if open before/at 12:00 -> lunch
+  # if open before/at 18:00 -> dinner
+  # if close after 22:00 -> late
+  mutate(Open_Breakfast = if_else(open_hour <= 10,1,0),
+         Open_Lunch = if_else(open_hour <= 12 & close_hour >= 12,1,0),
+         Open_Dinner = if_else(open_hour <= 18 & (close_hour >= 18 | close_hour <=2),1,0),
+         Open_Late = if_else(close_hour >= 22 | close_hour <= 2,1,0)) 
+
+# if open/close time is null, can we deterimine using the restaurant category?
 df <-
 df %>%
   mutate(Open_Breakfast = if_else(is.na(Open_Breakfast) & (grepl('breakfast|diner|brunch',`Restaurant Category 1`) |
@@ -93,16 +100,19 @@ df %>%
 
 #### Chunk restaurant categories
 
+We'll have to one-hot encode the restaurant categories. Too many categories will result in a large feature set. How many unique restaurant categories are there?
+
 ```{r}
+# get the distinct restaurant categories across all 3 columns
 rbind(df %>% select(restaurant_category=`Restaurant Category 1`),
       df %>% select(restaurant_category=`Restaurant Category 2`),
       df %>% select(restaurant_category=`Restaurant Category 3`)) %>%
   distinct() 
 ```
 
-```{r}
-df %>% distinct(`Restaurant Category 1`,`Restaurant Category 2`,`Restaurant Category 3`)
-```
+Manually chunk these categories into larger categories.
+
+> **Note**: this information loss may affect our model negatively. We may need to re-evaluate which and how many categories we're using
 
 ```{r}
 df <-
@@ -169,14 +179,13 @@ df %>%
   mutate(missing_percent=percentf(missing_restaurant_cat/total_records))
 ```
 
-Remove odd records based on location
+#### Misc. Cleaning
+
+I noticed the grid search pulled in records from other states. Filter for the states we need:
 
 ```{r}
 df %>% group_by(State) %>% tally()
-```
-
-```{r}
-df <- df %>% filter(State %ni% c('CA','ND'))
+df <- df %>% filter(State %in% c('ID','TX','NV'))
 ```
 
 Translate 'is_claimed' to boolean
@@ -185,17 +194,20 @@ Translate 'is_claimed' to boolean
 df <- df %>% mutate(is_claimed=if_else(is_claimed=='TRUE',1,0))
 ```
 
-
-### **Feature Engineering**
+If price is missing, fill with 'NA' string
 
 ```{r}
-df_select <-
-df %>%
-  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
-  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
-         price,State,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+df <- df %>% mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`))
 ```
 
+### **One-Hot Encode**
+
+```{r}
+# select the features we need
+df_select <-
+df %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`, price,State,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+```
 
 One-hot encode categorical features
 
@@ -207,7 +219,52 @@ head(df_onehot)
 
 ### **Random Forest**
 
-OOB
+Originally we intended to train a linear/logistic regression. However, the target variable (rating) is technically ordinal (1 star, 1.5 stars, 2 stars, 2.5 stars, etc.) which means our data will not meet the data assumptions. Instead, we will build a random forest using out of bag error estimation.
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=factor(case_when(rating <= 3.5~'low',
+                          TRUE~'high')))
+set.seed(149)
+# --- use tuneRF to find the optimal mtry (number of variables to randomly sample as candidates at each split)
+bestMtry <- tuneRF(df_model[-3],df_model$rating, ntreeTry=500,
+               stepFactor=1.5,improve=1e-5, trace=TRUE, plot=TRUE)
+```
+
+Based on tuneRF, the best mtry is 4. 
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE)
+training <- df_model[ inTraining,]
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+# --- use out-of-bag method for error estimation
+# --- number: number of resampling iterations (numeric)
+control <- trainControl(method = "oob", number=5, verboseIter=TRUE, savePredictions=TRUE)
+
+# --- set mtry == 4
+repGrid <- expand.grid(.mtry=c(4))
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control,
+               tuneGrid = repGrid)
+
+print(model)
+```
+
+If instead of using mtry from tuneRF, can I try multiple mtry values using randomsearch?
 
 ```{r}
 # --- bucket the rating (ordinal) to "high"/"low" (categorical)
@@ -224,12 +281,44 @@ testing  <- df_model[-inTraining,]
 
 set.seed(149)
 
-# --- use out-of-bag method for error estimation. 
-control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+# --- use out-of-bag method for error estimation
+# --- search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) 
+# --- number: number of resampling iterations (numeric)
 
-# search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) and ntree (number of branches will grow after each time split)
-# number: number of resampling iterations (numeric)
-# sampling: sampling method (up,down)
+control <- trainControl(method = "oob", number=5, search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+```
+
+> **Observation**: using caret's randomsearch, mtry 8 was recommended, though the accuracy is about the same
+
+Can performance be improved if I upsample the positive ("high") class? Keep randomsearch for mtry value
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE)
+training <- df_model[ inTraining,]
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation
+# --- search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) 
+# --- number: number of resampling iterations (numeric)
+# --- sampling: sampling method (up,down)
+
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
 
 model <- train(rating ~., data=training,
                method="rf",
@@ -243,22 +332,17 @@ Variable importance
 varImp(model)
 ```
 
+> **Observations**: review_count is highly predictive, which makes sense given review_count is a factor of time, and if a business has been around for along time, it's likely successful. State is also predictive, but since we want our model to predict across states/cities, can State be removed while maintaining an acceptable accuracy? Also can we remove restaurants that have very low review count? e.g. <=10
 
-```{r}
-training %>%
-  group_by(rating) %>%
-  summarise(reviews_mean=mean(review_count))
-```
-
-> **Observations**: review_count is highly predictive, which makes sense given review_count is a factor of time, and if a business has been around for along time, it's likely successful. State is also predictive, but since we want our model to predict across states/cities, can State be removed while maintaining an acceptable accuracy?
-
+**Final Model!!**
 
 ```{r}
 # --- bucket the rating (ordinal) to "high"/"low" (categorical)
 df_model <-
   df_onehot %>%
   mutate(rating=case_when(rating <= 3.5~'low',
-                          TRUE~'high'))
+                          TRUE~'high')) %>%
+  filter(review_count > 10)
 
 set.seed(149)
 # --- split training 80:20
@@ -268,12 +352,12 @@ testing  <- df_model[-inTraining,]
 
 set.seed(149)
 
-# --- use out-of-bag method for error estimation. 
-control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+# --- use out-of-bag method for error estimation
+# --- search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) 
+# --- number: number of resampling iterations (numeric)
+# --- sampling: sampling method (up,down)
 
-# search: hyperparameter search (grid, random); random search works better for lower dimensional data; for rf, you can tune mtry (number of variables to randomly sample as candidates at each split) and ntree (number of branches will grow after each time split)
-# number: number of resampling iterations (numeric)
-# sampling: sampling method (up,down)
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
 
 model <- train(rating ~., data=training,
                method="rf",
@@ -282,9 +366,329 @@ model <- train(rating ~., data=training,
 print(model)
 ```
 
-Variable importance 
+Predict on test set and create confusion matrix
+```{r}
+# --- feature importance 
+varImp(model)
+
+# --- confusion matrix on test data
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+#### Random Forest by City
+
+For each city, build a random forest. Are there different features that are important based on the city?
+
+Frisco, TX
+```{r}
+df_city <-
+df %>%
+  filter(review_count > 10 & City %in% c('Frisco','FRISCO')) %>%
+  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
+         price,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+
+dummy <- dummyVars("~.",data=df_city)
+df_onehot <- data.frame(predict(dummy,newdata=df_city))
+
+
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] 
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+varImp(model) 
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+Conroe, TX
+```{r}
+df_city <-
+df %>%
+  filter(review_count > 10 & City %in% c('Conroe','CONROE')) %>%
+  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
+         price,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+
+dummy <- dummyVars("~.",data=df_city)
+df_onehot <- data.frame(predict(dummy,newdata=df_city))
+
+
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] 
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+varImp(model) 
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+> **Observation** Conroe has a noticeable overfit issue, where the test accuracy is a lot lower than train 
+
+Enterprise
+```{r}
+df_city <-
+df %>%
+  filter(review_count > 10 & City %in% c('Enterprise','Las Vegas', 'Las vegas','LAS VEGAS')) %>%
+  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
+         price,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+
+dummy <- dummyVars("~.",data=df_city)
+df_onehot <- data.frame(predict(dummy,newdata=df_city))
+
+
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] 
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+varImp(model) 
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+Meridian
+```{r}
+df_city <-
+df %>%
+   filter(review_count > 10 & City=='Meridian') %>%
+  mutate(price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`,reservation=`Reservation Available`,
+         price,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+
+dummy <- dummyVars("~.",data=df_city)
+df_onehot <- data.frame(predict(dummy,newdata=df_city))
+
+
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high'))
+
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] 
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# --- use out-of-bag method for error estimation. 
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+varImp(model) 
+predict(model, newdata = testing) %>%
+  confusionMatrix(., as.factor(testing$rating))
+```
+
+> **Question**: how does this compare to a larger city like Dallas?
+
+### **Dallas Model**
+
+Load Dallas data
+
+```{r include=FALSE}
+urlfile="https://raw.githubusercontent.com/jxw659/CS6242/main/CleanedData/Cleaned_Dallas.csv?token=GHSAT0AAAAAAB3H4L3YYMB7WFQ5XD5UPPW6Y4GYKVQ"
+df_dallas <- readr::read_csv(url(urlfile))
+head(df_dallas)
+```
+
+Data cleaning
+
+Create Open_Breakfast, Open_Lunch, Open_Dinner, Open_Late
+```{r}
+# --- Open for breakfast, lunch, dinner, late
+df_dallas <-
+df_dallas %>%
+  select(-X1) %>%
+  mutate(open_hour=as.integer(substr(`Opening Time`,1,2)),
+         close_hour=as.integer(substr(`Closing Time`,1,2))) %>%
+  mutate(Open_Breakfast = if_else(open_hour <= 10,1,0),
+         Open_Lunch = if_else(open_hour <= 12 & close_hour >= 12,1,0),
+         Open_Dinner = if_else(open_hour <= 18 & (close_hour >= 18 | close_hour <=2),1,0),
+         Open_Late = if_else(close_hour >= 22 | close_hour <= 2,1,0))
+
+# --- if opening/closing time is null, can we impute the nulls based on restaurant category, else 0 for nulls
+df_dallas <-
+df_dallas %>%
+  mutate(Open_Breakfast = if_else(is.na(Open_Breakfast) & grepl('breakfast|diner|brunch',`Restaurant Category`),1,Open_Breakfast),
+         Open_Lunch = if_else(is.na(Open_Lunch) & grepl('lunch|brunch',`Restaurant Category`),1,Open_Lunch),
+         Open_Dinner = if_else(is.na(Open_Dinner) & grepl('dinner',`Restaurant Category`),1,Open_Dinner)) %>%
+  mutate(Open_Breakfast = if_else(is.na(Open_Breakfast),0,Open_Breakfast),
+         Open_Lunch = if_else(is.na(Open_Lunch),0,Open_Lunch),
+         Open_Dinner = if_else(is.na(Open_Dinner),0,Open_Dinner),
+         Open_Late = if_else(is.na(Open_Late),0,Open_Late))
+```
+
+Chunk restaurant data
 
 ```{r}
+df_dallas <-
+df_dallas %>%
+  mutate(restaurant_category=case_when(`Restaurant Category` %in% c("thai","japanese","chinese","asianfusion","sushi","indpak","noodles","vietnamese","pakistani","laotian","ramen","korean","mongolian","dimsum","taiwanese","hotpot","filipino","conveyorsushi","teppanyaki","cantonese","izakaya","japacurry","panasian","karaoke")~"asian",
+                                       
+                                       `Restaurant Category` %in% c("italian","greek","portuguese","french","scandinavian","spanish","tapasmallplates","tapas","british","fishnchips","german","irish","pastashops","modern_european","mediterranean")~"european",
+                                       
+                                       `Restaurant Category` %in% c("mideastern","halal","persian","turkish","falafel","syrian","kebab","lebanese","armenian")~"mideastern",
+                                       
+                                       `Restaurant Category` %in% c("latin","tex-mex","mexican","salvadoran","tacos","brazilian","newmexican")~"latin",
+                                       
+                                       `Restaurant Category` %in% c("bbq","soulfood","salad","tradamerican","hotdogs","sandwiches","pizza","burgers","chicken_wings","chickenshop","soup","delis","newamerican","hotdog","southern","cajun","cheesesteaks","smokehouse","steak")~"american",
+                                       
+                                       `Restaurant Category` %in% c("shavedice","desserts","icecream","cakeshop","bakeries","bubbletea","creperies","donuts","waffles","cupcakes","gelato")~"desserts",
+                                       
+                                       `Restaurant Category` %in% c("breakfast_brunch","coffee","cafes","acaibowls","juicebars","pancakes","diners")~"breakfast",
+                                       
+                                       `Restaurant Category` %in% c("hawaiian","poke")~"hawaiian",
+                                       
+                                       TRUE~"other"))
+
+```
+
+What restaurant categories exist for Dallas but do not exist for the other cities?
+```{r}
+df_dallas %>%
+  filter(restaurant_category=='other') %>%
+  distinct(`Restaurant Category`) 
+```
+
+Update resturant category list
+
+```{r}
+df_dallas <- 
+df_dallas %>%
+  mutate(restaurant_category=case_when(`Restaurant Category` %in% c('burmese','malaysian','szechuan','shanghainese','indonesian', 'cambodian')~'asian',
+                                       `Restaurant Category` %in% c('cuban','venezuelan','colombian','dominican','puertorican','honduran', 'nicaraguan','argentine','empanadas')~'latin',
+                                       `Restaurant Category` %in% c('chocolate','candy')~'desserts',
+                                       `Restaurant Category` %in% c('moroccan')~'mideastern',
+                                       TRUE~restaurant_category)) 
+```
+
+Misc. cleaning
+
+```{r}
+df_dallas <- df_dallas %>% 
+  filter(State == 'TX') %>% # remove any odd restaurants that may have slipped in from other states
+  mutate(is_claimed=if_else(is_claimed=='TRUE',1,0),
+         price=if_else(is.na(`Price Level`),"NA",`Price Level`)) %>%
+  select(is_claimed,review_count,rating,restaurant_category,pickup=`Pickup Available`,delivery=`Delivery Available`, reservation=`Reservation Available`,price,messaging=`Has Messaging`,Open_Breakfast,Open_Lunch,Open_Dinner,Open_Late)
+```
+
+Check NAs
+
+```{r warning=FALSE}
+df_dallas %>%
+  summarise_all(funs(sum(is.na(.))))
+```
+
+Populate 0 for NA columns
+```{r}
+df_dallas <- 
+  df_dallas %>%
+  mutate(is_claimed=if_else(is.na(is_claimed),0,is_claimed),
+         pickup=if_else(is.na(pickup),0,pickup),
+         delivery=if_else(is.na(delivery),0,delivery),
+         reservation=if_else(is.na(reservation),0,reservation))
+```
+
+One-hot encode categorical features
+
+```{r}
+dummy <- dummyVars("~.",data=df_dallas)
+df_onehot <- data.frame(predict(dummy,newdata=df_dallas))
+head(df_onehot)
+```
+
+Train Dallas model
+
+```{r}
+# --- bucket the rating (ordinal) to "high"/"low" (categorical)
+df_model <-
+  df_onehot %>%
+  mutate(rating=case_when(rating <= 3.5~'low',
+                          TRUE~'high')) %>%
+  filter(review_count > 10) # filter on review count > 10
+
+set.seed(149)
+# --- split training 80:20
+inTraining <- createDataPartition(df_model$rating, p = .8, list = FALSE) 
+training <- df_model[ inTraining,] 
+testing  <- df_model[-inTraining,]
+
+set.seed(149)
+
+# method: use out-of-bag method for error estimation
+control <- trainControl(method = "oob", number=5, sampling="up", search="random", verboseIter=TRUE, savePredictions=TRUE)
+
+# random forest
+model <- train(rating ~., data=training,
+               method="rf",
+               trControl = control)
+
+print(model)
+
+# variable importance
 varImp(model)
 ```
 
@@ -294,102 +698,205 @@ predict(model, newdata = testing) %>%
   confusionMatrix(., as.factor(testing$rating))
 ```
 
-State == ID
+### **Analysis**
+
+What is the average predicted probability by review count?
 
 ```{r}
-predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateID==1)))
-
-# --- accuracy 
-predictions %>%
-  cbind(.,testing %>% filter(StateID==1)) %>%
-  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
-  summarise(accuracy=sum(accurate)/sum(n()))
-
-# --- confusion matrix
-predictions %>%
-  cbind(.,testing %>% filter(StateID==1)) %>%
-  group_by(rating,predicted_rating) %>%
-  summarise(counts=sum(n())) %>%
-  mutate(perc=percentf(counts/sum(counts))) %>%
-  select(-counts) %>%
-  pivot_wider(names_from=predicted_rating,values_from=perc)
+cbind(predict(model, df_model, type="prob"), df_model) %>%
+  mutate(review_buckets=ntile(review_count,4)) %>%
+  left_join(.,cbind(predict(model, df_model, type="prob"), df_model) %>%
+              mutate(review_buckets=ntile(review_count,5)) %>%
+              group_by(review_buckets) %>%
+              summarise(min_review=min(review_count),
+                        max_review=max(review_count)) %>%
+              mutate(review_range=paste(as.character(min_review)," - ",as.character(max_review))),
+            by="review_buckets") %>%
+  group_by(review_buckets,review_range) %>%
+  summarise(avg_predicted_prob=mean(high))
+ 
+# uncomment below to write to file 
+#cbind(predict(model, df_model, type="prob"), df_model) %>%
+#  mutate(review_buckets=ntile(review_count,5)) %>%
+#  left_join(.,cbind(predict(model, df_model, type="prob"), df_model) %>%
+#              mutate(review_buckets=ntile(review_count,5)) %>%
+#              group_by(review_buckets) %>%
+#              summarise(min_review=min(review_count),
+#                        max_review=max(review_count)) %>%
+#              mutate(review_range=paste(as.character(min_review)," - ",as.character(max_review))),
+#            by="review_buckets") %>%
+#  write.csv("C:\\Users\\e672437\\Documents\\TBD\\HW\\review_count.csv")
 ```
 
-State == TX
+> **Observation**: the higher the review count, the better higher the predicted probability. We saw review count was the top important feature
+
+### **Dummy Data**
 
 ```{r}
-predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateTX==1)))
-
-# --- accuracy 
-predictions %>%
-  cbind(.,testing %>% filter(StateTX==1)) %>%
-  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
-  summarise(accuracy=sum(accurate)/sum(n()))
-
-# --- confusion matrix
-predictions %>%
-  cbind(.,testing %>% filter(StateTX==1)) %>%
-  group_by(rating,predicted_rating) %>%
-  summarise(counts=sum(n())) %>%
-  mutate(perc=percentf(counts/sum(counts))) %>%
-  select(-counts) %>%
-  pivot_wider(names_from=predicted_rating,values_from=perc)
+# refer to the git notebook "Dummy_Data_Creator.ipynb" to generate the dummy data
+dummy_df <- read.csv("C:\\Users\\e672437\\Downloads\\Dummy_data.csv")
 ```
 
-State == NV
+Clean up the dummy dataset. If we had more time, we would've modified the notebook "Dummy_Data_Creator.ipynb" to address these changes:
+
+What is the average review count? Set that as default for the dummy dataset
 
 ```{r}
-predictions <- data.frame(predicted_rating=predict(model, newdata = testing %>% filter(StateNV==1)))
-
-# --- accuracy 
-predictions %>%
-  cbind(.,testing %>% filter(StateNV==1)) %>%
-  mutate(accurate=if_else(rating==predicted_rating,1,0)) %>%
-  summarise(accuracy=sum(accurate)/sum(n()))
-
-# --- confusion matrix
-predictions %>%
-  cbind(.,testing %>% filter(StateNV==1)) %>%
-  group_by(rating,predicted_rating) %>%
-  summarise(counts=sum(n())) %>%
-  mutate(perc=percentf(counts/sum(counts))) %>%
-  select(-counts) %>%
-  pivot_wider(names_from=predicted_rating,values_from=perc)
+df_onehot %>%
+  filter(review_count>10) %>%
+  summarise(mean_review_count=mean(review_count))
 ```
 
+```{r}
+dummy_df <- dummy_df %>% 
+  filter(is_claimed==1) %>% # Filter out is_claimed == 0; for Tableau, we'll assume is_claimed should always be 1
+  select(-X) %>% # drop row label
+  mutate(`priceVery.High`=priceVeryHigh,
+         priceNA=0,
+         review_count=187) %>%
+  select(-priceVeryHigh) %>%
+  
+  # we're assuming a restaurant can only fit into one category; Dummy_Data_Creator.ipynb did not account for this
+  mutate(restaurant_ind=case_when(restaurant_categoryamerican==1 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==1 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==1 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==1 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==1 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==1 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==1 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==1 &
+                                restaurant_categoryother==0~1,
+                              
+                              restaurant_categoryamerican==0 & 
+                                restaurant_categoryasian==0 &
+                                restaurant_categorybreakfast==0 &
+                                restaurant_categorydesserts==0 &
+                                restaurant_categoryeuropean==0 &
+                                restaurant_categoryhawaiian==0 &
+                                restaurant_categorylatin==0 &
+                                restaurant_categorymideastern==0 &
+                                restaurant_categoryother==1~1),
+         price_ind=case_when(priceHigh==1 &
+                               priceMedium==0 &
+                               priceLow==0 &
+                               priceVery.High==0 &
+                               priceNA==0~1,
+                             
+                             priceHigh==0 &
+                               priceMedium==1 &
+                               priceLow==0 &
+                               priceVery.High==0 &
+                               priceNA==0~1,
+                             
+                             priceHigh==0 &
+                               priceMedium==0 &
+                               priceLow==1 &
+                               priceVery.High==0 &
+                               priceNA==0~1,
+                             
+                             priceHigh==0 &
+                               priceMedium==0 &
+                               priceLow==0 &
+                               priceVery.High==1 &
+                               priceNA==0~1)) %>%
+  filter(restaurant_ind==1 & price_ind==1)
+```
+
+
+Predict on dummy df
+```{r}
+predictions <- data.frame(predicted_probability=predict(model, newdata = dummy_df, type = "prob"))
+
+final_dummy_df <- cbind(predictions,dummy_df) %>%
+  mutate(predicted_rating=if_else(predicted_probability.high>=predicted_probability.low,'high','low'))
+
+head(final_dummy_df)
+```
+
+```{r}
+final_dummy_df %>%
+  group_by(predicted_rating) %>%
+  tally()
+```
+
+```{r eval=FALSE, include=FALSE}
+final_dummy_df %>% write.csv("C:\\Users\\e672437\\Documents\\TBD\\HW\\dummy_predictions.csv")
+```
 
 
 ### DO NOT USE, DO NOT REMOVE. FOR REFERENCE ONLY
-```{r}
-predict(model, newdata = testing, type = "prob") %>%
-  mutate(predicted_rating=if_else(high>=low,"high","low")) %>%
-  select(predicted_rating) %>%
-  cbind(.,testing) %>%
-  group_by(rating,predicted_rating) %>%
-  summarise(counts=sum(n())) %>%
-  mutate(perc=percentf(counts/sum(counts))) %>%
-  select(-counts) %>%
-  pivot_wider(names_from=predicted_rating,values_from=perc)
-```
 
-One-hot encode categorical features
-
-```{r}
-dummy <- dummyVars("~.",data=df_select)
-df_onehot <- data.frame(predict(dummy,newdata=df_select))
-head(df_onehot)
-```
-
-```{r}
-df_model %>% write.csv("C:\\Users\\e672437\\Documents\\TBD\\model_data.csv")
-```
-
-```{r}
-cor(,method = c("pearson"))
-```
-
-
-```{r}
+```{r eval=FALSE, include=FALSE}
 {
   'is_claimed': [0,1],
   'restaurant_categoryamerican': [0,1],
