@@ -1,14 +1,14 @@
 # Software Requirements
 ## Python 3.7 or greater
 ### Python Packages
-* pandas v. 1.4.2
+* pandas v. 1.4.2 - data wrangling
 * pyproj v 3.4.0
-* jupyter v 4.8.1
+* jupyter v 4.8.1 - notebook creation
 * requests v 2.28.1
-* ast v 3.7 or greater
-* itertools v 3.7 or greater
-* numpy v 1.20.1
-* json v 2.0.9
+* ast v 3.7 or greater - dictionary and list extraction
+* itertools v 3.7 or greater - used iteration in dummy data creation
+* numpy v 1.20.1 - data cleaning
+* json v 2.0.9 - data cleaning
 ## R 
 ### R Packages
 ## QGIS v 3.28.1 (https://www.qgis.org/en/site/)
